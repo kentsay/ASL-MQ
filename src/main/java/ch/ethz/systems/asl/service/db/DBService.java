@@ -27,20 +27,20 @@ import org.postgresql.ds.PGPoolingDataSource;
 
 public final class DBService {
 
-	private static final Logger Log = Logger.getLogger(DBService.class.getName());
+    private static final Logger Log = Logger.getLogger(DBService.class.getName());
 
 	private static volatile int usedConnectionCount = 0;
 	private static volatile int getConnectionCount = 0;
 
 	public static final String CONFIG_PROPERTIES_FILENAME = "config" + File.separator + "dbservice.properties";
 	public static final String CONN_ROLENAMES        = "dbservice.connection.rolenames";
-    public static final String CONN_SERVER           = "dbservice.connection.server";
-    public static final String CONN_DBNAME           = "dbservice.connection.dbname";
+	public static final String CONN_SERVER           = "dbservice.connection.server";
+	public static final String CONN_DBNAME           = "dbservice.connection.dbname";
 	public static final String CONN_DRIVER_CLASS     = "dbservice.connection.driverClass";
 	public static final String CONN_USERNAME         = "dbservice.connection.username";
 	public static final String CONN_URL              = "dbservice.connection.url";
 	public static final String CONN_PASSWORD         = "dbservice.connection.password";
-    public static final String CONN_MAXCONN          = "dbservice.connection.maxconnection";
+	public static final String CONN_MAXCONN          = "dbservice.connection.maxconnection";
 	public static final String PROPERTY_RETRY_COUNT  = "dbservice.connection.retryCount";
 	public static final String PROPERTY_RETRY_PERIOD = "dbservice.connection.retryPeriod";
 
@@ -58,8 +58,8 @@ public final class DBService {
 	// Make DBService Singleton
 	private static final DBService INSTANCE = new DBService();
 
-	/**
-	 * Creates a new DBService object.
+    /**
+     * Creates a new DBService object.
 	 */
 	private DBService() {
 	}
