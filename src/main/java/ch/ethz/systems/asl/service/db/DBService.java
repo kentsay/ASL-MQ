@@ -43,6 +43,9 @@ public final class DBService {
 	public static final String CONN_MAXCONN          = "dbservice.connection.maxconnection";
 	public static final String PROPERTY_RETRY_COUNT  = "dbservice.connection.retryCount";
 	public static final String PROPERTY_RETRY_PERIOD = "dbservice.connection.retryPeriod";
+	
+    /** Default auto commit. */
+    public static final boolean DEFAULT_AUTO_COMMIT = false;
 
 	private Properties props = null;
 
@@ -58,7 +61,7 @@ public final class DBService {
 	// Make DBService Singleton
 	private static final DBService INSTANCE = new DBService();
 
-    /**
+	/**
      * Creates a new DBService object.
 	 */
 	private DBService() {
@@ -194,6 +197,7 @@ public final class DBService {
 		} catch (SQLException e) {
 			diffTime = System.currentTimeMillis() - before;
 			Log.info("Get connection error:" + diffTime + " ms.");
+			Log.info("Retry Count: " + retry );
 			if (retry > 0) {
 				try {
 					Thread.sleep(retryPeriod);
@@ -206,8 +210,8 @@ public final class DBService {
 				throw e;
 			}
 		}
-
-		conn.setAutoCommit(false);
+		
+		conn.setAutoCommit(DEFAULT_AUTO_COMMIT);
 		return conn;
 	}
 
