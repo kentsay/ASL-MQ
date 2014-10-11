@@ -60,4 +60,20 @@ public class DBServiceTest {
             e.printStackTrace();
         }
     }
+    
+    @Test
+    public void DBInsertTest() {
+        try {
+            Connection conn = DBService.getDBService().getConnection("local");
+            String sql = "insert into queue (qname) values ('blablala')";
+            int rs = DBService.getDBService().sqlAction(sql, conn, false);
+            conn.commit();
+            System.out.println("Effect raw: " + rs);
+            assertNotNull(rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (NamingException e) {
+            e.printStackTrace();
+        }
+    }
 }
