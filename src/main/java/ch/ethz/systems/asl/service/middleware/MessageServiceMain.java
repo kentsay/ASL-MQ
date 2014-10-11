@@ -1,5 +1,6 @@
 package main.java.ch.ethz.systems.asl.service.middleware;
 
+import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -36,7 +37,6 @@ public class MessageServiceMain implements IService {
                 client = msgServer.accept();
                 numConnections ++;
                 System.out.println("Accept message from client");
-
                 MessageService msgSer = new MessageService(client, numConnections, this);
                 new Thread(msgSer).start();
             } catch (Exception e) {
@@ -45,7 +45,7 @@ public class MessageServiceMain implements IService {
         }
     }
     
-    public void stopService() {
+    public void stopService() throws IOException {
         setServiceState(STOP);
     }
 

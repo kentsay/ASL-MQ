@@ -4,10 +4,16 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
+import main.java.ch.ethz.systems.asl.bean.Message;
+import main.java.ch.ethz.systems.asl.bean.MsgFunc;
+import main.java.ch.ethz.systems.asl.bean.MsgType;
 import main.java.ch.ethz.systems.asl.service.middleware.IService;
+import main.java.ch.ethz.systems.asl.util.CommonUtil;
 
 public class Sender implements IService{
     
@@ -49,17 +55,28 @@ public class Sender implements IService{
         try {
             while ( true ) {
             System.out.print( "Enter an integer (0 to stop connection, -1 to stop server): " );
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            String keyboardInput = br.readLine();
-            os.writeBytes( keyboardInput + "\n" );
-
+            //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            //String keyboardInput = br.readLine();
+            //os.writeBytes( keyboardInput + "\n" );
+            /*
             int n = Integer.parseInt( keyboardInput );
             if ( n == 0 || n == -1 ) {
                 break;
             }
+            */
+            ObjectOutputStream objOut = new ObjectOutputStream(clientSocket.getOutputStream());
+            ObjectInputStream in = new ObjectInputStream(clientSocket.getInputStream());
+            Message msg = new Message();
+            msg.setMsgType(MsgType.SEND);
+            msg.setMsgFunc(MsgFunc.CTR_DELETEQ);
+            msg.setMid(CommonUtil.genUUID());
+            msg.setMsgDetail("queue3");
+            objOut.writeObject(msg);
             
-            String responseLine = is.readLine();
-            System.out.println("Server returns its square as: " + responseLine);
+            Message r = (Message)in.readObject();
+            //String responseLine = is.readLine();
+            System.out.println("Server returns its square as: " + r.getMsgDetail());
+            break;
             }
             
             // clean up:
@@ -74,6 +91,9 @@ public class Sender implements IService{
             System.err.println("Trying to connect to unknown host: " + e);
         } catch (IOException e) {
             System.err.println("IOException:  " + e);
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
     }
 
