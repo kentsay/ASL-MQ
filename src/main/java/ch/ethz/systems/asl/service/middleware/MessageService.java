@@ -371,10 +371,47 @@ public class MessageService implements Runnable {
     private void processQuery(Message raw, Message result) {
         switch (raw.getMsgFunc()) {
             case QUERY_BYSENDER:
-                //TODO
+                try {
+                    conn = DbUtil.getConnection(conn, "local");
+                    String receive = raw.getSender();
+                    String sender = raw.getMsgDetail();
+                    String sql = "select distinct mid, msg_detail "
+                            + "from msg, msg_detail "
+                            + "where mid=msg_id and msend_id = ? and mrecv_id in (?,?) limit 1";
+                    Vector<String> param = new Vector<>();
+                    param.add(sender);
+                    param.add(receive);
+                    param.add("all");
+                    ResultSet rs = DbUtil.sqlSelect(sql, param, conn);
+                    
+                    while(rs.next()) {
+                        result.setMsgDetail(rs.getString("msg_detail"));
+                    }
+                } catch (SQLException | NamingException e) {
+                    isRollBack = true;
+                    e.printStackTrace();
+                }
                 break;
             case QUERY_BYQUEUE:
-                //TODO
+                try {
+                    conn = DbUtil.getConnection(conn, "local");
+                    String receive = raw.getSender();
+                    String sql = "select distinct mqueue_id "
+                            + "from msg, msg_detail "
+                            + "where mrecv_id=? and status=CAST('exists' as status_enum)";
+                    Vector<String> param = new Vector<>();
+                    param.add(receive);
+                    ResultSet rs = DbUtil.sqlSelect(sql, param, conn);
+                    String rsQueue = "";
+                    while(rs.next()) {
+                        rsQueue = rs.getString("mqueue_id") + "," + rsQueue;
+                    }
+                    System.out.println("return Queue: " + rsQueue);
+                    result.setMsgQueue(rsQueue.substring(0, rsQueue.length()-1));
+                } catch (SQLException | NamingException e) {
+                    isRollBack = true;
+                    e.printStackTrace();
+                }
                 break;
             default:
                 break;
