@@ -1,15 +1,21 @@
 package main.java.ch.ethz.systems.asl.bean;
 
-public class Message {
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Message implements Serializable {
+    
+    private static final long serialVersionUID = 6572077450962477506L;
     
     private String mid           = "";
     private String sender        = "";
     private String receiver      = "";
     private String msgQueue      = "";
     private String msgArriveTime = "";
-    private String msgType       = "";
-    private String msgFunc       = "";
+    private MsgType msgType;
+    private MsgFunc msgFunc;
     private String msgDetail     = "";
+    private ArrayList<Message> responMessage;
     
     public String getMid() {
         return mid;
@@ -41,16 +47,16 @@ public class Message {
     public void setMsgArriveTime(String msgArriveTime) {
         this.msgArriveTime = msgArriveTime;
     }
-    public String getMsgType() {
+    public MsgType getMsgType() {
         return msgType;
     }
-    public void setMsgType(String msgType) {
+    public void setMsgType(MsgType msgType) {
         this.msgType = msgType;
     }
-    public String getMsgFunc() {
+    public MsgFunc getMsgFunc() {
         return msgFunc;
     }
-    public void setMsgFunc(String msgFunc) {
+    public void setMsgFunc(MsgFunc msgFunc) {
         this.msgFunc = msgFunc;
     }
     public String getMsgDetail() {
@@ -58,6 +64,12 @@ public class Message {
     }
     public void setMsgDetail(String msgDetail) {
         this.msgDetail = msgDetail;
+    }
+    public ArrayList<Message> getResponMessage() {
+        return responMessage;
+    }
+    public void setResponMessage(ArrayList<Message> responMessage) {
+        this.responMessage = responMessage;
     }
     
 }
