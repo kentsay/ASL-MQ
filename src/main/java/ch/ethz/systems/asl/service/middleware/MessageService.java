@@ -407,7 +407,7 @@ public class MessageService implements Runnable {
                         rsQueue = rs.getString("mqueue_id") + "," + rsQueue;
                     }
                     System.out.println("return Queue: " + rsQueue);
-                    result.setMsgQueue(rsQueue.substring(0, rsQueue.length()-1));
+                    result.setMsgDetail(rsQueue.substring(0, rsQueue.length()-1));
                 } catch (SQLException | NamingException e) {
                     isRollBack = true;
                     e.printStackTrace();

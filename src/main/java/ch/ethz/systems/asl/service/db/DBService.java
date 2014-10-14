@@ -293,7 +293,6 @@ public final class DBService {
      */
     public ResultSet select(String command, Vector<?> params, Connection conn) throws SQLException {
         String pSql = makeSql(command, params);
-
         ResultSet rs = null;
         PreparedStatement stmt = null;
 
@@ -306,10 +305,8 @@ public final class DBService {
              // use set Object to process non string field
                 stmt.setObject(i + 1, params.get(i));
             }
-
             long before = System.currentTimeMillis();
             rs = stmt.executeQuery();
-
             long diffTime = System.currentTimeMillis() - before;
 
             if (diffTime >= this.executeQueryTime) {
@@ -319,9 +316,10 @@ public final class DBService {
 
         } catch (SQLException e) {
             throw new SQLException("sql:" + pSql + "\n" + e.getMessage(), e.getSQLState(), e.getErrorCode());
-        } finally {
-            this.close(rs);
-            this.close(stmt);
+        }
+        finally {
+//            this.close(rs);
+//            this.close(stmt);
         }
         return rs;
     }
@@ -363,7 +361,7 @@ public final class DBService {
             }
             throw new SQLException("sql:" + command + "\n" + e.getMessage(), e.getSQLState(), e.getErrorCode());
         } finally {
-            this.close(stmt);
+//            this.close(stmt);
         }
 
         return rescount;
@@ -418,7 +416,7 @@ public final class DBService {
             }
             throw new SQLException("sql:" + sqlStatement + "\n" + e.getMessage(), e.getSQLState(), e.getErrorCode());
         } finally {
-            this.close(stmt);
+//            this.close(stmt);
         }
         return rescount;
     }
