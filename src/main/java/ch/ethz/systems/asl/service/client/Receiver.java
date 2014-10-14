@@ -1,6 +1,5 @@
 package main.java.ch.ethz.systems.asl.service.client;
 
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -17,15 +16,12 @@ public class Receiver implements IService {
     
     public static void main(String[] args) {
         String hostname = "localhost";
+        Socket clientSocket = null;  
         int port = 1999;
 
-        Socket clientSocket = null;  
-        DataOutputStream os = null;
-        
         try {
             clientSocket = new Socket(hostname, port);
-            os = new DataOutputStream(clientSocket.getOutputStream());
-
+            
             while ( true ) {
             System.out.println("Receiver is action:");
             ObjectOutputStream objOut = new ObjectOutputStream(clientSocket.getOutputStream());
@@ -60,8 +56,6 @@ public class Receiver implements IService {
                 System.out.println("TOp 1 msg from send1: " + r.getMsgDetail());
             break;
             }
-            
-            os.close();
             clientSocket.close();   
         } catch (UnknownHostException e) {
             System.err.println("Trying to connect to unknown host: " + e);
