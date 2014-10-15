@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import main.java.ch.ethz.systems.asl.bean.ResponseCode;
+
 public class MessageServiceMain implements IService {
     
     public ServerSocket msgServer = null;
@@ -29,10 +31,11 @@ public class MessageServiceMain implements IService {
             setServiceState(START);
             System.out.println("Message server running");
         } catch (Exception e) {
-            // TODO: handle exception
+            setServiceState(STOP);
+            System.out.println("[Error]: " + ResponseCode.ERROR_SERVER_FAIL.value());
         }
         
-        while ( true ) {
+        while (true) {
             try {
                 client = msgServer.accept();
                 numConnections ++;
@@ -40,7 +43,8 @@ public class MessageServiceMain implements IService {
                 MessageService msgSer = new MessageService(client, numConnections, this);
                 new Thread(msgSer).start();
             } catch (Exception e) {
-                // TODO: handle exception
+                setServiceState(STOP);
+                System.out.println("[Error]: " + ResponseCode.ERROR_SERVER_ACCEPT_FAIL.value());
             }
         }
     }
