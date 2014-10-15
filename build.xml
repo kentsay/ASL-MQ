@@ -1,43 +1,63 @@
 <project name="ASL-MQ" default="run" basedir=".">
 
 	<!-- set global properties for this build -->
-	<property name="src.dir"    location="src" />
-	<property name="build.dir"  location="bin"/>
-	<property name="lib.dir"    location="lib"/>
-	<property name="message-service-class" value="main.java.ch.ethz.systems.asl.service.middleware.MessageServiceMain"/>
-	<property name="sender-class"          value="main.java.ch.ethz.systems.asl.service.client.Sender"/>
-	<property name="receiver-class"        value="main.java.ch.ethz.systems.asl.service.client.Receiver"/>
-	<property name="port.number"           value="1999"/>
-	
+	<property name="src.dir" location="src" />
+	<property name="build.dir" location="bin" />
+	<property name="lib.dir" location="lib" />
+	<property name="message-service-class" value="main.java.ch.ethz.systems.asl.service.middleware.MessageServiceMain" />
+	<property name="sender-class" value="main.java.ch.ethz.systems.asl.service.client.Sender" />
+	<property name="receiver-class" value="main.java.ch.ethz.systems.asl.service.client.Receiver" />
+	<property name="port.number" value="1999" />
+
 	<path id="classpath">
-		<fileset dir="${lib.dir}" includes="postgresql.jar"/>
+		<fileset dir="${lib.dir}" includes="postgresql.jar" />
 	</path>
 
 	<target name="compile" description="compiles the source">
 		<!-- Compile the java code from ${src} into ${build} -->
-		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${build.dir}" />
 		<javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath" includeantruntime="false" />
 	</target>
 
-	<target name="jar" depends="compile" description="generate a jar executable" >
+	<target name="jar" depends="compile" description="generate a jar executable">
 		<!-- Put everything in into a executable jar file -->
 		<jar jarfile="${ant.project.name}.jar" basedir="${build.dir}" />
 	</target>
 
-	<target name="run" depends="jar" description="execute the jar file" >
-		<java classname="${main-class}" fork="true">
+	<target name="run" depends="jar" description="execute the jar file">
+		<java classname="${message-service-class}" fork="true">
 			<classpath>
-				<path refid="classpath"/>
-				<path location="${ant.project.name}.jar"/>
+				<path refid="classpath" />
+				<path location="${ant.project.name}.jar" />
 			</classpath>
-			<arg value="${port.number}"/>
+			<arg value="${port.number}" />
 		</java>
 	</target>
 
-	<target name="clean" description="clean up" >
+	<target name="send" depends="jar" description="execute the jar file">
+		<java classname="${sender-class}" fork="true">
+			<classpath>
+				<path refid="classpath" />
+				<path location="${ant.project.name}.jar" />
+			</classpath>
+			<arg value="${port.number}" />
+		</java>
+	</target>
+
+	<target name="receive" depends="jar" description="execute the jar file">
+		<java classname="${receiver-class}" fork="true">
+			<classpath>
+				<path refid="classpath" />
+				<path location="${ant.project.name}.jar" />
+			</classpath>
+			<arg value="${port.number}" />
+		</java>
+	</target>
+
+	<target name="clean" description="clean up">
 		<!-- Delete the ${build} directory and the jar file -->
-		<delete dir="${build.dir}"/>
-		<delete file="${ant.project.name}.jar"/>
+		<delete dir="${build.dir}" />
+		<delete file="${ant.project.name}.jar" />
 	</target>
 
 </project>
