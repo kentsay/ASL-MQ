@@ -1,7 +1,6 @@
 package main.java.ch.ethz.systems.asl.bean;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 
 public class Message implements Serializable {
     
@@ -15,7 +14,6 @@ public class Message implements Serializable {
     private MsgType msgType;
     private MsgFunc msgFunc;
     private String msgDetail     = "";
-    private ArrayList<Message> responMessage;
     
     public String getMid() {
         return mid;
@@ -64,12 +62,6 @@ public class Message implements Serializable {
     }
     public void setMsgDetail(String msgDetail) {
         this.msgDetail = msgDetail;
-    }
-    public ArrayList<Message> getResponMessage() {
-        return responMessage;
-    }
-    public void setResponMessage(ArrayList<Message> responMessage) {
-        this.responMessage = responMessage;
     }
     
 }
