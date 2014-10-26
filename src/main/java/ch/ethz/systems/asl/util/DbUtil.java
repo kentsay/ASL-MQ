@@ -19,6 +19,10 @@ public class DbUtil {
             return dbService.getConnection(profile);
     }
     
+    public static final void closeConnection(Connection conn) {
+        dbService.close(conn);
+    }
+    
     public static final int sqlAction(String sqlCmd, Vector<?> params, 
             Connection conn, boolean isRollback) throws SQLException {
         return dbService.sqlAction(sqlCmd, params, conn, isRollback);

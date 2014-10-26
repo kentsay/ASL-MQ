@@ -3,6 +3,12 @@ package main.java.ch.ethz.systems.asl.service.middleware;
 /*
  * @author: <a href="mailto:tsayk@student.ethz.ch">Kai-En Tsay(Ken)</a>
  * @version: 1.0
+ *  - init implement all components in message system
+ * @version: 1.1
+ *  - adjust: in order to remain table size, change db schema and remove status from table msg_detail and queue
+ *  - adjust: change sql syntax
+ *  - adjust: extract client api for testing
+ *  - adjust: extract sql query to postgresql store procedure
  * 
  */
 
@@ -13,7 +19,6 @@ import java.net.Socket;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Vector;
 import java.util.logging.Logger;
 
@@ -104,13 +109,14 @@ public class MessageService implements Runnable {
         }
         
         if (!isRollBack) conn.commit();
+        DbUtil.closeConnection(conn);
         return result;
     }
     
     private void processMsg(Message raw, Message result) {
+        Log.info("[Log]: ProcessMsg");
         try {
             conn = DbUtil.getConnection(conn, "local");
-            
             String sql_msg = "insert into msg (mid, msend_id, mrecv_id, mqueue_id) values (?,?,?,?)";
             Vector<String> param = new Vector<>();
             String mid = raw.getMid();
@@ -135,6 +141,7 @@ public class MessageService implements Runnable {
     }
     
     private void processMsgDtl(Message raw, Message result) {
+        Log.info("[Log]: ProcessMsgDtl");
         try {
             conn = DbUtil.getConnection(conn, "local");
             
@@ -164,23 +171,31 @@ public class MessageService implements Runnable {
     }
     
     private void processSend(Message raw, Message result) {
+        Log.info("[Log]: Process Send");
         switch(raw.getMsgFunc()) {
         case CTR_CREATEQ:
             if(null!= raw.getMsgDetail()) {
                 try {
-                    conn = DbUtil.getConnection(conn, "local");
-                    String qname = raw.getMsgQueue();
-                    String sql = "insert into queue (qname) values (?)";
-                    Vector<String> param = new Vector<>();
-                    param.add(qname);
-                    rescount = DbUtil.sqlAction(sql, param, conn, false);
-                    if (rescount > 0) {
-                        Log.info("insert queue table success");
+                    ResultSet rs = checkQueueExists(raw);
+                    if (!rs.next()) {
+                        //queue does exists, can execute queue create
+                        conn = DbUtil.getConnection(conn, "local");
+                        String qname = raw.getMsgQueue();
+                        String sql = "insert into queue (qname) values (?)";
+                        Vector<String> param = new Vector<>();
+                        param.add(qname);
+                        rescount = DbUtil.sqlAction(sql, param, conn, false);
+                        if (rescount > 0) {
+                            Log.info("insert queue table success");
+                        } else {
+                            //set error code: queue did not insert
+                            isRollBack = true;
+                            result.setMsgDetail(ResponseCode.ERROR_DB_QUEUE_TABLE_INSERT_FAIL.value());
+                            Log.info("insert queue table fail");
+                        }
                     } else {
-                        //set error code: queue did not insert
-                        isRollBack = true;
-                        result.setMsgDetail(ResponseCode.ERROR_DB_QUEUE_TABLE_INSERT_FAIL.value());
-                        Log.info("insert queue table fail");
+                        result.setMsgDetail(ResponseCode.ERROR_QUEUE_ALREADY_EXISTS.value());
+                        Log.info("queue already exists");
                     }
                 } catch (SQLException | NamingException e) {
                     isRollBack = true;
@@ -201,20 +216,19 @@ public class MessageService implements Runnable {
                     rescount = DbUtil.sqlAction(sql, param, conn, false);
                     if (rescount > 0) {
                         Log.info("delete queue table success");
-                        //change all msg status in this queue to remove
-                        sql = "update msg_detail "
-                                + "set status = CAST('remove' as status_enum) "
-                                + "where msg_id in ("
-                                    + "select msg_id from msg_detail, msg "
-                                    + "where msg_id = mid and mqueue_id = ?"
-                                + ")";
+                        //remove message in msg, msg_detail belong to this queue
+                        sql = "delete from msg_detail where msg_id in (select mid from msg where mqueue_id = ?)";
+                        param = new Vector<>();
+                        param.add(qname);
+                        rescount = DbUtil.sqlAction(sql, param, conn, false);
+                        sql = "delete from msg where mid in (select mid from msg where mqueue_id = ?)";
                         rescount = DbUtil.sqlAction(sql, param, conn, false);
                         if (rescount > 0) {
-                            Log.info("update msg_detail table to remove msg success");
+                            Log.info("delete msg, msg_detail table to remove msg success");
                         } else {
                             isRollBack = true;
                             result.setMsgDetail(ResponseCode.ERROR_DB_QUEUE_TABLE_DELETE_FAIL.value());
-                            Log.info("update msg_detail table to remove msg fail");
+                            Log.info("delete msg, msg_detail table to remove msg fail");
                         }
                     } else {
                         //set error code: queue did not delete
@@ -275,7 +289,7 @@ public class MessageService implements Runnable {
     private ResultSet checkQueueExists(Message raw) throws SQLException, NamingException {
         conn = DbUtil.getConnection(conn, "local");
         String qname = raw.getMsgQueue();
-        String sql = "select * from queue where qname = ? and qstatus = 'exists'";
+        String sql = "select * from queue where qname = ?";
         Vector<String> param = new Vector<>();
         param.add(qname);
         ResultSet rs = DbUtil.sqlSelect(sql, param, conn);
@@ -284,6 +298,7 @@ public class MessageService implements Runnable {
     
     private void processReceive(Message raw, Message result) {
         switch(raw.getMsgFunc()) {
+        //[Definition]: Clients can read a queue by removing the topmost message 
         case READ_BYRMVMESSAGE:
             try {
                 //check if queue exists, if not exist, then ROLLBACK
@@ -291,36 +306,33 @@ public class MessageService implements Runnable {
                 if (!rs.next()) {
                     isRollBack = true;
                     result.setMsgDetail(ResponseCode.ERROR_QUEUE_NOT_EXISTS.value());
-                    Log.info("queue does not exists, ROLLBACK!!");
+                    Log.info("queue does not exists, ROLLBACK!!");  
                 } else {
-                    //select message, update msg_status, update queue size
+                    //select message, remove top 1 from msg, msg_detail, update queue size
                     conn = DbUtil.getConnection(conn, "local");
                     String receive = raw.getSender();
                     String qname   = raw.getMsgQueue();
                     String sql = "select msg_id, msend_id, msg_detail "
                                + "from msg, msg_detail "
-                               + "where mid=msg_id and mrecv_id in (?,?) and mqueue_id=? and status='exists';";
+                               + "where mid=msg_id and mrecv_id in (?,?) and mqueue_id=? limit 1";
                     Vector<String> param = new Vector<>();
                     param.add(receive);
                     param.add("all");
                     param.add(qname);
                     rs = DbUtil.sqlSelect(sql, param, conn);
-                    String mid = "";
-                    ArrayList<Message> respMsg = new ArrayList<>();
-                    while(rs.next()) {
-                        Message data = new Message();
-                        mid = "'" + rs.getString("msg_id") + "'" + "," + mid;
-                        data.setMid(rs.getString("msg_id"));
-                        data.setMid(rs.getString("msend_id"));
-                        data.setMsgDetail(rs.getString("msg_detail"));
-                        respMsg.add(data);
-                    }
-                    result.setResponMessage(respMsg);
+
+                    String mid = rs.getString("msg_id");
+                    result.setMid(mid);
+                    result.setSender(rs.getString("msend_id"));
+                    result.setMsgDetail(rs.getString("msg_detail"));
                     
-                    sql = "update msg_detail "
-                        + "set status = CAST('remove' as status_enum) "
-                        + "where msg_id in (" + mid.substring(0, mid.length()-1) + ")";
-                    rescount = DbUtil.sqlAction(sql, conn);
+                    sql = "Delete from msg where mid = ?";
+                    param = new Vector<>();
+                    param.add(mid);
+                    rescount = DbUtil.sqlAction(sql, param, conn, false);
+                    sql = "Delete from msg_detail where msg_id = ?";
+                    rescount = DbUtil.sqlAction(sql, param, conn, false);
+                        
                     if (rescount > 0) {
                         updateQueueSize(raw, -rescount);
                         Log.info("read by remove message success");
@@ -350,20 +362,16 @@ public class MessageService implements Runnable {
                     String qname   = raw.getMsgQueue();
                     String sql = "select msg_id, msend_id, msg_detail "
                                + "from msg, msg_detail "
-                               + "where mid=msg_id and mrecv_id=? and mqueue_id=? and status='exists';";
+                               + "where mid=msg_id and mrecv_id=? and mqueue_id=? limit 1;";
                     Vector<String> param = new Vector<>();
                     param.add(receive);
                     param.add(qname);
                     rs = DbUtil.sqlSelect(sql, param, conn);
-                    ArrayList<Message> respMsg = new ArrayList<>();
-                    while(rs.next()) {
-                        Message data = new Message();
-                        data.setMid(rs.getString("msg_id"));
-                        data.setMid(rs.getString("msend_id"));
-                        data.setMsgDetail(rs.getString("msg_detail"));
-                        respMsg.add(data);
-                    }
-                    result.setResponMessage(respMsg);
+                    
+                    String mid = rs.getString("msg_id");
+                    result.setMid(mid);
+                    result.setSender(rs.getString("msend_id"));
+                    result.setMsgDetail(rs.getString("msg_detail"));
                 }
             } catch (SQLException | NamingException e) {
                 isRollBack = true;
@@ -406,8 +414,8 @@ public class MessageService implements Runnable {
                     conn = DbUtil.getConnection(conn, "local");
                     String receive = raw.getSender();
                     String sql = "select distinct mqueue_id "
-                               + "from msg, msg_detail "
-                               + "where mrecv_id=? and status=CAST('exists' as status_enum)";
+                               + "from msg"
+                               + "where mrecv_id=?";
                     Vector<String> param = new Vector<>();
                     param.add(receive);
                     ResultSet rs = DbUtil.sqlSelect(sql, param, conn);
