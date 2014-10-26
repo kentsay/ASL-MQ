@@ -13,7 +13,8 @@ public enum ResponseCode {
     ERROR_DB_MSG_DETAIL_TABLE_DELETE_FAIL("DB Delete msg_detail table fail"),
     ERROR_DB_QUEUE_TABLE_INSERT_FAIL("DB INSERT queue table fail"),
     ERROR_DB_QUEUE_TABLE_DELETE_FAIL("DB DELETE queue table fail"),
-    ERROR_QUEUE_NOT_EXISTS("Queue doest not exists");
+    ERROR_QUEUE_NOT_EXISTS("Queue doest not exists"),
+    ERROR_QUEUE_ALREADY_EXISTS("Queue already exists");
     
     private String type;
     
