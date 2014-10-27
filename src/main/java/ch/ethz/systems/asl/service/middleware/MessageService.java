@@ -297,9 +297,11 @@ public class MessageService implements Runnable {
     }
     
     private void processReceive(Message raw, Message result) {
+        Log.info("[Log]: process receive");
         switch(raw.getMsgFunc()) {
         //[Definition]: Clients can read a queue by removing the topmost message 
         case READ_BYRMVMESSAGE:
+            Log.info("[Log]: process READ_BYRMVMESSAGE");
             try {
                 //check if queue exists, if not exist, then ROLLBACK
                 ResultSet rs = checkQueueExists(raw);
@@ -310,6 +312,7 @@ public class MessageService implements Runnable {
                 } else {
                     //select message, remove top 1 from msg, msg_detail, update queue size
                     conn = DbUtil.getConnection(conn, "local");
+                    String mid = "";
                     String receive = raw.getSender();
                     String qname   = raw.getMsgQueue();
                     String sql = "select msg_id, msend_id, msg_detail "
@@ -320,26 +323,34 @@ public class MessageService implements Runnable {
                     param.add("all");
                     param.add(qname);
                     rs = DbUtil.sqlSelect(sql, param, conn);
-
-                    String mid = rs.getString("msg_id");
-                    result.setMid(mid);
-                    result.setSender(rs.getString("msend_id"));
-                    result.setMsgDetail(rs.getString("msg_detail"));
                     
-                    sql = "Delete from msg where mid = ?";
-                    param = new Vector<>();
-                    param.add(mid);
-                    rescount = DbUtil.sqlAction(sql, param, conn, false);
-                    sql = "Delete from msg_detail where msg_id = ?";
-                    rescount = DbUtil.sqlAction(sql, param, conn, false);
-                        
-                    if (rescount > 0) {
-                        updateQueueSize(raw, -rescount);
-                        Log.info("read by remove message success");
+                    while (rs.next()) {
+                        mid = rs.getString("msg_id");
+                        result.setMid(mid);
+                        result.setSender(rs.getString("msend_id"));
+                        result.setMsgDetail(rs.getString("msg_detail"));
+                    }
+                    
+                    //delete from msg and msg_detail only if there is content in table
+                    if ( !mid.equals("") ) {
+                        sql = "Delete from msg where mid = ?";
+                        param = new Vector<>();
+                        param.add(mid);
+                        rescount = DbUtil.sqlAction(sql, param, conn, false);
+                        sql = "Delete from msg_detail where msg_id = ?";
+                        rescount = DbUtil.sqlAction(sql, param, conn, false);
+                            
+                        if (rescount > 0) {
+                            updateQueueSize(raw, -rescount);
+                            Log.info("read by remove message success");
+                        } else {
+                            isRollBack = true;
+                            result.setMsgDetail(ResponseCode.ERROR_DB_MSG_DETAIL_TABLE_DELETE_FAIL.value());
+                            Log.info("read by remove message fail");
+                        }
                     } else {
-                        isRollBack = true;
-                        result.setMsgDetail(ResponseCode.ERROR_DB_MSG_DETAIL_TABLE_DELETE_FAIL.value());
-                        Log.info("read by remove message fail");
+                        result.setMsgDetail(ResponseCode.NO_DATA_IN_QUEUE.value());
+                        Log.info("no data in queue for client");
                     }
                 }
             } catch (SQLException | NamingException e) {
@@ -358,20 +369,28 @@ public class MessageService implements Runnable {
                     Log.info("queue does not exists, ROLLBACK!!");
                 } else {
                     conn = DbUtil.getConnection(conn, "local");
+                    String mid = "";
                     String receive = raw.getSender();
                     String qname   = raw.getMsgQueue();
                     String sql = "select msg_id, msend_id, msg_detail "
                                + "from msg, msg_detail "
-                               + "where mid=msg_id and mrecv_id=? and mqueue_id=? limit 1;";
+                               + "where mid=msg_id and mrecv_id in (?,?) and mqueue_id=? limit 1;";
                     Vector<String> param = new Vector<>();
                     param.add(receive);
+                    param.add("all");
                     param.add(qname);
                     rs = DbUtil.sqlSelect(sql, param, conn);
+                    while (rs.next()) {
+                        mid = rs.getString("msg_id");
+                        result.setMid(mid);
+                        result.setSender(rs.getString("msend_id"));
+                        result.setMsgDetail(rs.getString("msg_detail"));
+                    }
                     
-                    String mid = rs.getString("msg_id");
-                    result.setMid(mid);
-                    result.setSender(rs.getString("msend_id"));
-                    result.setMsgDetail(rs.getString("msg_detail"));
+                    if (mid.equals("")) {
+                        result.setMsgDetail(ResponseCode.NO_DATA_IN_QUEUE.value());
+                        Log.info("no data in queue for client");
+                    }
                 }
             } catch (SQLException | NamingException e) {
                 isRollBack = true;
@@ -400,8 +419,14 @@ public class MessageService implements Runnable {
                     param.add("all");
                     ResultSet rs = DbUtil.sqlSelect(sql, param, conn);
                     
+                    String msg_detail = "";
                     while(rs.next()) {
-                        result.setMsgDetail(rs.getString("msg_detail"));
+                        msg_detail = rs.getString("msg_detail");
+                        result.setMsgDetail(msg_detail);
+                    }
+                    if (msg_detail.equals("")) {
+                        result.setMsgDetail(ResponseCode.NO_DATA_IN_QUEUE.value());
+                        Log.info("No data in queue for client");
                     }
                 } catch (SQLException | NamingException e) {
                     isRollBack = true;
@@ -414,7 +439,7 @@ public class MessageService implements Runnable {
                     conn = DbUtil.getConnection(conn, "local");
                     String receive = raw.getSender();
                     String sql = "select distinct mqueue_id "
-                               + "from msg"
+                               + "from msg "
                                + "where mrecv_id=?";
                     Vector<String> param = new Vector<>();
                     param.add(receive);
@@ -423,8 +448,13 @@ public class MessageService implements Runnable {
                     while(rs.next()) {
                         rsQueue = rs.getString("mqueue_id") + "," + rsQueue;
                     }
-                    System.out.println("return Queue: " + rsQueue);
-                    result.setMsgDetail(rsQueue.substring(0, rsQueue.length()-1));
+                    if (rsQueue.equals("")) {
+                        Log.info("No queue has client data");
+                        result.setMsgDetail(ResponseCode.NO_QUEUE_HAS_DATA.value());
+                    } else {
+                        Log.info("return Queue: " + rsQueue);
+                        result.setMsgDetail(rsQueue.substring(0, rsQueue.length()-1));
+                    }
                 } catch (SQLException | NamingException e) {
                     isRollBack = true;
                     result.setMsgDetail(ResponseCode.ERROR_DB_SQL_FAIL.value());

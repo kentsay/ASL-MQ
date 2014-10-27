@@ -27,7 +27,7 @@ public class MsgClient implements IService {
         Socket clientSocket = null;
         int port = 1999;
 
-        if (args.length > 0) {
+        if (args.length > 0 && args.length == 2) {
             try {
                 type = args[0];
                 /*
@@ -67,84 +67,91 @@ public class MsgClient implements IService {
                         System.out.println("[Usage]: java MsgClient <type> <message data or data file path>");
                 }
                 
-
+                /*
+                 * Read message content and set into message object
+                 */
                 for (String data: message ) {
-                    clientSocket = new Socket(hostname, port);
-                    System.out.println("Message Client is action:");
-                    ObjectOutputStream objOut = new ObjectOutputStream(clientSocket.getOutputStream());
-                    ObjectInputStream in = new ObjectInputStream(clientSocket.getInputStream());
+                    if (data.startsWith("#") || data.equals("")) {
+                        //skip the line starting with # or empty, treat as comments 
+                        continue;
+                    } else {
+                        clientSocket = new Socket(hostname, port);
+                        System.out.println("Message Client is action:");
+                        ObjectOutputStream objOut = new ObjectOutputStream(clientSocket.getOutputStream());
+                        ObjectInputStream in = new ObjectInputStream(clientSocket.getInputStream());
 
-                    Message msg = new Message();
-                    System.out.println("Prepare Send out Message");
-                    StringTokenizer st = new StringTokenizer(data, ",");
-                    System.out.println("sending: " + data);
-                    
-                    while (st.hasMoreTokens()) {
-                        String msgRaw = st.nextToken().trim();
-                        String[] msgArray = msgRaw.split(":");
-                        switch (msgArray[0]) {
-                            case "MsgType":
-                                switch (msgArray[1]) {
-                                    case "SEND":
-                                        msg.setMsgType(MsgType.SEND);
-                                        break;
-                                    case "RECEIVE":
-                                        msg.setMsgType(MsgType.RECEIVE);
-                                        break;
-                                    case "QUERY":
-                                        msg.setMsgType(MsgType.QUERY);
-                                        break;
-                                }
-                                break;
-                            case "MsgFunc":
-                                switch (msgArray[1]) {
-                                    case "CTR_CREATEQ":
-                                        msg.setMsgFunc(MsgFunc.CTR_CREATEQ);
-                                        break;
-                                    case "CTR_DELETEQ":
-                                        msg.setMsgFunc(MsgFunc.CTR_DELETEQ);
-                                        break;
-                                    case "SEND_TOUSER":
-                                        msg.setMsgFunc(MsgFunc.SEND_TOUSER);
-                                        break;
-                                    case "SEND_TOALL":
-                                        msg.setMsgFunc(MsgFunc.SEND_TOALL);
-                                        break;
-                                    case "READ_BYRMVMESSAGE":
-                                        msg.setMsgFunc(MsgFunc.READ_BYRMVMESSAGE);
-                                        break;
-                                    case "READ_BYLOOKMESSAGE":
-                                        msg.setMsgFunc(MsgFunc.READ_BYLOOKMESSAGE);
-                                        break;
-                                    case "QUERY_BYSENDER":
-                                        msg.setMsgFunc(MsgFunc.QUERY_BYSENDER);
-                                        break;
-                                    case "QUERY_BYQUEUE":
-                                        msg.setMsgFunc(MsgFunc.QUERY_BYQUEUE);
-                                        break;
-                                }
-                                break;
-                            case "MsgSender":
-                                msg.setSender(msgArray[1]);
-                                break;
-                            case "MsgReceiver":
-                                msg.setReceiver(msgArray[1]);
-                                break;
-                            case "MsgQueue":
-                                msg.setMsgQueue(msgArray[1]);
-                                break;
-                            case "MsgDetail":
-                                msg.setMsgDetail(msgArray[1]);
-                                break;
+                        Message msg = new Message();
+                        System.out.println("Prepare Send out Message");
+                        StringTokenizer st = new StringTokenizer(data, ",");
+                        System.out.println("sending: " + data);
+                        
+                        while (st.hasMoreTokens()) {
+                            String msgRaw = st.nextToken().trim();
+                            String[] msgArray = msgRaw.split(":");
+                            switch (msgArray[0]) {
+                                case "MsgType":
+                                    switch (msgArray[1]) {
+                                        case "SEND":
+                                            msg.setMsgType(MsgType.SEND);
+                                            break;
+                                        case "RECEIVE":
+                                            msg.setMsgType(MsgType.RECEIVE);
+                                            break;
+                                        case "QUERY":
+                                            msg.setMsgType(MsgType.QUERY);
+                                            break;
+                                    }
+                                    break;
+                                case "MsgFunc":
+                                    switch (msgArray[1]) {
+                                        case "CTR_CREATEQ":
+                                            msg.setMsgFunc(MsgFunc.CTR_CREATEQ);
+                                            break;
+                                        case "CTR_DELETEQ":
+                                            msg.setMsgFunc(MsgFunc.CTR_DELETEQ);
+                                            break;
+                                        case "SEND_TOUSER":
+                                            msg.setMsgFunc(MsgFunc.SEND_TOUSER);
+                                            break;
+                                        case "SEND_TOALL":
+                                            msg.setMsgFunc(MsgFunc.SEND_TOALL);
+                                            break;
+                                        case "READ_BYRMVMESSAGE":
+                                            msg.setMsgFunc(MsgFunc.READ_BYRMVMESSAGE);
+                                            break;
+                                        case "READ_BYLOOKMESSAGE":
+                                            msg.setMsgFunc(MsgFunc.READ_BYLOOKMESSAGE);
+                                            break;
+                                        case "QUERY_BYSENDER":
+                                            msg.setMsgFunc(MsgFunc.QUERY_BYSENDER);
+                                            break;
+                                        case "QUERY_BYQUEUE":
+                                            msg.setMsgFunc(MsgFunc.QUERY_BYQUEUE);
+                                            break;
+                                    }
+                                    break;
+                                case "MsgSender":
+                                    msg.setSender(msgArray[1]);
+                                    break;
+                                case "MsgReceiver":
+                                    msg.setReceiver(msgArray[1]);
+                                    break;
+                                case "MsgQueue":
+                                    msg.setMsgQueue(msgArray[1]);
+                                    break;
+                                case "MsgDetail":
+                                    msg.setMsgDetail(msgArray[1]);
+                                    break;
+                            }
+                            msg.setMid(CommonUtil.genUUID());
                         }
-                        msg.setMid(CommonUtil.genUUID());
+                        System.out.println("Message Send out");
+                        
+                        objOut.writeObject(msg);
+                        Message r = (Message) in.readObject();
+                        System.out.println("Return Message: " + r.getMsgDetail());
+                        clientSocket.close();                        
                     }
-                    System.out.println("Message Send out");
-                    
-                    objOut.writeObject(msg);
-                    Message r = (Message) in.readObject();
-                    System.out.println("Return Message: " + r.getMsgDetail());
-                    clientSocket.close();
                 }
                 
             } catch (NumberFormatException e) {
