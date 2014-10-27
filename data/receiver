@@ -1,0 +1,19 @@
+# Message for type RECEIVE
+MsgType:RECEIVE, MsgFunc:READ_BYLOOKMESSAGE, MsgSender:recv1, MsgQueue:queue11
+MsgType:RECEIVE, MsgFunc:READ_BYLOOKMESSAGE, MsgSender:recv1, MsgQueue:queue11
+MsgType:RECEIVE, MsgFunc:READ_BYLOOKMESSAGE, MsgSender:recv2, MsgQueue:queue12
+MsgType:RECEIVE, MsgFunc:READ_BYLOOKMESSAGE, MsgSender:recv2, MsgQueue:queue12
+MsgType:RECEIVE, MsgFunc:READ_BYRMVMESSAGE, MsgSender:recv1, MsgQueue:queue11
+MsgType:RECEIVE, MsgFunc:READ_BYRMVMESSAGE, MsgSender:recv1, MsgQueue:queue11
+MsgType:RECEIVE, MsgFunc:READ_BYRMVMESSAGE, MsgSender:recv2, MsgQueue:queue12
+MsgType:RECEIVE, MsgFunc:READ_BYRMVMESSAGE, MsgSender:recv2, MsgQueue:queue12
+#
+# Message for type QUERY
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv1 
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv2
+MsgType:QUERY, MsgFunc:QUERY_BYSENDER, MsgSender:recv1, MsgDetail:send1
+MsgType:QUERY, MsgFunc:QUERY_BYSENDER, MsgSender:recv2, MsgDetail:send1
+MsgType:QUERY, MsgFunc:QUERY_BYSENDER, MsgSender:recv1, MsgDetail:send2
+MsgType:QUERY, MsgFunc:QUERY_BYSENDER, MsgSender:recv2, MsgDetail:send3
+MsgType:QUERY, MsgFunc:QUERY_BYSENDER, MsgSender:recv2, MsgDetail:send4
+MsgType:QUERY, MsgFunc:QUERY_BYSENDER, MsgSender:recv2, MsgDetail:send5

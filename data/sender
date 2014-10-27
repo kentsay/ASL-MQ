@@ -1,3 +1,4 @@
+# Message for type send
 MsgType:SEND, MsgFunc:CTR_CREATEQ, MsgSender:send1, MsgQueue:queue11    
 MsgType:SEND, MsgFunc:CTR_CREATEQ, MsgSender:send2, MsgQueue:queue11
 MsgType:SEND, MsgFunc:CTR_CREATEQ, MsgSender:send3, MsgQueue:queue12
@@ -7,3 +8,15 @@ MsgType:SEND, MsgFunc:CTR_CREATEQ, MsgSender:send3, MsgQueue:queue11
 MsgType:SEND, MsgFunc:CTR_CREATEQ, MsgSender:send1, MsgQueue:queue12
 MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send2, MsgQueue:queue11
 MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send3, MsgQueue:queue12
+MsgType:SEND, MsgFunc:CTR_CREATEQ, MsgSender:send1, MsgQueue:queue11
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send2, MsgQueue:queue11, MsgReceiver:all, MsgDetail: msg1 for all 
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send3, MsgQueue:queue11, MsgReceiver:all, MsgDetail: msg2 for all
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send2, MsgQueue:queue12, MsgReceiver:all, MsgDetail: msg3 for all
+MsgType:SEND, MsgFunc:CTR_CREATEQ, MsgSender:send2, MsgQueue:queue12
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send2, MsgQueue:queue12, MsgReceiver:all, MsgDetail: msg4 for all
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send3, MsgQueue:queue12, MsgReceiver:all, MsgDetail: msg5 for all
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send2, MsgQueue:queue12, MsgReceiver:all, MsgDetail: msg6 for all
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send1, MsgQueue:queue12, MsgReceiver:recv1, MsgDetail: msg1 for recv1
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send1, MsgQueue:queue12, MsgReceiver:recv1, MsgDetail: msg1 for recv1
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send1, MsgQueue:queue12, MsgReceiver:recv2, MsgDetail: msg1 for recv2
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send1, MsgQueue:queue12, MsgReceiver:recv2, MsgDetail: msg1 for recv2
