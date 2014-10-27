@@ -5,8 +5,8 @@
 	<property name="build.dir" location="bin" />
 	<property name="lib.dir" location="lib" />
 	<property name="message-service-class" value="main.java.ch.ethz.systems.asl.service.middleware.MessageServiceMain" />
-	<property name="sender-class" value="main.java.ch.ethz.systems.asl.service.client.Sender" />
-	<property name="receiver-class" value="main.java.ch.ethz.systems.asl.service.client.Receiver" />
+	<property name="sender-class" value="main.java.ch.ethz.systems.asl.service.client.MsgClient" />
+	<property name="receiver-class" value="main.java.ch.ethz.systems.asl.service.client.MsgClient" />
 	<property name="port.number" value="1999" />
 
 	<path id="classpath">
@@ -40,7 +40,8 @@
 				<path refid="classpath" />
 				<path location="${ant.project.name}.jar" />
 			</classpath>
-			<arg value="${port.number}" />
+      <arg value="-f" />
+      <arg value="data/sender" />
 		</java>
 	</target>
 
@@ -50,7 +51,8 @@
 				<path refid="classpath" />
 				<path location="${ant.project.name}.jar" />
 			</classpath>
-			<arg value="${port.number}" />
+			<arg value="-f" />
+      <arg value="data/receiver" />
 		</java>
 	</target>
 
