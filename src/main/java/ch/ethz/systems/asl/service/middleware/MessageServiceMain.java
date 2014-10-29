@@ -3,6 +3,8 @@ package main.java.ch.ethz.systems.asl.service.middleware;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import main.java.ch.ethz.systems.asl.bean.ResponseCode;
 
@@ -12,6 +14,7 @@ public class MessageServiceMain implements IService {
     public Socket client = null;
     int numConnections = 0;
     int port;
+    ExecutorService threadpool = Executors.newFixedThreadPool(100);
     
     private volatile int state = -1;
     
@@ -31,22 +34,24 @@ public class MessageServiceMain implements IService {
             setServiceState(START);
             System.out.println("Message server running");
         } catch (Exception e) {
+            e.printStackTrace();
             setServiceState(STOP);
             System.out.println("[Error]: " + ResponseCode.ERROR_SERVER_FAIL.value());
         }
-        
-        while (true) {
+        while (getServiceState() == 1) {
             try {
                 client = msgServer.accept();
                 numConnections ++;
-                System.out.println("Accept message from client");
+                //System.out.println("Accept message from client");
                 MessageService msgSer = new MessageService(client, numConnections, this);
-                new Thread(msgSer).start();
+                this.threadpool.execute(msgSer);
             } catch (Exception e) {
                 setServiceState(STOP);
                 System.out.println("[Error]: " + ResponseCode.ERROR_SERVER_ACCEPT_FAIL.value());
             }
         }
+        threadpool.shutdown();
+        System.out.println("Message server shutdown");
     }
     
     public void stopService() throws IOException {

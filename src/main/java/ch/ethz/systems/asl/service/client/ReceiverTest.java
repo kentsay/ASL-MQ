@@ -12,7 +12,7 @@ import main.java.ch.ethz.systems.asl.bean.MsgType;
 import main.java.ch.ethz.systems.asl.service.middleware.IService;
 import main.java.ch.ethz.systems.asl.util.CommonUtil;
 
-public class Receiver implements IService {
+public class ReceiverTest implements IService {
     
     public static void main(String[] args) {
         String hostname = "localhost";
