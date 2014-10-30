@@ -21,6 +21,7 @@ import main.java.ch.ethz.systems.asl.bean.Message;
 import main.java.ch.ethz.systems.asl.bean.ResponseCode;
 import main.java.ch.ethz.systems.asl.service.db.DBService;
 import main.java.ch.ethz.systems.asl.util.DbUtil;
+import main.java.ch.ethz.systems.asl.util.StopWatch;
 
 public class MessageService implements Runnable {
 
@@ -34,15 +35,18 @@ public class MessageService implements Runnable {
     boolean isRollBack = false;
     int id;
     int rescount;
+    StopWatch sw;
     
     public MessageService(Socket clientSocket, int id, MessageServiceMain server) throws ClassNotFoundException {
         this.clientSocket = clientSocket;
         this.server = server;
         this.id = id;
         System.out.println( "Connection " + id + " established with: " + clientSocket );
+        sw = new StopWatch();
     }
     
     public void run() {
+        sw.on();
         Message rawMsg, resultMsg = new Message();
         try {
             objInputStream = new ObjectInputStream(clientSocket.getInputStream());
@@ -53,7 +57,7 @@ public class MessageService implements Runnable {
             resultMsg = runMsgManagement(rawMsg);
             objOutputStream.writeObject(resultMsg);
             
-            Log.info( "Connection " + id + " closed." );
+            Log.info( "Connection " + id + " closed. Execution time: " + sw.off() + "ms" );
             clientSocket.close();
             
         } catch (IOException e) {
