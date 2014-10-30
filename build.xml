@@ -40,8 +40,6 @@
 				<path refid="classpath" />
 				<path location="${ant.project.name}.jar" />
 			</classpath>
-      <arg value="-f" />
-      <arg value="data/sender" />
 		</java>
 	</target>
 
