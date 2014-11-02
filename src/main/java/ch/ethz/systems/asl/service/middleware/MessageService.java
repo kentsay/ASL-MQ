@@ -19,6 +19,7 @@ import javax.naming.NamingException;
 
 import main.java.ch.ethz.systems.asl.bean.Message;
 import main.java.ch.ethz.systems.asl.bean.ResponseCode;
+import main.java.ch.ethz.systems.asl.util.DataCollector;
 import main.java.ch.ethz.systems.asl.service.db.DBService;
 import main.java.ch.ethz.systems.asl.util.DbUtil;
 import main.java.ch.ethz.systems.asl.util.StopWatch;
@@ -31,17 +32,19 @@ public class MessageService implements Runnable {
     Socket clientSocket;
     ObjectInputStream  objInputStream;
     ObjectOutputStream objOutputStream;
+    String dbFarm;
     Connection conn;
     boolean isRollBack = false;
     int id;
     int rescount;
     StopWatch sw;
     
-    public MessageService(Socket clientSocket, int id, MessageServiceMain server) throws ClassNotFoundException {
+    public MessageService(Socket clientSocket, int id, MessageServiceMain server, String db) throws ClassNotFoundException {
         this.clientSocket = clientSocket;
         this.server = server;
         this.id = id;
-        System.out.println( "Connection " + id + " established with: " + clientSocket );
+        this.dbFarm = db;
+        //Log.info( "Connection " + id + " established with: " + clientSocket );
         sw = new StopWatch();
     }
     
@@ -52,12 +55,11 @@ public class MessageService implements Runnable {
             objInputStream = new ObjectInputStream(clientSocket.getInputStream());
             objOutputStream = new ObjectOutputStream(clientSocket.getOutputStream());
             rawMsg = (Message)objInputStream.readObject();
-            Log.info("Received message from client " + id);
-            
             resultMsg = runMsgManagement(rawMsg);
             objOutputStream.writeObject(resultMsg);
-            
-            Log.info( "Connection " + id + " closed. Execution time: " + sw.off() + "ms" );
+            //Log.info( "Connection " + id + " closed. Execution time: " + sw.off() + "ms" );
+            //System.out.println( "Connection " + id + " closed. Execution time: " + sw.off() + "ms" );
+            DataCollector.putMsgMidTimeJar("msgMid", sw.off());
             clientSocket.close();
             
         } catch (IOException e) {
@@ -73,46 +75,46 @@ public class MessageService implements Runnable {
     
     public Message runMsgManagement(Message raw) throws SQLException {
         Message result = new Message();
-        msgValidation(raw);
         result = msgExecution(raw, result);
         return result;
     }
     
-    private void msgValidation(Message raw) {
-        /* TODO
-         * validate: message type, message function type
-         */
-    }
-    
-    private Message msgExecution(Message raw, Message result) throws SQLException {
-        processMsg(raw, result);
-        processMsgDtl(raw, result);
-        
-        switch(raw.getMsgType()) {
-        case SEND:
-            processSend(raw, result);
-            if (result.getMsgDetail().isEmpty())
-                result.setMsgDetail(ResponseCode.OK.value());
-            break;
-        case RECEIVE:
-            processReceive(raw, result);
-            break;
-        case QUERY:
-            processQuery(raw, result);
-            break;
-        default:
-            break;
+    private Message msgExecution(Message raw, Message result) {
+        try {
+            synchronized (this) {
+                conn = DbUtil.getConnection(conn, dbFarm);
+            }
+            processMsg(raw, result);
+            processMsgDtl(raw, result);
+            
+            switch(raw.getMsgType()) {
+            case SEND:
+                processSend(raw, result);
+                if (result.getMsgDetail().isEmpty())
+                    result.setMsgDetail(ResponseCode.OK.value());
+                break;
+            case RECEIVE:
+                processReceive(raw, result);
+                break;
+            case QUERY:
+                processQuery(raw, result);
+                break;
+            default:
+                break;
+            }
+            
+            if (!isRollBack) conn.commit();
+            DbUtil.closeConnection(conn);
+            
+        } catch (SQLException | NamingException e) {
+            result.setMsgDetail(ResponseCode.ERROR_DB_CONNECT_FAIL.value());
+            e.printStackTrace();
         }
-        
-        if (!isRollBack) conn.commit();
-        DbUtil.closeConnection(conn);
         return result;
     }
     
     private void processMsg(Message raw, Message result) {
-        Log.info("[Log]: ProcessMsg");
         try {
-            conn = DbUtil.getConnection(conn, "local");
             String sql = "SELECT func_insert_msg(?,?,?,?)";
             Vector<String> param = new Vector<>();
             String mid = raw.getMid();
@@ -124,23 +126,18 @@ public class MessageService implements Runnable {
             param.add(recvId);
             param.add(queue);
             ResultSet rs = DbUtil.sqlSelect(sql, param, conn);
-            if (rs.next()) {
-                Log.info("insert msg table success");
-            } else {
+            if (!rs.next()) {
                 result.setMsgDetail(ResponseCode.ERROR_DB_MSG_TABLE_INSERT_FAIL.value());
-                Log.info("insert msg table fail");
+                //Log.info("insert msg table fail");
             }
-        } catch (SQLException | NamingException e) {
+        } catch (SQLException e) {
             result.setMsgDetail(ResponseCode.ERROR_DB_CONNECT_FAIL.value());
             e.printStackTrace();
         }
     }
     
     private void processMsgDtl(Message raw, Message result) {
-        Log.info("[Log]: ProcessMsgDtl");
         try {
-            conn = DbUtil.getConnection(conn, "local");
-            
             String sql = "SELECT func_insert_msgdtl(?,?,?,?)";
             Vector<String> param = new Vector<>();
             String mid = raw.getMid();
@@ -152,20 +149,17 @@ public class MessageService implements Runnable {
             param.add(msgFunc);
             param.add(msgDtl);
             ResultSet rs = DbUtil.sqlSelect(sql, param, conn);
-            if (rs.next()) {
-                Log.info("insert msg_detail table success");
-            } else {
+            if (!rs.next()) {
                 result.setMsgDetail(ResponseCode.ERROR_DB_MSG_DETAIL_TABLE_INSERT_FAIL.value());
-                Log.info("insert msg_detail table fail");
+                //Log.info("insert msg_detail table fail");
             }
-        } catch (SQLException | NamingException e) {
+        } catch (SQLException e) {
             result.setMsgDetail(ResponseCode.ERROR_DB_SQL_FAIL.value());
             e.printStackTrace();
         }
     }
     
     private void processSend(Message raw, Message result) {
-        Log.info("[Log]: Process Send");
         switch(raw.getMsgFunc()) {
         case CTR_CREATEQ:
             if(null!= raw.getMsgDetail()) {
@@ -179,17 +173,15 @@ public class MessageService implements Runnable {
                         Vector<String> param = new Vector<>();
                         param.add(qname);
                         rs = DbUtil.sqlSelect(sql, param, conn);
-                        if (rs.next()) {
-                            Log.info("insert queue table success");
-                        } else {
+                        if (!rs.next()) {
                             //set error code: queue did not insert
                             isRollBack = true;
                             result.setMsgDetail(ResponseCode.ERROR_DB_QUEUE_TABLE_INSERT_FAIL.value());
-                            Log.info("insert queue table fail");
+                            //Log.info("insert queue table fail");
                         }
                     } else {
                         result.setMsgDetail(ResponseCode.ERROR_QUEUE_ALREADY_EXISTS.value());
-                        Log.info("queue already exists");
+                        //Log.info("queue already exists");
                     }
                 } catch (SQLException | NamingException e) {
                     isRollBack = true;
@@ -202,14 +194,12 @@ public class MessageService implements Runnable {
             if(null!= raw.getMsgDetail()) {
                 try {
                     //remove queue data
-                    conn = DbUtil.getConnection(conn, "local");
                     String qname = raw.getMsgQueue();
                     String sql = "SELECT func_delete_queue(?);";
                     Vector<String> param = new Vector<>();
                     param.add(qname);
                     ResultSet rs =DbUtil.sqlSelect(sql, param, conn);
                     if (rs.next()) {
-                        Log.info("delete queue table success");
                         //remove message in msg, msg_detail belong to this queue
                         sql = "SELECT func_delete_msg_detail(?)";
                         param = new Vector<>();
@@ -217,20 +207,18 @@ public class MessageService implements Runnable {
                         rs =DbUtil.sqlSelect(sql, param, conn);
                         sql = "SELECT func_delete_msg(?)";
                         rs =DbUtil.sqlSelect(sql, param, conn);
-                        if (rs.next()) {
-                            Log.info("delete msg, msg_detail table to remove msg success");
-                        } else {
+                        if (!rs.next()) {
                             isRollBack = true;
                             result.setMsgDetail(ResponseCode.ERROR_DB_QUEUE_TABLE_DELETE_FAIL.value());
-                            Log.info("delete msg, msg_detail table to remove msg fail");
+                            //Log.info("delete msg, msg_detail table to remove msg fail");
                         }
                     } else {
                         //set error code: queue did not delete
                         isRollBack = true;
                         result.setMsgDetail(ResponseCode.ERROR_DB_QUEUE_TABLE_DELETE_FAIL.value());
-                        Log.info("delete queue table fail");
+                        //Log.info("delete queue table fail");
                     }
-                } catch (SQLException | NamingException e) {
+                } catch (SQLException e) {
                     isRollBack = true;
                     result.setMsgDetail(ResponseCode.ERROR_DB_SQL_FAIL.value());
                     e.printStackTrace();
@@ -246,11 +234,11 @@ public class MessageService implements Runnable {
                     //queue does not exist, then ROLLBACK
                     isRollBack = true;
                     result.setMsgDetail(ResponseCode.ERROR_QUEUE_NOT_EXISTS.value());
-                    Log.info("queue does not exists, ROLLBACK!!");
+                    //Log.info("queue does not exists, ROLLBACK!!");
                 } else {
                     updateQueueSize(raw,1);
                 }
-            } catch (SQLException | NamingException e) {
+            } catch (SQLException e) {
                 isRollBack = true;
                 result.setMsgDetail(ResponseCode.ERROR_DB_SQL_FAIL.value());
                 e.printStackTrace();
@@ -261,9 +249,8 @@ public class MessageService implements Runnable {
         }
     }
 
-    private void updateQueueSize(Message raw, int size) throws SQLException, NamingException {
+    private void updateQueueSize(Message raw, int size) throws SQLException {
         //update queue size
-        conn = DbUtil.getConnection(conn, "local");
         String qname = raw.getMsgQueue();
         String sql = "update queue "
                 + "set qsize = ((select qsize from queue where qname = ?) + " + size + ") "
@@ -272,16 +259,13 @@ public class MessageService implements Runnable {
         param.add(qname);
         param.add(qname);
         rescount = DbUtil.sqlAction(sql, param, conn, false);
-        if (rescount > 0) {
-            Log.info("update queue size success");
-        } else {
+        if (rescount == 0) {
             isRollBack = true;
-            Log.info("update queue size fail");
+            //Log.info("update queue size fail");
         }
     }
 
-    private ResultSet checkQueueExists(Message raw) throws SQLException, NamingException {
-        conn = DbUtil.getConnection(conn, "local");
+    private ResultSet checkQueueExists(Message raw) throws SQLException {
         String qname = raw.getMsgQueue();
         String sql = "select * from queue where qname = ?";
         Vector<String> param = new Vector<>();
@@ -291,21 +275,18 @@ public class MessageService implements Runnable {
     }
     
     private void processReceive(Message raw, Message result) {
-        Log.info("[Log]: process receive");
         switch(raw.getMsgFunc()) {
         //[Definition]: Clients can read a queue by removing the topmost message 
         case READ_BYRMVMESSAGE:
-            Log.info("[Log]: process READ_BYRMVMESSAGE");
             try {
                 //check if queue exists, if not exist, then ROLLBACK
                 ResultSet rs = checkQueueExists(raw);
                 if (!rs.next()) {
                     isRollBack = true;
                     result.setMsgDetail(ResponseCode.ERROR_QUEUE_NOT_EXISTS.value());
-                    Log.info("queue does not exists, ROLLBACK!!");  
+                    //Log.info("queue does not exists, ROLLBACK!!");  
                 } else {
                     //select message, remove top 1 from msg, msg_detail, update queue size
-                    conn = DbUtil.getConnection(conn, "local");
                     String mid = "";
                     String receive = raw.getSender();
                     String qname   = raw.getMsgQueue();
@@ -335,18 +316,17 @@ public class MessageService implements Runnable {
                         rs = DbUtil.sqlSelect(sql, param, conn);
                         if (rs.next()) {
                             updateQueueSize(raw, -1);
-                            Log.info("read by remove message success");
                         } else {
                             isRollBack = true;
                             result.setMsgDetail(ResponseCode.ERROR_DB_MSG_DETAIL_TABLE_DELETE_FAIL.value());
-                            Log.info("read by remove message fail");
+                            //Log.info("read by remove message fail");
                         }
                     } else {
                         result.setMsgDetail(ResponseCode.NO_DATA_IN_QUEUE.value());
-                        Log.info("no data in queue for client");
+                        //Log.info("no data in queue for client");
                     }
                 }
-            } catch (SQLException | NamingException e) {
+            } catch (SQLException e) {
                 isRollBack = true;
                 result.setMsgDetail(ResponseCode.ERROR_DB_SQL_FAIL.value());
                 e.printStackTrace();
@@ -359,9 +339,8 @@ public class MessageService implements Runnable {
                 if (!rs.next()) {
                     isRollBack = true;
                     result.setMsgDetail(ResponseCode.ERROR_QUEUE_NOT_EXISTS.value());
-                    Log.info("queue does not exists, ROLLBACK!!");
+                    //Log.info("queue does not exists, ROLLBACK!!");
                 } else {
-                    conn = DbUtil.getConnection(conn, "local");
                     String mid = "";
                     String receive = raw.getSender();
                     String qname   = raw.getMsgQueue();
@@ -382,10 +361,10 @@ public class MessageService implements Runnable {
                     
                     if (mid.equals("")) {
                         result.setMsgDetail(ResponseCode.NO_DATA_IN_QUEUE.value());
-                        Log.info("no data in queue for client");
+                        //Log.info("no data in queue for client");
                     }
                 }
-            } catch (SQLException | NamingException e) {
+            } catch (SQLException e) {
                 isRollBack = true;
                 result.setMsgDetail(ResponseCode.ERROR_DB_SQL_FAIL.value());
                 e.printStackTrace();
@@ -400,7 +379,6 @@ public class MessageService implements Runnable {
         switch (raw.getMsgFunc()) {
             case QUERY_BYSENDER:
                 try {
-                    conn = DbUtil.getConnection(conn, "local");
                     String receive = raw.getSender();
                     String sender = raw.getMsgDetail();
                     String sql = "select distinct mid, msg_detail "
@@ -419,9 +397,9 @@ public class MessageService implements Runnable {
                     }
                     if (msg_detail.equals("")) {
                         result.setMsgDetail(ResponseCode.NO_DATA_IN_QUEUE.value());
-                        Log.info("No data in queue for client");
+                        //Log.info("No data in queue for client");
                     }
-                } catch (SQLException | NamingException e) {
+                } catch (SQLException e) {
                     isRollBack = true;
                     result.setMsgDetail(ResponseCode.ERROR_DB_SQL_FAIL.value());
                     e.printStackTrace();
@@ -429,7 +407,6 @@ public class MessageService implements Runnable {
                 break;
             case QUERY_BYQUEUE:
                 try {
-                    conn = DbUtil.getConnection(conn, "local");
                     String receive = raw.getSender();
                     String sql = "select distinct mqueue_id "
                                + "from msg "
@@ -443,13 +420,12 @@ public class MessageService implements Runnable {
                         rsQueue = rs.getString("mqueue_id") + "," + rsQueue;
                     }
                     if (rsQueue.equals("")) {
-                        Log.info("No queue has client data");
+                        //Log.info("No queue has client data");
                         result.setMsgDetail(ResponseCode.NO_QUEUE_HAS_DATA.value());
                     } else {
-                        Log.info("return Queue: " + rsQueue);
                         result.setMsgDetail(rsQueue.substring(0, rsQueue.length()-1));
                     }
-                } catch (SQLException | NamingException e) {
+                } catch (SQLException e) {
                     isRollBack = true;
                     result.setMsgDetail(ResponseCode.ERROR_DB_SQL_FAIL.value());
                     e.printStackTrace();

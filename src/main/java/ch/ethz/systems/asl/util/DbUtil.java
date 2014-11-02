@@ -13,8 +13,10 @@ public class DbUtil {
     private static DBService dbService = DBService.getDBService();
     
     public static final Connection getConnection(Connection conn, String profile) throws SQLException, NamingException {
-        if (null != conn)
+        if (null != conn) {
+//            System.out.println("Connection already exists");
             return conn;
+        }
         else 
             return dbService.getConnection(profile);
     }

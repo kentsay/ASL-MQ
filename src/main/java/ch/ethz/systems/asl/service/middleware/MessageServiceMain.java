@@ -7,6 +7,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import main.java.ch.ethz.systems.asl.bean.ResponseCode;
+import main.java.ch.ethz.systems.asl.util.DataCollector;
+import main.java.ch.ethz.systems.asl.util.StopWatch;
 
 public class MessageServiceMain implements IService {
     
@@ -14,18 +16,25 @@ public class MessageServiceMain implements IService {
     public Socket client = null;
     int numConnections = 0;
     int port;
+    String dbFarm;
     ExecutorService threadpool = Executors.newFixedThreadPool(100);
     
     private volatile int state = -1;
     
     public static void main(String[] args) {
-        int port = Integer.parseInt(args[0]);
-        MessageServiceMain service = new MessageServiceMain(port);
-        service.startService();
+        if (args.length < 2) {
+            System.out.println("[Usage]: java MessageServiceMain <Port Number> <DB farm Name>");
+        } else {
+            int port = Integer.parseInt(args[0]);
+            String dbFarm = args[1];
+            MessageServiceMain service = new MessageServiceMain(port, dbFarm);
+            service.startService();
+        }
     }
     
-    public MessageServiceMain(int port) {
+    public MessageServiceMain(int port, String db) {
         this.port = port;
+        this.dbFarm = db;
     }
     
     public void startService() {
@@ -38,14 +47,21 @@ public class MessageServiceMain implements IService {
             setServiceState(STOP);
             System.out.println("[Error]: " + ResponseCode.ERROR_SERVER_FAIL.value());
         }
+        System.out.println("########## Middleware Report" + " ##########");
+        System.out.println("Req#\t Time\t Resp\t Throughput");
         while (getServiceState() == 1) {
             try {
+                StopWatch sw = new StopWatch();
+                sw.on();
                 client = msgServer.accept();
                 numConnections ++;
-                //System.out.println("Accept message from client");
-                MessageService msgSer = new MessageService(client, numConnections, this);
+                MessageService msgSer = new MessageService(client, numConnections, this, dbFarm);
                 this.threadpool.execute(msgSer);
+                if (numConnections % 1000 == 0) {
+                    DataCollector.getStaticData("msgMid", numConnections);
+                }
             } catch (Exception e) {
+                e.printStackTrace();
                 setServiceState(STOP);
                 System.out.println("[Error]: " + ResponseCode.ERROR_SERVER_ACCEPT_FAIL.value());
             }
@@ -57,6 +73,7 @@ public class MessageServiceMain implements IService {
     public void stopService() throws IOException {
         setServiceState(STOP);
     }
+   
 
     @Override
     public int getServiceState() {

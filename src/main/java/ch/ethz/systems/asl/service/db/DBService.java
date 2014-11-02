@@ -181,7 +181,7 @@ public final class DBService {
 		try {
 
 			getConnectionCount++;
-			Log.info("getConnectionCount = " + String.valueOf(getConnectionCount));
+			//Log.info("getConnectionCount = " + String.valueOf(getConnectionCount));
 
 			before = System.currentTimeMillis();
 			DataSource source = (DataSource) nameToDsMap.get(roleName);
@@ -192,9 +192,9 @@ public final class DBService {
 			}
 
 			usedConnectionCount++;
-			Log.info("Used connections = " + String.valueOf(usedConnectionCount));
+			//Log.info("Used connections = " + String.valueOf(usedConnectionCount));
 
-		} catch (SQLException e) {
+		} catch (SQLException | NullPointerException e) {
 			diffTime = System.currentTimeMillis() - before;
 			Log.info("Get connection error:" + diffTime + " ms.");
 			Log.info("Retry Count: " + retry );
@@ -232,8 +232,8 @@ public final class DBService {
 				conn.close();
 				usedConnectionCount--;
 				getConnectionCount--;
-				Log.info("Used connections = "   + String.valueOf(usedConnectionCount));
-				Log.info("getConnectionCount = " + String.valueOf(getConnectionCount));
+				//Log.info("Used connections = "   + String.valueOf(usedConnectionCount));
+				//Log.info("getConnectionCount = " + String.valueOf(getConnectionCount));
 			}
 		} catch (SQLException e) {
 			Log.info("Close connection error.");
@@ -311,7 +311,7 @@ public final class DBService {
 
             if (diffTime >= this.executeQueryTime) {
                 String s = "SQL pstmt query time: " + diffTime + " ms[" + pSql + "]";
-                Log.warning(s);
+                //Log.warning(s);
             }
 
         } catch (SQLException e) {
@@ -352,7 +352,7 @@ public final class DBService {
 
             if (diffTime >= this.executeUpdateTime) {
                 String s = "SQL stmt update time: " + diffTime + " ms[" + command + "]";
-                Log.warning(s);
+                //Log.warning(s);
             }
             
         } catch (SQLException e) {
@@ -407,7 +407,7 @@ public final class DBService {
 
             if (diffTime >= this.executeUpdateTime) {
                 String s = "SQL pstmt update time: " + diffTime + " ms[" + sqlStatement + "]";
-                Log.warning(s);
+                //Log.warning(s);
             }
 
         } catch (SQLException e) {

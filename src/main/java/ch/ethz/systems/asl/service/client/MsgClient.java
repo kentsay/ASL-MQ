@@ -18,7 +18,9 @@ import java.util.StringTokenizer;
 import main.java.ch.ethz.systems.asl.bean.Message;
 import main.java.ch.ethz.systems.asl.bean.MsgFunc;
 import main.java.ch.ethz.systems.asl.bean.MsgType;
+import main.java.ch.ethz.systems.asl.util.DataCollector;
 import main.java.ch.ethz.systems.asl.util.CommonUtil;
+import main.java.ch.ethz.systems.asl.util.StopWatch;
 
 public class MsgClient {
     
@@ -27,8 +29,14 @@ public class MsgClient {
     int port = 1999;
     int timeout = 5000;
     ArrayList<String> message = new ArrayList<>();
+    StopWatch sw = new StopWatch();
     
-    public MsgClient(String type, String msg) {
+    public MsgClient(String rmAddress, int port) {
+        this.hostname = rmAddress;
+        this.port = port;
+    }
+    
+    public void setMessage(String type, String msg) {
         try {
             /*
              * Provide two types to read message:
@@ -75,28 +83,25 @@ public class MsgClient {
         System.out.println("[Usage]: java MsgClient <type> <message data or data file path>");
     }
     
-    public void execute() {
+    public long execute(String type, String rawMsg) {
+        setMessage(type, rawMsg);
         try {
             //Read message content and set into message object
             for (String data: message ) {
+                sw.on();
                 if (data.startsWith("#") || data.equals("")) {
                     //skip the line starting with # or empty, treat as comments 
                     continue;
                 } else {
-                    //clientSocket = new Socket(hostname, port);
                     clientSocket = new Socket();
                     SocketAddress sockaddr = new InetSocketAddress(hostname, port);
                     clientSocket.connect(sockaddr, timeout);
-                    
-                    System.out.println("Message Client is action:");
+
                     ObjectOutputStream objOut = new ObjectOutputStream(clientSocket.getOutputStream());
                     ObjectInputStream in = new ObjectInputStream(clientSocket.getInputStream());
 
                     Message msg = new Message();
-                    System.out.println("Prepare Send out Message");
                     StringTokenizer st = new StringTokenizer(data, ",");
-                    System.out.println("sending: " + data);
-                    
                     while (st.hasMoreTokens()) {
                         String msgRaw = st.nextToken().trim();
                         String[] msgArray = msgRaw.split(":");
@@ -157,11 +162,13 @@ public class MsgClient {
                         }
                         msg.setMid(CommonUtil.genUUID());
                     }
-                    System.out.println("Message Send out");
-                    
                     objOut.writeObject(msg);
+                    DataCollector.putMsgMidTimeJar("cliSend", sw.off());
+                    
+                    sw.on();
                     Message r = (Message) in.readObject();
-                    System.out.println("Return Message: " + r.getMsgDetail());
+                    DataCollector.putMsgMidTimeJar("cliRecv", sw.off());
+                    //System.out.println("Return Message: " + r.getMsgDetail());
                     clientSocket.close();                        
                 }
             }
@@ -174,14 +181,17 @@ public class MsgClient {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+        return sw.off();
     }
     
     public static void main(String[] args) {
-        for (int i =0 ; i<800; i++) {
-            MsgClient sender = new MsgClient("-f", "data/sender");
-            sender.execute();
+        for (int i =0 ; i<4000; i++) {
+            MsgClient sender = new MsgClient("localhost", 1999);
+            sender.execute("-f", "data/sender");
             //MsgClient receiver = new MsgClient("-f", "data/receiver");
             //receiver.execute();   
         }
+        DataCollector.getStaticData("cliSend", DataCollector.getMsgMidTimeJar("cliSend").size());
+        DataCollector.getStaticData("cliRecv", DataCollector.getMsgMidTimeJar("cliRecv").size());
     }
 }
