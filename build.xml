@@ -8,6 +8,7 @@
 	<property name="sender-class" value="main.java.ch.ethz.systems.asl.service.client.MsgClient" />
 	<property name="receiver-class" value="main.java.ch.ethz.systems.asl.service.client.MsgClient" />
 	<property name="port.number" value="1999" />
+	<property name="db.farm" value="local"/>
 
 	<path id="classpath">
 		<fileset dir="${lib.dir}" includes="postgresql.jar" />
@@ -31,6 +32,7 @@
 				<path location="${ant.project.name}.jar" />
 			</classpath>
 			<arg value="${port.number}" />
+			<arg value="${db.farm}" />
 		</java>
 	</target>
 
