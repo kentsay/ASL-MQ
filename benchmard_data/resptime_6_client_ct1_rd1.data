@@ -1,0 +1,41 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+    [javac] Compiling 1 source file to /home/ec2-user/ASL-MQ/bin
+
+compile:
+    [javac] Compiling 1 source file to /home/ec2-user/ASL-MQ/bin
+
+compile:
+    [javac] Compiling 1 source file to /home/ec2-user/ASL-MQ/bin
+
+jar:
+
+jar:
+      [jar] Building jar: /home/ec2-user/ASL-MQ/ASL-MQ.jar
+
+send:
+
+jar:
+
+send:
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 44679	 2	 341	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 756692	 50	 19	 15021
+
+BUILD SUCCESSFUL
+Total time: 13 minutes 24 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 45434	 3	 333	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 757277	 50	 19	 15021
+
+BUILD SUCCESSFUL
+Total time: 13 minutes 26 seconds
