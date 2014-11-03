@@ -51,7 +51,7 @@ public class DataCollector {
                            sum + "\t " + 
                            sum/reqNumber + "\t " + 
                            reqNumber/(sum/1000) + "\t " + 
-                           (DataCollector.getMsgMidTimeJar(name).size()+1) + "\t" + 
+                           (DataCollector.getMsgMidTimeJar(name).size()+1) + "\t " + 
                            reqNumber/(totalTime/1000));
     }
 }

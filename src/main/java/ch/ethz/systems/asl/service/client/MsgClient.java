@@ -199,11 +199,11 @@ public class MsgClient {
             sender.execute("-f", "data/delete");
             long time = sw.off();
             System.out.println("########## Client Send Report" + " ##########");
-            System.out.println("Req#\t Time\t Resp\t Tput\t Recv#");
+            System.out.println("Req#\t Time\t Resp\t Rate\t Recv#\t Throughput");
             DataCollector.getStaticData("cliSend", DataCollector.getMsgMidTimeJar("cliSend").size(), time);
             
             System.out.println("########## Client Receive Report" + " ##########");
-            System.out.println("Req#\t Time\t Resp\t Tput\t Recv#");
+            System.out.println("Req#\t Time\t Resp\t Rate\t Recv#\t Throughput");
             DataCollector.getStaticData("cliRecv", DataCollector.getMsgMidTimeJar("cliRecv").size(), time);
         }
     }
