@@ -7,6 +7,7 @@
 	<property name="message-service-class" value="main.java.ch.ethz.systems.asl.service.middleware.MessageServiceMain" />
 	<property name="sender-class" value="main.java.ch.ethz.systems.asl.service.client.MsgClient" />
 	<property name="receiver-class" value="main.java.ch.ethz.systems.asl.service.client.MsgClient" />
+	<property name="msg.server.ip" value="localhost"/>
 	<property name="port.number" value="1999" />
 	<property name="db.farm" value="local"/>
 
@@ -42,17 +43,8 @@
 				<path refid="classpath" />
 				<path location="${ant.project.name}.jar" />
 			</classpath>
-		</java>
-	</target>
-
-	<target name="receive" depends="jar" description="execute the jar file">
-		<java classname="${receiver-class}" fork="true">
-			<classpath>
-				<path refid="classpath" />
-				<path location="${ant.project.name}.jar" />
-			</classpath>
-			<arg value="-f" />
-      <arg value="data/receiver" />
+			<arg value="${msg.server.ip}" />
+			<arg value="${port.number}" />
 		</java>
 	</target>
 
