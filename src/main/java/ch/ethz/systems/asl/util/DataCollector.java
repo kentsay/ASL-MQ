@@ -48,6 +48,6 @@ public class DataCollector {
         
         //System.out.println("########## " + name + " Report" + " ##########");
         //System.out.println("Req#\t Time\t Resp\t Throughput");
-        System.out.println(reqNumber + "\t " + sum + "\t " + sum/reqNumber + "\t " + reqNumber/(sum/1000));
+        System.out.println(reqNumber + "\t " + sum + "\t " + sum/reqNumber + "\t " + reqNumber/(sum/1000) + "\t " + (DataCollector.getMsgMidTimeJar(name).size()+1));
     }
 }

@@ -48,7 +48,7 @@ public class MessageServiceMain implements IService {
             System.out.println("[Error]: " + ResponseCode.ERROR_SERVER_FAIL.value());
         }
         System.out.println("########## Middleware Report" + " ##########");
-        System.out.println("Req#\t Time\t Resp\t Throughput");
+        System.out.println("Req#\t Time\t Resp\t Tput\t Recv#");
         while (getServiceState() == 1) {
             try {
                 StopWatch sw = new StopWatch();

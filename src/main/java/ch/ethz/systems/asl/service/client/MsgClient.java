@@ -83,7 +83,7 @@ public class MsgClient {
         System.out.println("[Usage]: new MsgClient().execute(<type>,<message data or data file path>)");
     }
     
-    public long execute(String type, String rawMsg) {
+    public void execute(String type, String rawMsg) {
         setMessage(type, rawMsg);
         try {
             //Read message content and set into message object
@@ -181,7 +181,6 @@ public class MsgClient {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        return sw.off();
     }
     
     public static void main(String[] args) {
@@ -192,11 +191,17 @@ public class MsgClient {
             int port = Integer.parseInt(args[1]);
             MsgClient sender = new MsgClient(msgServerHost, port);
             sender.execute("-f", "data/create");
-            for (int i =0 ; i<4000; i++) {
+            for (int i =0 ; i<200; i++) {
                 sender.execute("-f", "data/sender");
             }
             sender.execute("-f", "data/delete");
+            
+            System.out.println("########## Client Send Report" + " ##########");
+            System.out.println("Req#\t Time\t Resp\t Tput\t Recv#");
             DataCollector.getStaticData("cliSend", DataCollector.getMsgMidTimeJar("cliSend").size());
+            
+            System.out.println("########## Client Receive Report" + " ##########");
+            System.out.println("Req#\t Time\t Resp\t Tput\t Recv#");
             DataCollector.getStaticData("cliRecv", DataCollector.getMsgMidTimeJar("cliRecv").size());
         }
     }
