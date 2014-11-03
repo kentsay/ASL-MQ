@@ -80,7 +80,7 @@ public class MsgClient {
     
     public void usage() {
         System.out.println("Unknow type");
-        System.out.println("[Usage]: java MsgClient <type> <message data or data file path>");
+        System.out.println("[Usage]: new MsgClient().execute(<type>,<message data or data file path>)");
     }
     
     public long execute(String type, String rawMsg) {
@@ -185,13 +185,19 @@ public class MsgClient {
     }
     
     public static void main(String[] args) {
-        for (int i =0 ; i<4000; i++) {
-            MsgClient sender = new MsgClient("localhost", 1999);
-            sender.execute("-f", "data/sender");
-            //MsgClient receiver = new MsgClient("-f", "data/receiver");
-            //receiver.execute();   
+        if (args.length < 2) {
+            System.out.println("[Usage]: new MsgClient(<Message Server Host>, <Message Server Port>)");
+        } else {
+            String msgServerHost = args[0];
+            int port = Integer.parseInt(args[1]);
+            MsgClient sender = new MsgClient(msgServerHost, port);
+            sender.execute("-f", "data/create");
+            for (int i =0 ; i<4000; i++) {
+                sender.execute("-f", "data/sender");
+            }
+            sender.execute("-f", "data/delete");
+            DataCollector.getStaticData("cliSend", DataCollector.getMsgMidTimeJar("cliSend").size());
+            DataCollector.getStaticData("cliRecv", DataCollector.getMsgMidTimeJar("cliRecv").size());
         }
-        DataCollector.getStaticData("cliSend", DataCollector.getMsgMidTimeJar("cliSend").size());
-        DataCollector.getStaticData("cliRecv", DataCollector.getMsgMidTimeJar("cliRecv").size());
     }
 }
