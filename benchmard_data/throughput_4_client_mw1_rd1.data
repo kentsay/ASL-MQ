@@ -1,0 +1,72 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+jar:
+
+run:
+     [java] Message server running
+     [java] ########## Middleware Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] Nov 03, 2014 2:38:34 PM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: Get connection error:0 ms.
+     [java] Nov 03, 2014 2:38:34 PM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: Retry Count: 0
+     [java] Exception in thread "pool-1-thread-2" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] Nov 03, 2014 2:38:34 PM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: DBCP borrow connection time: 101 ms.
+     [java] 1000	 48378	 48	 20	 998
+     [java] 2000	 95971	 47	 21	 1998
+     [java] 3000	 143132	 47	 20	 2998
+     [java] 4000	 190714	 47	 21	 3998
+     [java] 5000	 237981	 47	 21	 4999
+     [java] 6000	 285420	 47	 21	 5999
+     [java] 7000	 332828	 47	 21	 6998
+     [java] 8000	 380269	 47	 21	 7998
+     [java] 9000	 428315	 47	 21	 8998
+     [java] 10000	 476326	 47	 21	 9998
+     [java] 11000	 524565	 47	 20	 10998
+     [java] 12000	 572735	 47	 20	 11998
+     [java] 13000	 621010	 47	 20	 12998
+     [java] 14000	 669235	 47	 20	 13998
+     [java] 15000	 717508	 47	 20	 14998
+     [java] 16000	 766209	 47	 20	 15998
+     [java] 17000	 814834	 47	 20	 16998
+     [java] 18000	 863798	 47	 20	 17998
+     [java] 19000	 913012	 48	 20	 18998
+     [java] 20000	 962069	 48	 20	 19998
+     [java] 21000	 1011239	 48	 20	 20998
+     [java] 22000	 1060946	 48	 20	 21998
+     [java] 23000	 1110960	 48	 20	 22998
+     [java] 24000	 1161010	 48	 20	 23998
+     [java] 25000	 1210837	 48	 20	 24998
+     [java] 26000	 1261341	 48	 20	 25998
+     [java] 27000	 1311246	 48	 20	 26998
+     [java] 28000	 1361423	 48	 20	 27998
+     [java] 29000	 1411351	 48	 20	 28998
+     [java] 30000	 1461645	 48	 20	 29998
+     [java] 31000	 1512143	 48	 20	 30998
+     [java] 32000	 1562773	 48	 20	 31998
+     [java] 33000	 1613476	 48	 20	 32998
+     [java] 34000	 1664684	 48	 20	 33998
+     [java] 35000	 1717047	 49	 20	 34998
+     [java] 36000	 1769460	 49	 20	 35998
+     [java] 37000	 1821039	 49	 20	 36998
+     [java] 38000	 1870914	 49	 20	 37999
+     [java] 39000	 1921312	 49	 20	 38998
+     [java] 40000	 1971717	 49	 20	 39998
+     [java] 41000	 2022575	 49	 20	 40998
+     [java] 42000	 2073841	 49	 20	 41998
+     [java] 43000	 2125529	 49	 20	 42998
+     [java] 44000	 2177610	 49	 20	 43998
+     [java] 45000	 2230388	 49	 20	 44998
+     [java] 46000	 2284142	 49	 20	 45998
