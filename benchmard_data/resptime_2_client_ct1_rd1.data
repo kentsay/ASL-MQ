@@ -1,0 +1,16 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+jar:
+
+send:
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 40020	 112507	 2	 357	 40021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 40020	 1967897	 49	 20	 40021
+
+BUILD SUCCESSFUL
+Total time: 34 minutes 44 seconds
