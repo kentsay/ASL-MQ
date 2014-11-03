@@ -1,0 +1,11 @@
+#
+MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send2, MsgQueue:queue11
+MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send3, MsgQueue:queue12
+MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send2, MsgQueue:queue13
+MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send2, MsgQueue:queue14
+MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send3, MsgQueue:queue15
+MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send2, MsgQueue:queue16
+MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send3, MsgQueue:queue17
+MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send2, MsgQueue:queue18
+MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send2, MsgQueue:queue19
+MsgType:SEND, MsgFunc:CTR_DELETEQ, MsgSender:send3, MsgQueue:queue20
