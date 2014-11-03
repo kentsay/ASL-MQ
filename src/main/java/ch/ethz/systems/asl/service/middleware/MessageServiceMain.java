@@ -49,16 +49,16 @@ public class MessageServiceMain implements IService {
         }
         System.out.println("########## Middleware Report" + " ##########");
         System.out.println("Req#\t Time\t Resp\t Tput\t Recv#");
+        StopWatch sw = new StopWatch();
+        sw.on();
         while (getServiceState() == 1) {
             try {
-                StopWatch sw = new StopWatch();
-                sw.on();
                 client = msgServer.accept();
                 numConnections ++;
                 MessageService msgSer = new MessageService(client, numConnections, this, dbFarm);
                 this.threadpool.execute(msgSer);
                 if (numConnections % 1000 == 0) {
-                    DataCollector.getStaticData("msgMid", numConnections);
+                    DataCollector.getStaticData("msgMid", numConnections, sw.off());
                 }
             } catch (Exception e) {
                 e.printStackTrace();

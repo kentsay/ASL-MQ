@@ -188,6 +188,7 @@ public class MsgClient {
         if (args.length < 2) {
             System.out.println("[Usage]: new MsgClient(<Message Server Host>, <Message Server Port>)");
         } else {
+            StopWatch sw = new StopWatch();
             String msgServerHost = args[0];
             int port = Integer.parseInt(args[1]);
             MsgClient sender = new MsgClient(msgServerHost, port);
@@ -196,14 +197,14 @@ public class MsgClient {
                 sender.execute("-f", "data/sender");
             }
             sender.execute("-f", "data/delete");
-            
+            long time = sw.off();
             System.out.println("########## Client Send Report" + " ##########");
             System.out.println("Req#\t Time\t Resp\t Tput\t Recv#");
-            DataCollector.getStaticData("cliSend", DataCollector.getMsgMidTimeJar("cliSend").size());
+            DataCollector.getStaticData("cliSend", DataCollector.getMsgMidTimeJar("cliSend").size(), time);
             
             System.out.println("########## Client Receive Report" + " ##########");
             System.out.println("Req#\t Time\t Resp\t Tput\t Recv#");
-            DataCollector.getStaticData("cliRecv", DataCollector.getMsgMidTimeJar("cliRecv").size());
+            DataCollector.getStaticData("cliRecv", DataCollector.getMsgMidTimeJar("cliRecv").size(), time);
         }
     }
 }
