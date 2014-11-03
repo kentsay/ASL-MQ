@@ -28,7 +28,7 @@ public class MsgClient {
     Socket clientSocket = null;
     int port = 1999;
     int timeout = 5000;
-    ArrayList<String> message = new ArrayList<>();
+    ArrayList<String> message;
     StopWatch sw = new StopWatch();
     
     public MsgClient(String rmAddress, int port) {
@@ -57,6 +57,7 @@ public class MsgClient {
                     message.add(msg);
                     break;
                 case "-f":
+                    message = new ArrayList<>();
                     File fname = new File(msg);
                     if(fname.exists() && !fname.isDirectory()) {
                         BufferedReader br = new BufferedReader(new FileReader(fname));
