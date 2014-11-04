@@ -1,0 +1,438 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+jar:
+
+run:
+     [java] Message server running
+     [java] ########## Middleware Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 十一月 03, 2014 10:24:44 下午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Get connection error:0 ms.
+     [java] 十一月 03, 2014 10:24:44 下午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Get connection error:0 ms.
+     [java] 十一月 03, 2014 10:24:44 下午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Get connection error:2 ms.
+     [java] 十一月 03, 2014 10:24:44 下午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Retry Count: 0
+     [java] 十一月 03, 2014 10:24:44 下午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Retry Count: 0
+     [java] 十一月 03, 2014 10:24:44 下午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Retry Count: 0
+     [java] Exception in thread "pool-1-thread-4" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] Exception in thread "pool-1-thread-3" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] Exception in thread "pool-1-thread-2" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] 十一月 03, 2014 10:24:44 下午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: DBCP borrow connection time: 116 ms.
+     [java] 1000	 51396	 51	 19	 989	 100
+     [java] 2000	 101361	 50	 19	 1989	 125
+     [java] 3000	 151521	 50	 19	 2989	 136
+     [java] 4000	 203566	 50	 19	 3989	 142
+     [java] 5000	 256782	 51	 19	 4990	 147
+     [java] 6000	 310107	 51	 19	 5990	 146
+     [java] 7000	 363565	 51	 19	 6991	 148
+     [java] 8000	 418094	 52	 19	 7989	 150
+     [java] 9000	 471838	 52	 19	 8989	 150
+     [java] 10000	 527064	 52	 18	 9989	 151
+     [java] 11000	 582428	 52	 18	 10991	 150
+     [java] 12000	 638912	 53	 18	 11989	 151
+     [java] 13000	 698585	 53	 18	 12989	 151
+     [java] 14000	 763421	 54	 18	 13989	 148
+     [java] 15000	 827507	 55	 18	 14989	 148
+     [java] 16000	 891291	 55	 17	 15989	 146
+     [java] 17000	 964640	 56	 17	 16990	 145
+     [java] 18000	 1024600	 56	 17	 17989	 145
+     [java] 19000	 1085846	 57	 17	 18990	 145
+     [java] 20000	 1146149	 57	 17	 19990	 144
+     [java] 21000	 1207390	 57	 17	 20989	 144
+     [java] 22000	 1271120	 57	 17	 21990	 143
+     [java] 23000	 1337617	 58	 17	 22990	 142
+     [java] 24000	 1404017	 58	 17	 23989	 142
+     [java] 25000	 1474428	 58	 16	 24990	 141
+     [java] 26000	 1543952	 59	 16	 25990	 140
+     [java] 27000	 1617517	 59	 16	 26989	 139
+     [java] 28000	 1690821	 60	 16	 27989	 138
+     [java] 29000	 1762176	 60	 16	 28990	 138
+     [java] 30000	 1839822	 61	 16	 29990	 136
+     [java] 31000	 1918053	 61	 16	 30992	 135
+     [java] 32000	 2005522	 62	 15	 31989	 134
+     [java] 33000	 2090246	 63	 15	 32991	 133
+     [java] 34000	 2172180	 63	 15	 33992	 132
+     [java] 35000	 2256935	 64	 15	 34989	 131
+     [java] 36000	 2348413	 65	 15	 35989	 129
+     [java] 37000	 2438430	 65	 15	 36989	 128
+     [java] 38000	 2532982	 66	 15	 37989	 127
+     [java] 39000	 2630083	 67	 14	 38990	 125
+     [java] 40000	 2729373	 68	 14	 39989	 124
+     [java] 41000	 2832187	 69	 14	 40989	 123
+     [java] 42000	 2939712	 69	 14	 41989	 121
+     [java] 43000	 3052464	 70	 14	 42990	 120
+     [java] 44000	 3164992	 71	 13	 43990	 118
+     [java] 45000	 3277688	 72	 13	 44990	 117
+     [java] 46000	 3392452	 73	 13	 45989	 115
+     [java] 47000	 3514558	 74	 13	 46990	 114
+     [java] 48000	 3635763	 75	 13	 47989	 113
+     [java] 49000	 3757519	 76	 13	 48989	 111
+     [java] 50000	 3881417	 77	 12	 49989	 110
+     [java] 51000	 4012781	 78	 12	 50989	 109
+     [java] 52000	 4141058	 79	 12	 51990	 107
+     [java] 53000	 4271148	 80	 12	 52989	 106
+     [java] 54000	 4407040	 81	 12	 53989	 105
+     [java] 55000	 4543248	 82	 12	 54989	 104
+     [java] 56000	 4684860	 83	 11	 55990	 102
+     [java] 57000	 4829626	 84	 11	 56989	 101
+     [java] 58000	 4966554	 85	 11	 57989	 100
+     [java] 59000	 5110910	 86	 11	 58989	 99
+     [java] 60000	 5263988	 87	 11	 59989	 98
+     [java] 61000	 5420528	 88	 11	 60989	 97
+     [java] 62000	 5565848	 89	 11	 61989	 96
+     [java] 63000	 5726924	 90	 11	 62989	 95
+     [java] 64000	 5890328	 92	 10	 63989	 94
+     [java] 65000	 6026118	 92	 10	 64989	 93
+     [java] 66000	 6163314	 93	 10	 65989	 92
+     [java] 67000	 6326801	 94	 10	 66989	 91
+     [java] 68000	 6499664	 95	 10	 67989	 90
+     [java] 69000	 6673646	 96	 10	 68989	 89
+     [java] 70000	 6854553	 97	 10	 69989	 88
+     [java] 71000	 7019355	 98	 10	 70989	 87
+     [java] 72000	 7209276	 100	 9	 71989	 86
+     [java] 73000	 7399916	 101	 9	 72989	 85
+     [java] 74000	 7583310	 102	 9	 73989	 84
+     [java] 75000	 7774520	 103	 9	 74989	 83
+     [java] 76000	 7957178	 104	 9	 75989	 83
+     [java] 77000	 8144174	 105	 9	 76989	 82
+     [java] 78000	 8329594	 106	 9	 77989	 81
+     [java] 79000	 8516009	 107	 9	 78989	 80
+     [java] 80000	 8705015	 108	 9	 79989	 80
+     [java] 81000	 8903660	 109	 9	 80989	 79
+     [java] 82000	 9104986	 111	 9	 81989	 78
+     [java] 83000	 9333921	 112	 8	 82989	 77
+     [java] 84000	 9544223	 113	 8	 83989	 76
+     [java] 85000	 9738162	 114	 8	 84989	 76
+     [java] 86000	 9934392	 115	 8	 85989	 75
+     [java] 87000	 10138434	 116	 8	 86989	 74
+     [java] 88000	 10345671	 117	 8	 87989	 74
+     [java] 89000	 10547042	 118	 8	 88989	 73
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_detail('queue11')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3527 waits for ShareLock on transaction 1360046; blocked by process 3518.
+     [java] Process 3518 waits for ShareLock on transaction 1360047; blocked by process 3527.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_detail" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('813bb73d-7b99-46cc-bc22-4caac73f37be')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3526 waits for AccessExclusiveLock on tuple (1783,6) of relation 16403 of database 16385; blocked by process 3516.
+     [java] Process 3516 waits for ShareLock on transaction 1360197; blocked by process 3514.
+     [java] Process 3514 waits for ShareLock on transaction 1360130; blocked by process 3528.
+     [java] Process 3528 waits for AccessExclusiveLock on tuple (1783,6) of relation 16403 of database 16385; blocked by process 3526.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('813bb73d-7b99-46cc-bc22-4caac73f37be')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3523 waits for AccessExclusiveLock on tuple (1783,6) of relation 16403 of database 16385; blocked by process 3516.
+     [java] Process 3516 waits for ShareLock on transaction 1360197; blocked by process 3514.
+     [java] Process 3514 waits for ShareLock on transaction 1360130; blocked by process 3528.
+     [java] Process 3528 waits for AccessExclusiveLock on tuple (1783,6) of relation 16403 of database 16385; blocked by process 3523.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg('queue12')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3528 waits for AccessExclusiveLock on tuple (1783,6) of relation 16403 of database 16385; blocked by process 3516.
+     [java] Process 3516 waits for ShareLock on transaction 1360197; blocked by process 3514.
+     [java] Process 3514 waits for ShareLock on transaction 1360130; blocked by process 3528.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_detail('queue13')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3522 waits for ShareLock on transaction 1360235; blocked by process 3516.
+     [java] Process 3516 waits for ShareLock on transaction 1360234; blocked by process 3522.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_detail" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('76938bdc-6469-4c40-a980-a6ff180bc3a3')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3527 waits for AccessExclusiveLock on tuple (1809,58) of relation 16403 of database 16385; blocked by process 3528.
+     [java] Process 3528 waits for ShareLock on transaction 1360281; blocked by process 3523.
+     [java] Process 3523 waits for ShareLock on transaction 1360268; blocked by process 3522.
+     [java] Process 3522 waits for AccessExclusiveLock on tuple (1809,58) of relation 16403 of database 16385; blocked by process 3527.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('76938bdc-6469-4c40-a980-a6ff180bc3a3')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3525 waits for AccessExclusiveLock on tuple (1809,58) of relation 16403 of database 16385; blocked by process 3528.
+     [java] Process 3528 waits for ShareLock on transaction 1360281; blocked by process 3523.
+     [java] Process 3523 waits for ShareLock on transaction 1360268; blocked by process 3522.
+     [java] Process 3522 waits for AccessExclusiveLock on tuple (1809,58) of relation 16403 of database 16385; blocked by process 3525.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('76938bdc-6469-4c40-a980-a6ff180bc3a3')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3521 waits for AccessExclusiveLock on tuple (1809,58) of relation 16403 of database 16385; blocked by process 3528.
+     [java] Process 3528 waits for ShareLock on transaction 1360281; blocked by process 3523.
+     [java] Process 3523 waits for ShareLock on transaction 1360268; blocked by process 3522.
+     [java] Process 3522 waits for AccessExclusiveLock on tuple (1809,58) of relation 16403 of database 16385; blocked by process 3521.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('76938bdc-6469-4c40-a980-a6ff180bc3a3')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3536 waits for AccessExclusiveLock on tuple (1809,58) of relation 16403 of database 16385; blocked by process 3528.
+     [java] Process 3528 waits for ShareLock on transaction 1360281; blocked by process 3523.
+     [java] Process 3523 waits for ShareLock on transaction 1360268; blocked by process 3522.
+     [java] Process 3522 waits for AccessExclusiveLock on tuple (1809,58) of relation 16403 of database 16385; blocked by process 3536.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('76938bdc-6469-4c40-a980-a6ff180bc3a3')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3528 waits for ShareLock on transaction 1360281; blocked by process 3523.
+     [java] Process 3523 waits for ShareLock on transaction 1360268; blocked by process 3522.
+     [java] Process 3522 waits for AccessExclusiveLock on tuple (1809,58) of relation 16403 of database 16385; blocked by process 3528.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_detail_byid('76938bdc-6469-4c40-a980-a6ff180bc3a3')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3523 waits for ShareLock on transaction 1360268; blocked by process 3522.
+     [java] Process 3522 waits for ShareLock on transaction 1360281; blocked by process 3523.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_detail_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:update queue set qsize = ((select qsize from queue where qname = 'queue15') + 1) where qname = 'queue15' 
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3522 waits for ShareLock on transaction 1360376; blocked by process 3527.
+     [java] Process 3527 waits for ShareLock on transaction 1360370; blocked by process 3521.
+     [java] Process 3521 waits for ExclusiveLock on tuple (2,59) of relation 16388 of database 16385; blocked by process 3522.
+     [java]   建議：See server log for query details.
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.updateQueueSize(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:update queue set qsize = ((select qsize from queue where qname = 'queue15') + 1) where qname = 'queue15' 
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3523 waits for ExclusiveLock on tuple (2,59) of relation 16388 of database 16385; blocked by process 3514.
+     [java] Process 3514 waits for ShareLock on transaction 1360376; blocked by process 3527.
+     [java] Process 3527 waits for ShareLock on transaction 1360370; blocked by process 3521.
+     [java] Process 3521 waits for ExclusiveLock on tuple (2,59) of relation 16388 of database 16385; blocked by process 3523.
+     [java]   建議：See server log for query details.
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.updateQueueSize(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:update queue set qsize = ((select qsize from queue where qname = 'queue15') + 1) where qname = 'queue15' 
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3524 waits for ExclusiveLock on tuple (2,59) of relation 16388 of database 16385; blocked by process 3514.
+     [java] Process 3514 waits for ShareLock on transaction 1360376; blocked by process 3527.
+     [java] Process 3527 waits for ShareLock on transaction 1360370; blocked by process 3521.
+     [java] Process 3521 waits for ExclusiveLock on tuple (2,59) of relation 16388 of database 16385; blocked by process 3524.
+     [java]   建議：See server log for query details.
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.updateQueueSize(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:update queue set qsize = ((select qsize from queue where qname = 'queue15') + 1) where qname = 'queue15' 
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3528 waits for ExclusiveLock on tuple (2,59) of relation 16388 of database 16385; blocked by process 3514.
+     [java] Process 3514 waits for ShareLock on transaction 1360376; blocked by process 3527.
+     [java] Process 3527 waits for ShareLock on transaction 1360370; blocked by process 3521.
+     [java] Process 3521 waits for ExclusiveLock on tuple (2,59) of relation 16388 of database 16385; blocked by process 3528.
+     [java]   建議：See server log for query details.
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.updateQueueSize(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:update queue set qsize = ((select qsize from queue where qname = 'queue15') + 1) where qname = 'queue15' 
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3536 waits for ExclusiveLock on tuple (2,59) of relation 16388 of database 16385; blocked by process 3514.
+     [java] Process 3514 waits for ShareLock on transaction 1360376; blocked by process 3527.
+     [java] Process 3527 waits for ShareLock on transaction 1360370; blocked by process 3521.
+     [java] Process 3521 waits for ExclusiveLock on tuple (2,59) of relation 16388 of database 16385; blocked by process 3536.
+     [java]   建議：See server log for query details.
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.updateQueueSize(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:update queue set qsize = ((select qsize from queue where qname = 'queue15') + -1) where qname = 'queue15' 
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3521 waits for ExclusiveLock on tuple (2,59) of relation 16388 of database 16385; blocked by process 3514.
+     [java] Process 3514 waits for ShareLock on transaction 1360376; blocked by process 3527.
+     [java] Process 3527 waits for ShareLock on transaction 1360370; blocked by process 3521.
+     [java]   建議：See server log for query details.
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.updateQueueSize(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_detail_byid('f02fc418-c143-474e-a58c-af40427d6dde')
+     [java] ERROR: deadlock detected
+     [java]   詳細：Process 3525 waits for ShareLock on transaction 1360376; blocked by process 3527.
+     [java] Process 3527 waits for ShareLock on transaction 1360369; blocked by process 3525.
+     [java]   建議：See server log for query details.
+     [java]   在位置：SQL function "func_delete_msg_detail_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] 90000	 10824634	 120	 8	 89992	 72
