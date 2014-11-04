@@ -193,7 +193,9 @@ public class MsgClient {
             int port = Integer.parseInt(args[1]);
             MsgClient sender = new MsgClient(msgServerHost, port);
             sender.execute("-f", "data/create");
-            for (int i =0 ; i<200; i++) {
+            sw.on();
+            //client keep sending message for 30 min
+            while(sw.off() < 1800000) {
                 sender.execute("-f", "data/sender");
             }
             sender.execute("-f", "data/delete");

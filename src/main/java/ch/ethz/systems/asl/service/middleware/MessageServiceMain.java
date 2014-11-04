@@ -60,6 +60,11 @@ public class MessageServiceMain implements IService {
                 if (numConnections % 1000 == 0) {
                     DataCollector.getStaticData("msgMid", numConnections, sw.off());
                 }
+                if (sw.off() > 1800000) {
+                    DataCollector.getStaticData("msgMid", numConnections, sw.off());
+                    setServiceState(STOP);
+                    break;
+                }
             } catch (Exception e) {
                 e.printStackTrace();
                 setServiceState(STOP);
