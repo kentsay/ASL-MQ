@@ -20,13 +20,12 @@ import javax.naming.NamingException;
 import main.java.ch.ethz.systems.asl.bean.Message;
 import main.java.ch.ethz.systems.asl.bean.ResponseCode;
 import main.java.ch.ethz.systems.asl.util.DataCollector;
-import main.java.ch.ethz.systems.asl.service.db.DBService;
 import main.java.ch.ethz.systems.asl.util.DbUtil;
 import main.java.ch.ethz.systems.asl.util.StopWatch;
 
 public class MessageService implements Runnable {
 
-    private static final Logger Log = Logger.getLogger(DBService.class.getName());
+    private static final Logger Log = Logger.getLogger(MessageService.class.getName());
     
     MessageServiceMain server;
     Socket clientSocket;
@@ -235,7 +234,9 @@ public class MessageService implements Runnable {
                     result.setMsgDetail(ResponseCode.ERROR_QUEUE_NOT_EXISTS.value());
                     //Log.info("queue does not exists, ROLLBACK!!");
                 } else {
-                    updateQueueSize(raw,1);
+                    synchronized (this) {
+                        updateQueueSize(raw,1);    
+                    }
                 }
             } catch (SQLException e) {
                 isRollBack = true;
@@ -314,7 +315,9 @@ public class MessageService implements Runnable {
                         sql = "SELECT func_delete_msg_detail_byid(?)";
                         rs = DbUtil.sqlSelect(sql, param, conn);
                         if (rs.next()) {
-                            updateQueueSize(raw, -1);
+                            synchronized (this) {
+                                updateQueueSize(raw, -1);    
+                            }
                         } else {
                             isRollBack = true;
                             result.setMsgDetail(ResponseCode.ERROR_DB_MSG_DETAIL_TABLE_DELETE_FAIL.value());
