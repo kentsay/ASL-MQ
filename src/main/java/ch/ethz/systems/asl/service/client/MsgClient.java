@@ -196,9 +196,9 @@ public class MsgClient {
             sw.on();
             //client keep sending message for 30 min
             while(sw.off() < 1800000) {
-                sender.execute("-f", "data/sender");
+                sender.execute("-f", "data/benchmark_dbsize_0");
             }
-            sender.execute("-f", "data/delete");
+            //sender.execute("-f", "data/delete");
             long time = sw.off();
             System.out.println("########## Client Send Report" + " ##########");
             System.out.println("Req#\t Time\t Resp\t Rate\t Recv#\t Throughput");

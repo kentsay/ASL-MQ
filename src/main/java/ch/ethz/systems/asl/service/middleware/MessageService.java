@@ -58,7 +58,6 @@ public class MessageService implements Runnable {
             resultMsg = runMsgManagement(rawMsg);
             objOutputStream.writeObject(resultMsg);
             //Log.info( "Connection " + id + " closed. Execution time: " + sw.off() + "ms" );
-            //System.out.println( "Connection " + id + " closed. Execution time: " + sw.off() + "ms" );
             DataCollector.putMsgMidTimeJar("msgMid", sw.off());
             clientSocket.close();
             
@@ -84,11 +83,11 @@ public class MessageService implements Runnable {
             synchronized (this) {
                 conn = DbUtil.getConnection(conn, dbFarm);
             }
-            processMsg(raw, result);
-            processMsgDtl(raw, result);
             
             switch(raw.getMsgType()) {
             case SEND:
+                processMsg(raw, result);
+                processMsgDtl(raw, result);
                 processSend(raw, result);
                 if (result.getMsgDetail().isEmpty())
                     result.setMsgDetail(ResponseCode.OK.value());
@@ -276,7 +275,7 @@ public class MessageService implements Runnable {
     
     private void processReceive(Message raw, Message result) {
         switch(raw.getMsgFunc()) {
-        //[Definition]: Clients can read a queue by removing the topmost message 
+        //[Definition]: Clients can read a queue by removing the top most message 
         case READ_BYRMVMESSAGE:
             try {
                 //check if queue exists, if not exist, then ROLLBACK
