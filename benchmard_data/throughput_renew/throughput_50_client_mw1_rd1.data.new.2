@@ -1,0 +1,1383 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+jar:
+
+run:
+     [java] Message server running
+     [java] ########## Middleware Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] Nov 06, 2014 9:13:57 AM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: Get connection error:0 ms.
+     [java] Nov 06, 2014 9:13:57 AM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: Retry Count: 0
+     [java] Exception in thread "pool-1-thread-20" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue12')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue12) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue15')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue15) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue16')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue16) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue16')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue16) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue16')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue16) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue18')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue18) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue20')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue20) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue20')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue20) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] 1000	 137262	 137	 7	 961	 40
+     [java] 2000	 210659	 105	 9	 1952	 76
+     [java] 3000	 274661	 91	 10	 2952	 107
+     [java] 4000	 339538	 84	 11	 3953	 137
+     [java] 5000	 423654	 84	 11	 4954	 161
+     [java] 6000	 516354	 86	 11	 5956	 181
+     [java] 7000	 595031	 85	 11	 6954	 200
+     [java] 8000	 657821	 82	 12	 7951	 222
+     [java] 9000	 713675	 79	 12	 8954	 236
+     [java] 10000	 764826	 76	 13	 9953	 256
+     [java] 11000	 817644	 74	 13	 10953	 275
+     [java] 12000	 875125	 72	 13	 11951	 292
+     [java] 13000	 929577	 71	 13	 12954	 309
+     [java] 14000	 981773	 70	 14	 13953	 325
+     [java] 15000	 1034527	 68	 14	 14952	 340
+     [java] 16000	 1088673	 68	 14	 15951	 347
+     [java] 17000	 1145944	 67	 14	 16952	 361
+     [java] 18000	 1198362	 66	 15	 17952	 375
+     [java] 19000	 1251036	 65	 15	 18951	 387
+     [java] 20000	 1308218	 65	 15	 19952	 400
+     [java] 21000	 1360952	 64	 15	 20955	 411
+     [java] 22000	 1410854	 64	 15	 21951	 423
+     [java] 23000	 1464931	 63	 15	 22951	 425
+     [java] 24000	 1526011	 63	 15	 23953	 436
+     [java] 25000	 1580770	 63	 15	 24955	 446
+     [java] 26000	 1633670	 62	 15	 25953	 456
+     [java] 27000	 1686406	 62	 16	 26954	 465
+     [java] 28000	 1746387	 62	 16	 27952	 466
+     [java] 29000	 1800369	 62	 16	 28957	 475
+     [java] 30000	 1851781	 61	 16	 29953	 483
+     [java] 31000	 1904038	 61	 16	 30953	 492
+     [java] 32000	 1963652	 61	 16	 31954	 500
+     [java] 33000	 2016284	 61	 16	 32954	 507
+     [java] 34000	 2067544	 60	 16	 33952	 507
+     [java] 35000	 2121837	 60	 16	 34950	 514
+     [java] 36000	 2185018	 60	 16	 35953	 521
+     [java] 37000	 2248125	 60	 16	 36952	 528
+     [java] 38000	 2299947	 60	 16	 37953	 535
+     [java] 39000	 2353102	 60	 16	 38953	 534
+     [java] 40000	 2411445	 60	 16	 39953	 540
+     [java] 41000	 2466379	 60	 16	 40952	 546
+     [java] 42000	 2518734	 59	 16	 41957	 552
+     [java] 43000	 2571582	 59	 16	 42951	 558
+     [java] 44000	 2633108	 59	 16	 43953	 556
+     [java] 45000	 2688327	 59	 16	 44953	 562
+     [java] 46000	 2737567	 59	 16	 45951	 567
+     [java] 47000	 2792186	 59	 16	 46952	 573
+     [java] 48000	 2855002	 59	 16	 47952	 578
+     [java] 49000	 2910286	 59	 16	 48953	 583
+     [java] 50000	 2960744	 59	 16	 49954	 588
+     [java] 51000	 3015442	 59	 16	 50952	 586
+     [java] 52000	 3082705	 59	 16	 51954	 590
+     [java] 53000	 3141759	 59	 16	 52956	 595
+     [java] 54000	 3196142	 59	 16	 53954	 593
+     [java] 55000	 3252013	 59	 16	 54951	 597
+     [java] 56000	 3320049	 59	 16	 55954	 602
+     [java] 57000	 3394123	 59	 16	 56953	 600
+     [java] 58000	 3467757	 59	 16	 57955	 604
+     [java] 59000	 3535569	 59	 16	 58954	 602
+     [java] 60000	 3590749	 59	 16	 59954	 606
+     [java] 61000	 3645094	 59	 16	 60953	 610
+     [java] 62000	 3695775	 59	 16	 61956	 613
+     [java] 63000	 3748872	 59	 16	 62952	 617
+     [java] 64000	 3801361	 59	 16	 63952	 621
+     [java] 65000	 3856097	 59	 16	 64954	 619
+     [java] 66000	 3907296	 59	 16	 65956	 622
+     [java] 67000	 3960317	 59	 16	 66953	 626
+     [java] 68000	 4013646	 59	 16	 67952	 629
+     [java] 69000	 4067992	 58	 16	 68953	 633
+     [java] 70000	 4117823	 58	 17	 69953	 636
+     [java] 71000	 4170102	 58	 17	 70953	 639
+     [java] 72000	 4223540	 58	 17	 71955	 642
+     [java] 73000	 4276142	 58	 17	 72952	 640
+     [java] 74000	 4326522	 58	 17	 73953	 643
+     [java] 75000	 4379285	 58	 17	 74957	 646
+     [java] 76000	 4436661	 58	 17	 75952	 649
+     [java] 77000	 4490020	 58	 17	 76956	 652
+     [java] 78000	 4541934	 58	 17	 77953	 655
+     [java] 79000	 4595137	 58	 17	 78950	 658
+     [java] 80000	 4652602	 58	 17	 79950	 655
+     [java] 81000	 4705079	 58	 17	 80953	 658
+     [java] 82000	 4758373	 58	 17	 81955	 661
+     [java] 83000	 4811942	 57	 17	 82953	 664
+     [java] 84000	 4869919	 57	 17	 83951	 666
+     [java] 85000	 4929295	 57	 17	 84952	 669
+     [java] 86000	 4980589	 57	 17	 85953	 671
+     [java] 87000	 5033423	 57	 17	 86951	 669
+     [java] 88000	 5090560	 57	 17	 87954	 671
+     [java] 89000	 5143464	 57	 17	 88954	 674
+     [java] 90000	 5194721	 57	 17	 89952	 676
+     [java] 91000	 5266747	 57	 17	 90952	 674
+     [java] 92000	 5322678	 57	 17	 91954	 676
+     [java] 93000	 5377596	 57	 17	 92954	 673
+     [java] 94000	 5428814	 57	 17	 93956	 676
+     [java] 95000	 5497363	 57	 17	 94954	 650
+     [java] 96000	 5558059	 57	 17	 95954	 648
+     [java] 97000	 5615220	 57	 17	 96959	 651
+     [java] 98000	 5669402	 57	 17	 97956	 653
+     [java] 99000	 5724024	 57	 17	 98955	 651
+     [java] 100000	 5782030	 57	 17	 99955	 653
+     [java] 101000	 5837952	 57	 17	 100956	 655
+     [java] 102000	 5897089	 57	 17	 101972	 649
+     [java] 103000	 5958399	 57	 17	 102956	 651
+     [java] 104000	 6016564	 57	 17	 103956	 650
+     [java] 105000	 6067211	 57	 17	 104956	 652
+     [java] 106000	 6118529	 57	 17	 105956	 654
+     [java] 107000	 6170932	 57	 17	 106957	 656
+     [java] 108000	 6223858	 57	 17	 107956	 658
+     [java] 109000	 6273654	 57	 17	 108955	 660
+     [java] 110000	 6325951	 57	 17	 109957	 658
+     [java] 111000	 6378421	 57	 17	 110957	 660
+     [java] 112000	 6429371	 57	 17	 111957	 662
+     [java] 113000	 6481509	 57	 17	 112957	 664
+     [java] 114000	 6533265	 57	 17	 113957	 666
+     [java] 115000	 6585690	 57	 17	 114957	 664
+     [java] 116000	 6636406	 57	 17	 115957	 666
+     [java] 117000	 6687273	 57	 17	 116956	 668
+     [java] 118000	 6740527	 57	 17	 117958	 670
+     [java] 119000	 6792426	 57	 17	 118955	 672
+     [java] 120000	 6842781	 57	 17	 119956	 670
+     [java] 121000	 6894535	 56	 17	 120958	 672
+     [java] 122000	 6948137	 56	 17	 121960	 674
+     [java] 123000	 7000838	 56	 17	 122959	 675
+     [java] 124000	 7051507	 56	 17	 123957	 677
+     [java] 125000	 7103930	 56	 17	 124955	 675
+     [java] 126000	 7156858	 56	 17	 125957	 677
+     [java] 127000	 7209170	 56	 17	 126959	 679
+     [java] 128000	 7261941	 56	 17	 127959	 680
+     [java] 129000	 7317106	 56	 17	 128956	 678
+     [java] 130000	 7370072	 56	 17	 129956	 680
+     [java] 131000	 7421323	 56	 17	 130957	 682
+     [java] 132000	 7474124	 56	 17	 131959	 683
+     [java] 133000	 7527907	 56	 17	 132957	 685
+     [java] 134000	 7579776	 56	 17	 133958	 683
+     [java] 135000	 7631106	 56	 17	 134956	 685
+     [java] 136000	 7684685	 56	 17	 135958	 686
+     [java] 137000	 7738139	 56	 17	 136959	 688
+     [java] 138000	 7789864	 56	 17	 137959	 690
+     [java] 139000	 7839901	 56	 17	 138956	 688
+     [java] 140000	 7894307	 56	 17	 139956	 689
+     [java] 141000	 7947284	 56	 17	 140954	 691
+     [java] 142000	 7998015	 56	 17	 141954	 692
+     [java] 143000	 8052065	 56	 17	 142957	 690
+     [java] 144000	 8110860	 56	 17	 143958	 692
+     [java] 145000	 8165532	 56	 17	 144955	 693
+     [java] 146000	 8218052	 56	 17	 145958	 695
+     [java] 147000	 8271677	 56	 17	 146955	 693
+     [java] 148000	 8327130	 56	 17	 147955	 694
+     [java] 149000	 8378738	 56	 17	 148956	 696
+     [java] 150000	 8431743	 56	 17	 149955	 697
+     [java] 151000	 8489190	 56	 17	 150958	 695
+     [java] 152000	 8553473	 56	 17	 151956	 697
+     [java] 153000	 8605955	 56	 17	 152957	 698
+     [java] 154000	 8662579	 56	 17	 153956	 696
+     [java] 155000	 8717668	 56	 17	 154957	 698
+     [java] 156000	 8769118	 56	 17	 155955	 699
+     [java] 157000	 8820234	 56	 17	 156958	 700
+     [java] 158000	 8871720	 56	 17	 157956	 702
+     [java] 159000	 8925391	 56	 17	 158956	 700
+     [java] 160000	 8975805	 56	 17	 159959	 701
+     [java] 161000	 9026530	 56	 17	 160960	 703
+     [java] 162000	 9079204	 56	 17	 161957	 704
+     [java] 163000	 9132560	 56	 17	 162956	 705
+     [java] 164000	 9184412	 56	 17	 163958	 703
+     [java] 165000	 9235828	 55	 17	 164959	 705
+     [java] 166000	 9289208	 55	 17	 165956	 706
+     [java] 167000	 9342032	 55	 17	 166955	 707
+     [java] 168000	 9393188	 55	 17	 167958	 708
+     [java] 169000	 9445715	 55	 17	 168956	 707
+     [java] 170000	 9500044	 55	 17	 169956	 708
+     [java] 171000	 9551166	 55	 17	 170955	 709
+     [java] 172000	 9603079	 55	 17	 171957	 710
+     [java] 173000	 9655506	 55	 17	 172955	 709
+     [java] 174000	 9708074	 55	 17	 173955	 710
+     [java] 175000	 9759558	 55	 17	 174959	 711
+     [java] 176000	 9811752	 55	 17	 175954	 712
+     [java] 177000	 9865372	 55	 17	 176958	 713
+     [java] 178000	 9916969	 55	 17	 177959	 712
+     [java] 179000	 9967452	 55	 17	 178954	 713
+     [java] 180000	 10019258	 55	 17	 179956	 714
+     [java] 181000	 10073268	 55	 17	 180954	 715
+     [java] 182000	 10124628	 55	 17	 181957	 716
+     [java] 183000	 10175880	 55	 17	 182959	 714
+     [java] 184000	 10230075	 55	 17	 183957	 715
+     [java] 185000	 10283412	 55	 17	 184960	 717
+     [java] 186000	 10334579	 55	 17	 185954	 718
+     [java] 187000	 10386538	 55	 18	 186957	 719
+     [java] 188000	 10439759	 55	 18	 187957	 717
+     [java] 189000	 10492769	 55	 18	 188958	 718
+     [java] 190000	 10543616	 55	 18	 189957	 719
+     [java] 191000	 10595831	 55	 18	 190958	 720
+     [java] 192000	 10651624	 55	 18	 191956	 719
+     [java] 193000	 10707576	 55	 18	 192955	 720
+     [java] 194000	 10761568	 55	 18	 193958	 721
+     [java] 195000	 10815232	 55	 18	 194956	 722
+     [java] 196000	 10867980	 55	 18	 195956	 720
+     [java] 197000	 10918510	 55	 18	 196957	 721
+     [java] 198000	 10969132	 55	 18	 197954	 722
+     [java] 199000	 11022280	 55	 18	 198956	 723
+     [java] 200000	 11078880	 55	 18	 199961	 724
+     [java] 201000	 11133850	 55	 18	 200957	 723
+     [java] 202000	 11189784	 55	 18	 201958	 724
+     [java] 203000	 11245728	 55	 18	 202957	 725
+     [java] 204000	 11297656	 55	 18	 203957	 725
+     [java] 205000	 11347850	 55	 18	 204959	 724
+     [java] 206000	 11401042	 55	 18	 205955	 725
+     [java] 207000	 11455339	 55	 18	 206959	 726
+     [java] 208000	 11507470	 55	 18	 207955	 727
+     [java] 209000	 11559978	 55	 18	 208956	 725
+     [java] 210000	 11612129	 55	 18	 209956	 726
+     [java] 211000	 11663777	 55	 18	 210957	 727
+     [java] 212000	 11714356	 55	 18	 211957	 728
+     [java] 213000	 11768847	 55	 18	 212956	 729
+     [java] 214000	 11821127	 55	 18	 213955	 727
+     [java] 215000	 11873654	 55	 18	 214960	 728
+     [java] 216000	 11923987	 55	 18	 215955	 729
+     [java] 217000	 11977505	 55	 18	 216956	 730
+     [java] 218000	 12031269	 55	 18	 217956	 731
+     [java] 219000	 12081960	 55	 18	 218957	 730
+     [java] 220000	 12132733	 55	 18	 219954	 730
+     [java] 221000	 12186286	 55	 18	 220958	 731
+     [java] 222000	 12239953	 55	 18	 221957	 732
+     [java] 223000	 12290639	 55	 18	 222955	 733
+     [java] 224000	 12343020	 55	 18	 223958	 732
+     [java] 225000	 12398241	 55	 18	 224957	 732
+     [java] 226000	 12450930	 55	 18	 225957	 733
+     [java] 227000	 12503341	 55	 18	 226956	 734
+     [java] 228000	 12557945	 55	 18	 227957	 733
+     [java] 229000	 12612418	 55	 18	 228958	 733
+     [java] 230000	 12665006	 55	 18	 229958	 734
+     [java] 231000	 12716799	 55	 18	 230957	 735
+     [java] 232000	 12770965	 55	 18	 231956	 734
+     [java] 233000	 12825430	 55	 18	 232957	 735
+     [java] 234000	 12876273	 55	 18	 233954	 735
+     [java] 235000	 12927498	 55	 18	 234956	 736
+     [java] 236000	 12981284	 55	 18	 235958	 737
+     [java] 237000	 13033059	 54	 18	 236955	 736
+     [java] 238000	 13085042	 54	 18	 237959	 736
+     [java] 239000	 13138941	 54	 18	 238956	 737
+     [java] 240000	 13192445	 54	 18	 239959	 738
+     [java] 241000	 13244130	 54	 18	 240955	 739
+     [java] 242000	 13299460	 54	 18	 241956	 737
+     [java] 243000	 13355189	 54	 18	 242959	 738
+     [java] 244000	 13412271	 54	 18	 243955	 739
+     [java] 245000	 13464721	 54	 18	 244956	 737
+     [java] 246000	 13516792	 54	 18	 245960	 738
+     [java] 247000	 13571850	 54	 18	 246955	 739
+     [java] 248000	 13625502	 54	 18	 247958	 740
+     [java] 249000	 13678643	 54	 18	 248960	 738
+     [java] 250000	 13742148	 54	 18	 249957	 739
+     [java] 251000	 13798159	 54	 18	 250957	 740
+     [java] 252000	 13854081	 54	 18	 251959	 739
+     [java] 253000	 13905175	 54	 18	 252959	 739
+     [java] 254000	 13956370	 54	 18	 253955	 740
+     [java] 255000	 14008376	 54	 18	 254958	 741
+     [java] 256000	 14058675	 54	 18	 255958	 742
+     [java] 257000	 14110648	 54	 18	 256958	 742
+     [java] 258000	 14162970	 54	 18	 257957	 741
+     [java] 259000	 14213961	 54	 18	 258955	 742
+     [java] 260000	 14265022	 54	 18	 259958	 742
+     [java] 261000	 14316446	 54	 18	 260956	 743
+     [java] 262000	 14368612	 54	 18	 261960	 744
+     [java] 263000	 14419651	 54	 18	 262958	 742
+     [java] 264000	 14470333	 54	 18	 263956	 743
+     [java] 265000	 14522905	 54	 18	 264956	 744
+     [java] 266000	 14575341	 54	 18	 265957	 745
+     [java] 267000	 14626194	 54	 18	 266955	 745
+     [java] 268000	 14678919	 54	 18	 267955	 744
+     [java] 269000	 14732020	 54	 18	 268955	 745
+     [java] 270000	 14785198	 54	 18	 269959	 745
+     [java] 271000	 14835769	 54	 18	 270959	 746
+     [java] 272000	 14887482	 54	 18	 271956	 747
+     [java] 273000	 14940088	 54	 18	 272956	 745
+     [java] 274000	 14993663	 54	 18	 273959	 746
+     [java] 275000	 15044601	 54	 18	 274956	 747
+     [java] 276000	 15099668	 54	 18	 275955	 747
+     [java] 277000	 15153486	 54	 18	 276956	 746
+     [java] 278000	 15204566	 54	 18	 277956	 747
+     [java] 279000	 15256364	 54	 18	 278955	 747
+     [java] 280000	 15309578	 54	 18	 279955	 748
+     [java] 281000	 15361926	 54	 18	 280954	 749
+     [java] 282000	 15413163	 54	 18	 281959	 748
+     [java] 283000	 15464967	 54	 18	 282955	 748
+     [java] 284000	 15518791	 54	 18	 283956	 749
+     [java] 285000	 15571392	 54	 18	 284958	 750
+     [java] 286000	 15622483	 54	 18	 285958	 750
+     [java] 287000	 15676327	 54	 18	 286958	 749
+     [java] 288000	 15730448	 54	 18	 287959	 750
+     [java] 289000	 15782060	 54	 18	 288958	 750
+     [java] 290000	 15833782	 54	 18	 289959	 751
+     [java] 291000	 15888265	 54	 18	 290958	 750
+     [java] 292000	 15942240	 54	 18	 291955	 750
+     [java] 293000	 15994975	 54	 18	 292957	 751
+     [java] 294000	 16047041	 54	 18	 293957	 751
+     [java] 295000	 16102896	 54	 18	 294956	 750
+     [java] 296000	 16156348	 54	 18	 295957	 751
+     [java] 297000	 16209363	 54	 18	 296958	 751
+     [java] 298000	 16264280	 54	 18	 297957	 752
+     [java] 299000	 16323465	 54	 18	 298955	 751
+     [java] 300000	 16382541	 54	 18	 299959	 751
+     [java] 301000	 16436335	 54	 18	 300957	 752
+     [java] 302000	 16500331	 54	 18	 301957	 751
+     [java] 303000	 16552312	 54	 18	 302957	 751
+     [java] 304000	 16602967	 54	 18	 303954	 752
+     [java] 305000	 16654399	 54	 18	 304956	 753
+     [java] 306000	 16707354	 54	 18	 305957	 751
+     [java] 307000	 16759175	 54	 18	 306958	 752
+     [java] 308000	 16809355	 54	 18	 307955	 753
+     [java] 309000	 16860949	 54	 18	 308959	 753
+     [java] 310000	 16913667	 54	 18	 309956	 754
+     [java] 311000	 16964865	 54	 18	 310955	 753
+     [java] 312000	 17015971	 54	 18	 311961	 753
+     [java] 313000	 17068239	 54	 18	 312956	 754
+     [java] 314000	 17121675	 54	 18	 313957	 754
+     [java] 315000	 17174691	 54	 18	 314958	 755
+     [java] 316000	 17227133	 54	 18	 315958	 754
+     [java] 317000	 17280439	 54	 18	 316955	 754
+     [java] 318000	 17334836	 54	 18	 317958	 755
+     [java] 319000	 17388597	 54	 18	 318958	 755
+     [java] 320000	 17440952	 54	 18	 319956	 754
+     [java] 321000	 17495003	 54	 18	 320957	 755
+     [java] 322000	 17547247	 54	 18	 321957	 755
+     [java] 323000	 17598614	 54	 18	 322955	 756
+     [java] 324000	 17650807	 54	 18	 323954	 757
+     [java] 325000	 17703857	 54	 18	 324955	 755
+     [java] 326000	 17754888	 54	 18	 325958	 756
+     [java] 327000	 17806579	 54	 18	 326957	 756
+     [java] 328000	 17859845	 54	 18	 327959	 757
+     [java] 329000	 17912439	 54	 18	 328955	 756
+     [java] 330000	 17963202	 54	 18	 329956	 756
+     [java] 331000	 18017281	 54	 18	 330958	 757
+     [java] 332000	 18071522	 54	 18	 331957	 757
+     [java] 333000	 18124671	 54	 18	 332955	 758
+     [java] 334000	 18177797	 54	 18	 333957	 757
+     [java] 335000	 18233294	 54	 18	 334958	 757
+     [java] 336000	 18287537	 54	 18	 335957	 758
+     [java] 337000	 18338767	 54	 18	 336954	 759
+     [java] 338000	 18390337	 54	 18	 337958	 757
+     [java] 339000	 18446938	 54	 18	 338957	 758
+     [java] 340000	 18502512	 54	 18	 339958	 758
+     [java] 341000	 18555746	 54	 18	 340958	 759
+     [java] 342000	 18609613	 54	 18	 341957	 758
+     [java] 343000	 18662818	 54	 18	 342955	 758
+     [java] 344000	 18716158	 54	 18	 343956	 759
+     [java] 345000	 18768059	 54	 18	 344957	 759
+     [java] 346000	 18822712	 54	 18	 345965	 758
+     [java] 347000	 18878552	 54	 18	 346958	 759
+     [java] 348000	 18936722	 54	 18	 347956	 759
+     [java] 349000	 18989497	 54	 18	 348957	 758
+     [java] 350000	 19048671	 54	 18	 349957	 759
+     [java] 351000	 19107129	 54	 18	 350958	 759
+     [java] 352000	 19157664	 54	 18	 351957	 760
+     [java] 353000	 19209250	 54	 18	 352956	 759
+     [java] 354000	 19261318	 54	 18	 353955	 759
+     [java] 355000	 19315583	 54	 18	 354957	 760
+     [java] 356000	 19366554	 54	 18	 355957	 760
+     [java] 357000	 19418926	 54	 18	 356954	 761
+     [java] 358000	 19471590	 54	 18	 357955	 760
+     [java] 359000	 19525986	 54	 18	 358959	 760
+     [java] 360000	 19576941	 54	 18	 359958	 761
+     [java] 361000	 19628762	 54	 18	 360957	 761
+     [java] 362000	 19681172	 54	 18	 361959	 760
+     [java] 363000	 19732232	 54	 18	 362957	 761
+     [java] 364000	 19784972	 54	 18	 363957	 761
+     [java] 365000	 19837487	 54	 18	 364957	 762
+     [java] 366000	 19890023	 54	 18	 365955	 762
+     [java] 367000	 19941066	 54	 18	 366957	 761
+     [java] 368000	 19993342	 54	 18	 367958	 761
+     [java] 369000	 20045598	 54	 18	 368958	 762
+     [java] 370000	 20097168	 54	 18	 369959	 762
+     [java] 371000	 20150203	 54	 18	 370959	 763
+     [java] 372000	 20203274	 54	 18	 371959	 762
+     [java] 373000	 20255421	 54	 18	 372957	 762
+     [java] 374000	 20306797	 54	 18	 373957	 763
+     [java] 375000	 20358129	 54	 18	 374955	 763
+     [java] 376000	 20411594	 54	 18	 375957	 762
+     [java] 377000	 20464685	 54	 18	 376957	 763
+     [java] 378000	 20515863	 54	 18	 377955	 763
+     [java] 379000	 20568709	 54	 18	 378956	 764
+     [java] 380000	 20622801	 54	 18	 379959	 764
+     [java] 381000	 20674716	 54	 18	 380961	 763
+     [java] 382000	 20726703	 54	 18	 381956	 764
+     [java] 383000	 20780007	 54	 18	 382957	 764
+     [java] 384000	 20834243	 54	 18	 383957	 764
+     [java] 385000	 20886383	 54	 18	 384958	 763
+     [java] 386000	 20938964	 54	 18	 385955	 764
+     [java] 387000	 20993378	 54	 18	 386956	 764
+     [java] 388000	 21051221	 54	 18	 387956	 765
+     [java] 389000	 21104886	 54	 18	 388959	 764
+     [java] 390000	 21160070	 54	 18	 389959	 764
+     [java] 391000	 21213135	 54	 18	 390957	 765
+     [java] 392000	 21264262	 54	 18	 391958	 765
+     [java] 393000	 21314505	 54	 18	 392956	 764
+     [java] 394000	 21367334	 54	 18	 393954	 765
+     [java] 395000	 21421722	 54	 18	 394957	 765
+     [java] 396000	 21478704	 54	 18	 395955	 765
+     [java] 397000	 21535512	 54	 18	 396956	 764
+     [java] 398000	 21599702	 54	 18	 397957	 765
+     [java] 399000	 21653320	 54	 18	 398957	 765
+     [java] 400000	 21704633	 54	 18	 399957	 764
+     [java] 401000	 21756177	 54	 18	 400959	 765
+     [java] 402000	 21809091	 54	 18	 401957	 765
+     [java] 403000	 21860907	 54	 18	 402960	 766
+     [java] 404000	 21913573	 54	 18	 403957	 766
+     [java] 405000	 21966366	 54	 18	 404954	 765
+     [java] 406000	 22018509	 54	 18	 405958	 766
+     [java] 407000	 22070070	 54	 18	 406961	 766
+     [java] 408000	 22121717	 54	 18	 407956	 766
+     [java] 409000	 22174385	 54	 18	 408957	 767
+     [java] 410000	 22227258	 54	 18	 409959	 766
+     [java] 411000	 22278982	 54	 18	 410955	 766
+     [java] 412000	 22332499	 54	 18	 411957	 767
+     [java] 413000	 22384556	 54	 18	 412957	 767
+     [java] 414000	 22436689	 54	 18	 413956	 766
+     [java] 415000	 22488676	 54	 18	 414960	 767
+     [java] 416000	 22541969	 54	 18	 415958	 767
+     [java] 417000	 22594774	 54	 18	 416958	 767
+     [java] 418000	 22646779	 54	 18	 417959	 768
+     [java] 419000	 22698765	 54	 18	 418957	 767
+     [java] 420000	 22753667	 54	 18	 419954	 767
+     [java] 421000	 22806431	 54	 18	 420957	 768
+     [java] 422000	 22858705	 54	 18	 421957	 768
+     [java] 423000	 22910996	 54	 18	 422957	 767
+     [java] 424000	 22964871	 54	 18	 423956	 768
+     [java] 425000	 23017270	 54	 18	 424961	 768
+     [java] 426000	 23068512	 54	 18	 425956	 768
+     [java] 427000	 23122027	 54	 18	 426958	 767
+     [java] 428000	 23176472	 54	 18	 427958	 768
+     [java] 429000	 23228604	 54	 18	 428959	 768
+     [java] 430000	 23280515	 54	 18	 429956	 769
+     [java] 431000	 23336516	 54	 18	 430956	 768
+     [java] 432000	 23389519	 54	 18	 431958	 768
+     [java] 433000	 23441480	 54	 18	 432958	 769
+     [java] 434000	 23493867	 54	 18	 433958	 769
+     [java] 435000	 23548292	 54	 18	 434962	 769
+     [java] 436000	 23602615	 54	 18	 435959	 768
+     [java] 437000	 23657799	 54	 18	 436954	 769
+     [java] 438000	 23712400	 54	 18	 437956	 769
+     [java] 439000	 23769060	 54	 18	 438956	 768
+     [java] 440000	 23821370	 54	 18	 439956	 769
+     [java] 441000	 23873056	 54	 18	 440957	 769
+     [java] 442000	 23925706	 54	 18	 441956	 770
+     [java] 443000	 23980697	 54	 18	 442959	 770
+     [java] 444000	 24036166	 54	 18	 443960	 769
+     [java] 445000	 24099981	 54	 18	 444958	 769
+     [java] 446000	 24158092	 54	 18	 445958	 768
+     [java] 447000	 24217523	 54	 18	 446955	 769
+     [java] 448000	 24269470	 54	 18	 447959	 769
+     [java] 449000	 24321022	 54	 18	 448958	 770
+     [java] 450000	 24373783	 54	 18	 449954	 769
+     [java] 451000	 24426407	 54	 18	 450959	 769
+     [java] 452000	 24479086	 54	 18	 451956	 770
+     [java] 453000	 24531658	 54	 18	 452956	 770
+     [java] 454000	 24584627	 54	 18	 453957	 769
+     [java] 455000	 24635884	 54	 18	 454956	 769
+     [java] 456000	 24687753	 54	 18	 455955	 770
+     [java] 457000	 24740669	 54	 18	 456956	 770
+     [java] 458000	 24792765	 54	 18	 457955	 771
+     [java] 459000	 24844044	 54	 18	 458958	 770
+     [java] 460000	 24896725	 54	 18	 459959	 770
+     [java] 461000	 24949341	 54	 18	 460958	 770
+     [java] 462000	 25001253	 54	 18	 461956	 771
+     [java] 463000	 25052803	 54	 18	 462959	 771
+     [java] 464000	 25106329	 54	 18	 463956	 770
+     [java] 465000	 25159591	 54	 18	 464958	 771
+     [java] 466000	 25210773	 54	 18	 465957	 771
+     [java] 467000	 25265356	 54	 18	 466959	 771
+     [java] 468000	 25319799	 54	 18	 467963	 771
+     [java] 469000	 25372637	 54	 18	 468960	 771
+     [java] 470000	 25424511	 54	 18	 469958	 771
+     [java] 471000	 25477332	 54	 18	 470957	 772
+     [java] 472000	 25530506	 54	 18	 471956	 771
+     [java] 473000	 25584005	 54	 18	 472959	 771
+     [java] 474000	 25635603	 54	 18	 473958	 771
+     [java] 475000	 25688866	 54	 18	 474959	 772
+     [java] 476000	 25743003	 54	 18	 475958	 771
+     [java] 477000	 25796515	 54	 18	 476957	 771
+     [java] 478000	 25848956	 54	 18	 477957	 772
+     [java] 479000	 25903545	 54	 18	 478955	 772
+     [java] 480000	 25959158	 54	 18	 479955	 771
+     [java] 481000	 26013326	 54	 18	 480961	 772
+     [java] 482000	 26065750	 54	 18	 481959	 772
+     [java] 483000	 26121276	 54	 18	 482957	 772
+     [java] 484000	 26175472	 54	 18	 483955	 771
+     [java] 485000	 26229876	 54	 18	 484957	 772
+     [java] 486000	 26285067	 54	 18	 485958	 772
+     [java] 487000	 26342376	 54	 18	 486955	 773
+     [java] 488000	 26396184	 54	 18	 487956	 772
+     [java] 489000	 26450217	 54	 18	 488955	 772
+     [java] 490000	 26506075	 54	 18	 489961	 772
+     [java] 491000	 26562273	 54	 18	 490957	 772
+     [java] 492000	 26621602	 54	 18	 491960	 772
+     [java] 493000	 26683821	 54	 18	 492957	 772
+     [java] 494000	 26738987	 54	 18	 493956	 771
+     [java] 495000	 26801772	 54	 18	 494955	 772
+     [java] 496000	 26853732	 54	 18	 495957	 772
+     [java] 497000	 26905989	 54	 18	 496957	 771
+     [java] 498000	 26959098	 54	 18	 497957	 772
+     [java] 499000	 27011852	 54	 18	 498958	 772
+     [java] 500000	 27064267	 54	 18	 499958	 772
+     [java] 501000	 27117261	 54	 18	 500957	 771
+     [java] 502000	 27169823	 54	 18	 501956	 772
+     [java] 503000	 27221440	 54	 18	 502957	 772
+     [java] 504000	 27274496	 54	 18	 503957	 773
+     [java] 505000	 27326935	 54	 18	 504957	 773
+     [java] 506000	 27379765	 54	 18	 505959	 772
+     [java] 507000	 27431886	 54	 18	 506957	 772
+     [java] 508000	 27484758	 54	 18	 507959	 773
+     [java] 509000	 27537885	 54	 18	 508958	 773
+     [java] 510000	 27590078	 54	 18	 509959	 772
+     [java] 511000	 27641787	 54	 18	 510962	 773
+     [java] 512000	 27695611	 54	 18	 511958	 773
+     [java] 513000	 27749503	 54	 18	 512960	 773
+     [java] 514000	 27801708	 54	 18	 513960	 774
+     [java] 515000	 27854954	 54	 18	 514959	 773
+     [java] 516000	 27909576	 54	 18	 515957	 773
+     [java] 517000	 27963194	 54	 18	 516961	 773
+     [java] 518000	 28015056	 54	 18	 517959	 774
+     [java] 519000	 28067980	 54	 18	 518962	 773
+     [java] 520000	 28121691	 54	 18	 519954	 773
+     [java] 521000	 28174154	 54	 18	 520956	 774
+     [java] 522000	 28226325	 54	 18	 521957	 774
+     [java] 523000	 28280314	 54	 18	 522960	 773
+     [java] 524000	 28335553	 54	 18	 523957	 774
+     [java] 525000	 28388462	 54	 18	 524959	 774
+     [java] 526000	 28440731	 54	 18	 525958	 774
+     [java] 527000	 28495132	 54	 18	 526959	 773
+     [java] 528000	 28549111	 54	 18	 527959	 774
+     [java] 529000	 28601731	 54	 18	 528954	 774
+     [java] 530000	 28654359	 54	 18	 529954	 774
+     [java] 531000	 28708969	 54	 18	 530955	 774
+     [java] 532000	 28763663	 54	 18	 531957	 774
+     [java] 533000	 28818559	 54	 18	 532962	 774
+     [java] 534000	 28876260	 54	 18	 533961	 773
+     [java] 535000	 28932855	 54	 18	 534955	 774
+     [java] 536000	 28985854	 54	 18	 535963	 774
+     [java] 537000	 29038907	 54	 18	 536955	 774
+     [java] 538000	 29091056	 54	 18	 537955	 774
+     [java] 539000	 29143650	 54	 18	 538956	 774
+     [java] 540000	 29197670	 54	 18	 539958	 774
+     [java] 541000	 29257734	 54	 18	 540956	 773
+     [java] 542000	 29316147	 54	 18	 541956	 774
+     [java] 543000	 29370717	 54	 18	 542957	 774
+     [java] 544000	 29427216	 54	 18	 543959	 774
+     [java] 545000	 29478864	 54	 18	 544959	 774
+     [java] 546000	 29531004	 54	 18	 545958	 774
+     [java] 547000	 29582728	 54	 18	 546960	 774
+     [java] 548000	 29635689	 54	 18	 547956	 775
+     [java] 549000	 29693819	 54	 18	 548956	 774
+     [java] 550000	 29747215	 54	 18	 549957	 774
+     [java] 551000	 29799528	 54	 18	 550961	 774
+     [java] 552000	 29851308	 54	 18	 551959	 775
+     [java] 553000	 29904279	 54	 18	 552957	 774
+     [java] 554000	 29957915	 54	 18	 553963	 774
+     [java] 555000	 30010752	 54	 18	 554959	 775
+     [java] 556000	 30064572	 54	 18	 555958	 775
+     [java] 557000	 30118253	 54	 18	 556957	 774
+     [java] 558000	 30171262	 54	 18	 557958	 775
+     [java] 559000	 30225769	 54	 18	 558963	 775
+     [java] 560000	 30278770	 54	 18	 559955	 775
+     [java] 561000	 30332365	 54	 18	 560961	 774
+     [java] 562000	 30384657	 54	 18	 561958	 775
+     [java] 563000	 30437757	 54	 18	 562956	 775
+     [java] 564000	 30492862	 54	 18	 563955	 775
+     [java] 565000	 30545619	 54	 18	 564960	 775
+     [java] 566000	 30597599	 54	 18	 565957	 775
+     [java] 567000	 30650571	 54	 18	 566957	 775
+     [java] 568000	 30704703	 54	 18	 567961	 775
+     [java] 569000	 30757310	 54	 18	 568959	 775
+     [java] 570000	 30809508	 54	 18	 569959	 775
+     [java] 571000	 30864791	 54	 18	 570960	 775
+     [java] 572000	 30918330	 54	 18	 571960	 776
+     [java] 573000	 30971169	 54	 18	 572961	 775
+     [java] 574000	 31024362	 54	 18	 573958	 775
+     [java] 575000	 31079302	 54	 18	 574956	 775
+     [java] 576000	 31132879	 54	 18	 575956	 776
+     [java] 577000	 31185141	 54	 18	 576959	 775
+     [java] 578000	 31238709	 54	 18	 577956	 775
+     [java] 579000	 31293654	 54	 18	 578958	 776
+     [java] 580000	 31349106	 54	 18	 579960	 776
+     [java] 581000	 31404450	 54	 18	 580959	 775
+     [java] 582000	 31459197	 54	 18	 581958	 776
+     [java] 583000	 31512712	 54	 18	 582957	 776
+     [java] 584000	 31565671	 54	 18	 583959	 775
+     [java] 585000	 31619325	 54	 18	 584956	 775
+     [java] 586000	 31674463	 54	 18	 585961	 776
+     [java] 587000	 31728981	 54	 18	 586956	 776
+     [java] 588000	 31787854	 54	 18	 587955	 775
+     [java] 589000	 31845835	 54	 18	 588957	 776
+     [java] 590000	 31905400	 54	 18	 589956	 776
+     [java] 591000	 31962155	 54	 18	 590959	 775
+     [java] 592000	 32015337	 54	 18	 591961	 775
+     [java] 593000	 32068174	 54	 18	 592959	 776
+     [java] 594000	 32121089	 54	 18	 593959	 776
+     [java] 595000	 32175103	 54	 18	 594960	 775
+     [java] 596000	 32227991	 54	 18	 595958	 776
+     [java] 597000	 32280925	 54	 18	 596957	 776
+     [java] 598000	 32334948	 54	 18	 597958	 775
+     [java] 599000	 32387708	 54	 18	 598958	 775
+     [java] 600000	 32443881	 54	 18	 599956	 776
+     [java] 601000	 32511488	 54	 18	 600959	 775
+     [java] 602000	 32563882	 54	 18	 601960	 775
+     [java] 603000	 32616897	 54	 18	 602959	 776
+     [java] 604000	 32671438	 54	 18	 603957	 776
+     [java] 605000	 32724898	 54	 18	 604960	 775
+     [java] 606000	 32777073	 54	 18	 605957	 775
+     [java] 607000	 32829688	 54	 18	 606958	 776
+     [java] 608000	 32884676	 54	 18	 607958	 776
+     [java] 609000	 32937536	 54	 18	 608958	 775
+     [java] 610000	 32991848	 54	 18	 609958	 776
+     [java] 611000	 33045421	 54	 18	 610963	 776
+     [java] 612000	 33100268	 54	 18	 611958	 776
+     [java] 613000	 33152905	 54	 18	 612956	 775
+     [java] 614000	 33205171	 54	 18	 613956	 776
+     [java] 615000	 33258712	 54	 18	 614958	 776
+     [java] 616000	 33312426	 54	 18	 615958	 776
+     [java] 617000	 33365578	 54	 18	 616966	 776
+     [java] 618000	 33419685	 54	 18	 617958	 776
+     [java] 619000	 33474299	 54	 18	 618959	 776
+     [java] 620000	 33527880	 54	 18	 619958	 776
+     [java] 621000	 33581185	 54	 18	 620959	 776
+     [java] 622000	 33635957	 54	 18	 621959	 776
+     [java] 623000	 33690492	 54	 18	 622957	 776
+     [java] 624000	 33743892	 54	 18	 623958	 776
+     [java] 625000	 33796276	 54	 18	 624957	 776
+     [java] 626000	 33849911	 54	 18	 625962	 776
+     [java] 627000	 33907380	 54	 18	 626956	 776
+     [java] 628000	 33964192	 54	 18	 627956	 776
+     [java] 629000	 34020909	 54	 18	 628957	 776
+     [java] 630000	 34074887	 54	 18	 629956	 776
+     [java] 631000	 34128527	 54	 18	 630958	 776
+     [java] 632000	 34180866	 54	 18	 631955	 776
+     [java] 633000	 34234264	 54	 18	 632958	 776
+     [java] 634000	 34288453	 54	 18	 633957	 776
+     [java] 635000	 34350678	 54	 18	 634957	 776
+     [java] 636000	 34406009	 54	 18	 635960	 776
+     [java] 637000	 34467164	 54	 18	 636957	 775
+     [java] 638000	 34519876	 54	 18	 637957	 776
+     [java] 639000	 34573284	 54	 18	 638958	 776
+     [java] 640000	 34625666	 54	 18	 639954	 776
+     [java] 641000	 34678574	 54	 18	 640957	 776
+     [java] 642000	 34733968	 54	 18	 641960	 776
+     [java] 643000	 34787758	 54	 18	 642960	 776
+     [java] 644000	 34840141	 54	 18	 643961	 776
+     [java] 645000	 34893743	 54	 18	 644960	 776
+     [java] 646000	 34946045	 54	 18	 645962	 776
+     [java] 647000	 34999059	 54	 18	 646955	 776
+     [java] 648000	 35051888	 54	 18	 647956	 776
+     [java] 649000	 35105023	 54	 18	 648957	 776
+     [java] 650000	 35158768	 54	 18	 649957	 776
+     [java] 651000	 35211187	 54	 18	 650960	 776
+     [java] 652000	 35263737	 54	 18	 651957	 777
+     [java] 653000	 35317677	 54	 18	 652957	 776
+     [java] 654000	 35369959	 54	 18	 653959	 776
+     [java] 655000	 35422471	 54	 18	 654960	 776
+     [java] 656000	 35476148	 54	 18	 655961	 777
+     [java] 657000	 35530337	 54	 18	 656956	 776
+     [java] 658000	 35584001	 54	 18	 657957	 776
+     [java] 659000	 35640075	 54	 18	 658959	 777
+     [java] 660000	 35695835	 54	 18	 659958	 777
+     [java] 661000	 35749792	 54	 18	 660964	 776
+     [java] 662000	 35802635	 54	 18	 661959	 776
+     [java] 663000	 35857886	 54	 18	 662960	 777
+     [java] 664000	 35912055	 54	 18	 663959	 777
+     [java] 665000	 35965161	 54	 18	 664959	 776
+     [java] 666000	 36019326	 54	 18	 665958	 777
+     [java] 667000	 36074834	 54	 18	 666956	 777
+     [java] 668000	 36129352	 54	 18	 667958	 776
+     [java] 669000	 36182888	 54	 18	 668960	 777
+     [java] 670000	 36236729	 54	 18	 669958	 777
+     [java] 671000	 36294674	 54	 18	 670961	 777
+     [java] 672000	 36349200	 54	 18	 671960	 776
+     [java] 673000	 36402295	 54	 18	 672957	 777
+     [java] 674000	 36458122	 54	 18	 673958	 777
+     [java] 675000	 36514565	 54	 18	 674956	 776
+     [java] 676000	 36568764	 54	 18	 675959	 777
+     [java] 677000	 36622420	 54	 18	 676958	 777
+     [java] 678000	 36676770	 54	 18	 677958	 776
+     [java] 679000	 36731714	 54	 18	 678957	 776
+     [java] 680000	 36785285	 54	 18	 679958	 777
+     [java] 681000	 36839726	 54	 18	 680955	 777
+     [java] 682000	 36900425	 54	 18	 681959	 776
+     [java] 683000	 36959733	 54	 18	 682961	 777
+     [java] 684000	 37016069	 54	 18	 683958	 777
+     [java] 685000	 37073473	 54	 18	 684958	 776
+     [java] 686000	 37127038	 54	 18	 685960	 776
+     [java] 687000	 37180881	 54	 18	 686956	 777
+     [java] 688000	 37233821	 54	 18	 687956	 776
+     [java] 689000	 37289439	 54	 18	 688960	 776
+     [java] 690000	 37342974	 54	 18	 689958	 777
+     [java] 691000	 37395628	 54	 18	 690964	 777
+     [java] 692000	 37449264	 54	 18	 691957	 776
+     [java] 693000	 37503095	 54	 18	 692962	 776
+     [java] 694000	 37556461	 54	 18	 693961	 777
+     [java] 695000	 37609459	 54	 18	 694960	 777
+     [java] 696000	 37662912	 54	 18	 695954	 776
+     [java] 697000	 37719838	 54	 18	 696958	 777
+     [java] 698000	 37774375	 54	 18	 697957	 777
+     [java] 699000	 37827665	 54	 18	 698958	 776
+     [java] 700000	 37881709	 54	 18	 699958	 776
+     [java] 701000	 37936190	 54	 18	 700961	 777
+     [java] 702000	 37988921	 54	 18	 701957	 777
+     [java] 703000	 38043053	 54	 18	 702959	 776
+     [java] 704000	 38097755	 54	 18	 703956	 777
+     [java] 705000	 38153682	 54	 18	 704962	 777
+     [java] 706000	 38207014	 54	 18	 705955	 776
+     [java] 707000	 38261804	 54	 18	 706958	 776
+     [java] 708000	 38316875	 54	 18	 707959	 777
+     [java] 709000	 38372039	 54	 18	 708956	 777
+     [java] 710000	 38428190	 54	 18	 709960	 776
+     [java] 711000	 38484198	 54	 18	 710957	 777
+     [java] 712000	 38539412	 54	 18	 711958	 777
+     [java] 713000	 38593569	 54	 18	 712962	 776
+     [java] 714000	 38647777	 54	 18	 713957	 776
+     [java] 715000	 38709472	 54	 18	 714957	 777
+     [java] 716000	 38763800	 54	 18	 715962	 776
+     [java] 717000	 38816900	 54	 18	 716957	 776
+     [java] 718000	 38870840	 54	 18	 717956	 777
+     [java] 719000	 38926597	 54	 18	 718957	 777
+     [java] 720000	 38980925	 54	 18	 719957	 776
+     [java] 721000	 39035833	 54	 18	 720959	 776
+     [java] 722000	 39092209	 54	 18	 721959	 777
+     [java] 723000	 39147416	 54	 18	 722957	 776
+     [java] 724000	 39201185	 54	 18	 723964	 776
+     [java] 725000	 39254937	 54	 18	 724955	 777
+     [java] 726000	 39310996	 54	 18	 725957	 776
+     [java] 727000	 39365705	 54	 18	 726958	 776
+     [java] 728000	 39421179	 54	 18	 727955	 776
+     [java] 729000	 39487698	 54	 18	 728959	 776
+     [java] 730000	 39545152	 54	 18	 729954	 776
+     [java] 731000	 39601635	 54	 18	 730957	 776
+     [java] 732000	 39657748	 54	 18	 731956	 776
+     [java] 733000	 39711572	 54	 18	 732957	 776
+     [java] 734000	 39764933	 54	 18	 733959	 776
+     [java] 735000	 39820527	 54	 18	 734958	 776
+     [java] 736000	 39875137	 54	 18	 735960	 776
+     [java] 737000	 39929603	 54	 18	 736960	 776
+     [java] 738000	 39983837	 54	 18	 737957	 776
+     [java] 739000	 40037243	 54	 18	 738959	 776
+     [java] 740000	 40090281	 54	 18	 739959	 776
+     [java] 741000	 40144643	 54	 18	 740960	 776
+     [java] 742000	 40199096	 54	 18	 741963	 776
+     [java] 743000	 40253289	 54	 18	 742957	 776
+     [java] 744000	 40307517	 54	 18	 743958	 776
+     [java] 745000	 40363679	 54	 18	 744956	 776
+     [java] 746000	 40417276	 54	 18	 745957	 776
+     [java] 747000	 40472915	 54	 18	 746961	 776
+     [java] 748000	 40527048	 54	 18	 747955	 776
+     [java] 749000	 40580858	 54	 18	 748954	 776
+     [java] 750000	 40635053	 54	 18	 749962	 776
+     [java] 751000	 40690388	 54	 18	 750956	 776
+     [java] 752000	 40744662	 54	 18	 751956	 776
+     [java] 753000	 40798967	 54	 18	 752958	 776
+     [java] 754000	 40852977	 54	 18	 753957	 776
+     [java] 755000	 40908693	 54	 18	 754956	 776
+     [java] 756000	 40963604	 54	 18	 755960	 776
+     [java] 757000	 41016802	 54	 18	 756956	 776
+     [java] 758000	 41070442	 54	 18	 757956	 776
+     [java] 759000	 41125268	 54	 18	 758956	 776
+     [java] 760000	 41179535	 54	 18	 759961	 776
+     [java] 761000	 41232836	 54	 18	 760961	 776
+     [java] 762000	 41287150	 54	 18	 761958	 776
+     [java] 763000	 41342093	 54	 18	 762957	 776
+     [java] 764000	 41396283	 54	 18	 763961	 776
+     [java] 765000	 41449699	 54	 18	 764955	 776
+     [java] 766000	 41505593	 54	 18	 765957	 776
+     [java] 767000	 41564988	 54	 18	 766957	 776
+     [java] 768000	 41623359	 54	 18	 767963	 776
+     [java] 769000	 41679597	 54	 18	 768965	 775
+     [java] 770000	 41733442	 54	 18	 769955	 776
+     [java] 771000	 41788084	 54	 18	 770958	 776
+     [java] 772000	 41842184	 54	 18	 771957	 776
+     [java] 773000	 41896592	 54	 18	 772956	 776
+     [java] 774000	 41954821	 54	 18	 773957	 776
+     [java] 775000	 42012869	 54	 18	 774958	 776
+     [java] 776000	 42070933	 54	 18	 775954	 776
+     [java] 777000	 42126900	 54	 18	 776954	 776
+     [java] 778000	 42192267	 54	 18	 777963	 775
+     [java] 779000	 42246230	 54	 18	 778963	 775
+     [java] 780000	 42299715	 54	 18	 779962	 776
+     [java] 781000	 42353657	 54	 18	 780955	 776
+     [java] 782000	 42412721	 54	 18	 781955	 775
+     [java] 783000	 42469677	 54	 18	 782956	 776
+     [java] 784000	 42524330	 54	 18	 783957	 775
+     [java] 785000	 42578402	 54	 18	 784957	 775
+     [java] 786000	 42633066	 54	 18	 785958	 775
+     [java] 787000	 42686179	 54	 18	 786960	 776
+     [java] 788000	 42743431	 54	 18	 787961	 775
+     [java] 789000	 42799150	 54	 18	 788961	 775
+     [java] 790000	 42853853	 54	 18	 789964	 776
+     [java] 791000	 42907754	 54	 18	 790961	 775
+     [java] 792000	 42964394	 54	 18	 791960	 775
+     [java] 793000	 43021593	 54	 18	 792967	 775
+     [java] 794000	 43075314	 54	 18	 793967	 775
+     [java] 795000	 43129677	 54	 18	 794957	 775
+     [java] 796000	 43184642	 54	 18	 795957	 775
+     [java] 797000	 43240537	 54	 18	 796959	 775
+     [java] 798000	 43294159	 54	 18	 797959	 775
+     [java] 799000	 43347525	 54	 18	 798963	 775
+     [java] 800000	 43402421	 54	 18	 799961	 775
+     [java] 801000	 43456773	 54	 18	 800965	 775
+     [java] 802000	 43510116	 54	 18	 801963	 775
+     [java] 803000	 43564699	 54	 18	 802957	 775
+     [java] 804000	 43620884	 54	 18	 803969	 775
+     [java] 805000	 43674941	 54	 18	 804960	 775
+     [java] 806000	 43728712	 54	 18	 805958	 775
+     [java] 807000	 43784044	 54	 18	 806959	 775
+     [java] 808000	 43838662	 54	 18	 807963	 775
+     [java] 809000	 43892416	 54	 18	 808962	 775
+     [java] 810000	 43946891	 54	 18	 809956	 775
+     [java] 811000	 44002548	 54	 18	 810956	 775
+     [java] 812000	 44062528	 54	 18	 811960	 775
+     [java] 813000	 44118819	 54	 18	 812962	 775
+     [java] 814000	 44175772	 54	 18	 813958	 775
+     [java] 815000	 44231312	 54	 18	 814955	 775
+     [java] 816000	 44285292	 54	 18	 815968	 775
+     [java] 817000	 44339629	 54	 18	 816960	 775
+     [java] 818000	 44395844	 54	 18	 817959	 775
+     [java] 819000	 44452969	 54	 18	 818954	 775
+     [java] 820000	 44513014	 54	 18	 819960	 775
+     [java] 821000	 44571189	 54	 18	 820959	 775
+     [java] 822000	 44635040	 54	 18	 821955	 774
+     [java] 823000	 44692098	 54	 18	 822960	 774
+     [java] 824000	 44745452	 54	 18	 823956	 775
+     [java] 825000	 44800207	 54	 18	 824959	 774
+     [java] 826000	 44854939	 54	 18	 825966	 774
+     [java] 827000	 44912391	 54	 18	 826958	 775
+     [java] 828000	 44966408	 54	 18	 827958	 774
+     [java] 829000	 45021535	 54	 18	 828962	 774
+     [java] 830000	 45076625	 54	 18	 829960	 774
+     [java] 831000	 45129160	 54	 18	 830955	 774
+     [java] 832000	 45183289	 54	 18	 831959	 774
+     [java] 833000	 45238088	 54	 18	 832966	 774
+     [java] 834000	 45292311	 54	 18	 833961	 775
+     [java] 835000	 45345011	 54	 18	 834955	 774
+     [java] 836000	 45403804	 54	 18	 835957	 774
+     [java] 837000	 45458749	 54	 18	 836957	 775
+     [java] 838000	 45512819	 54	 18	 837955	 774
+     [java] 839000	 45566423	 54	 18	 838957	 774
+     [java] 840000	 45620713	 54	 18	 839962	 774
+     [java] 841000	 45674674	 54	 18	 840961	 774
+     [java] 842000	 45729633	 54	 18	 841959	 774
+     [java] 843000	 45783977	 54	 18	 842958	 774
+     [java] 844000	 45839950	 54	 18	 843964	 774
+     [java] 845000	 45895325	 54	 18	 844958	 774
+     [java] 846000	 45948839	 54	 18	 845964	 774
+     [java] 847000	 46002283	 54	 18	 846958	 774
+     [java] 848000	 46057045	 54	 18	 847958	 774
+     [java] 849000	 46112640	 54	 18	 848957	 774
+     [java] 850000	 46167118	 54	 18	 849958	 774
+     [java] 851000	 46221488	 54	 18	 850956	 774
+     [java] 852000	 46276525	 54	 18	 851960	 774
+     [java] 853000	 46330156	 54	 18	 852956	 774
+     [java] 854000	 46384894	 54	 18	 853966	 774
+     [java] 855000	 46440425	 54	 18	 854958	 774
+     [java] 856000	 46496230	 54	 18	 855959	 774
+     [java] 857000	 46551511	 54	 18	 856956	 774
+     [java] 858000	 46609105	 54	 18	 857960	 774
+     [java] 859000	 46668518	 54	 18	 858962	 774
+     [java] 860000	 46724732	 54	 18	 859956	 774
+     [java] 861000	 46778986	 54	 18	 860972	 774
+     [java] 862000	 46833724	 54	 18	 861956	 774
+     [java] 863000	 46890332	 54	 18	 862965	 773
+     [java] 864000	 46946005	 54	 18	 863964	 774
+     [java] 865000	 47003806	 54	 18	 864957	 774
+     [java] 866000	 47067686	 54	 18	 865957	 773
+     [java] 867000	 47129402	 54	 18	 866959	 774
+     [java] 868000	 47186511	 54	 18	 867958	 773
+     [java] 869000	 47240655	 54	 18	 868968	 773
+     [java] 870000	 47294692	 54	 18	 869958	 774
+     [java] 871000	 47348641	 54	 18	 870954	 773
+     [java] 872000	 47403212	 54	 18	 871967	 773
+     [java] 873000	 47456951	 54	 18	 872963	 773
+     [java] 874000	 47512010	 54	 18	 873960	 773
+     [java] 875000	 47566240	 54	 18	 874959	 773
+     [java] 876000	 47620464	 54	 18	 875966	 773
+     [java] 877000	 47675080	 54	 18	 876955	 774
+     [java] 878000	 47734291	 54	 18	 877962	 773
+     [java] 879000	 47788292	 54	 18	 878957	 773
+     [java] 880000	 47844477	 54	 18	 879964	 773
+     [java] 881000	 47898795	 54	 18	 880957	 773
+     [java] 882000	 47953370	 54	 18	 881958	 773
+     [java] 883000	 48008082	 54	 18	 882968	 773
+     [java] 884000	 48062625	 54	 18	 883961	 773
+     [java] 885000	 48117776	 54	 18	 884954	 773
+     [java] 886000	 48172514	 54	 18	 885956	 773
+     [java] 887000	 48229232	 54	 18	 886961	 773
+     [java] 888000	 48285479	 54	 18	 887960	 773
+     [java] 889000	 48341169	 54	 18	 888957	 773
+     [java] 890000	 48396259	 54	 18	 889959	 773
+     [java] 891000	 48450980	 54	 18	 890962	 773
+     [java] 892000	 48505978	 54	 18	 891960	 773
+     [java] 893000	 48560672	 54	 18	 892958	 773
+     [java] 894000	 48615317	 54	 18	 893958	 773
+     [java] 895000	 48670974	 54	 18	 894954	 773
+     [java] 896000	 48726342	 54	 18	 895968	 773
+     [java] 897000	 48781609	 54	 18	 896965	 773
+     [java] 898000	 48835902	 54	 18	 897958	 773
+     [java] 899000	 48891334	 54	 18	 898959	 773
+     [java] 900000	 48946993	 54	 18	 899964	 773
+     [java] 901000	 49001232	 54	 18	 900958	 773
+     [java] 902000	 49061535	 54	 18	 901956	 772
+     [java] 903000	 49121768	 54	 18	 902959	 773
+     [java] 904000	 49178340	 54	 18	 903956	 772
+     [java] 905000	 49234276	 54	 18	 904966	 772
+     [java] 906000	 49288748	 54	 18	 905959	 773
+     [java] 907000	 49343751	 54	 18	 906963	 772
+     [java] 908000	 49399632	 54	 18	 907963	 772
+     [java] 909000	 49456377	 54	 18	 908959	 772
+     [java] 910000	 49513512	 54	 18	 909955	 772
+     [java] 911000	 49577413	 54	 18	 910962	 772
+     [java] 912000	 49634781	 54	 18	 911960	 772
+     [java] 913000	 49695961	 54	 18	 912964	 772
+     [java] 914000	 49751283	 54	 18	 913961	 772
+     [java] 915000	 49806316	 54	 18	 914960	 772
+     [java] 916000	 49861304	 54	 18	 915960	 772
+     [java] 917000	 49916348	 54	 18	 916956	 772
+     [java] 918000	 49971159	 54	 18	 917961	 772
+     [java] 919000	 50026861	 54	 18	 918957	 772
+     [java] 920000	 50081601	 54	 18	 919966	 772
+     [java] 921000	 50138067	 54	 18	 920959	 772
+     [java] 922000	 50193602	 54	 18	 921970	 772
+     [java] 923000	 50249827	 54	 18	 922966	 772
+     [java] 924000	 50306552	 54	 18	 923960	 771
+     [java] 925000	 50362294	 54	 18	 924964	 772
+     [java] 926000	 50417218	 54	 18	 925960	 772
+     [java] 927000	 50472901	 54	 18	 926957	 771
+     [java] 928000	 50529177	 54	 18	 927961	 772
+     [java] 929000	 50585433	 54	 18	 928962	 772
+     [java] 930000	 50640624	 54	 18	 929958	 771
+     [java] 931000	 50697083	 54	 18	 930956	 771
+     [java] 932000	 50753453	 54	 18	 931957	 771
+     [java] 933000	 50809380	 54	 18	 932965	 771
+     [java] 934000	 50865004	 54	 18	 933962	 771
+     [java] 935000	 50920572	 54	 18	 934966	 771
+     [java] 936000	 50980424	 54	 18	 935960	 771
+     [java] 937000	 51035535	 54	 18	 936963	 771
+     [java] 938000	 51091175	 54	 18	 937961	 771
+     [java] 939000	 51147142	 54	 18	 938962	 771
+     [java] 940000	 51202651	 54	 18	 939960	 771
+     [java] 941000	 51258745	 54	 18	 940960	 771
+     [java] 942000	 51315497	 54	 18	 941970	 771
+     [java] 943000	 51372313	 54	 18	 942968	 771
+     [java] 944000	 51428514	 54	 18	 943963	 771
+     [java] 945000	 51483804	 54	 18	 944956	 771
+     [java] 946000	 51541951	 54	 18	 945958	 771
+     [java] 947000	 51599462	 54	 18	 946957	 771
+     [java] 948000	 51656392	 54	 18	 947960	 771
+     [java] 949000	 51713221	 54	 18	 948964	 770
+     [java] 950000	 51768347	 54	 18	 949966	 771
+     [java] 951000	 51825994	 54	 18	 950960	 771
+     [java] 952000	 51880167	 54	 18	 951965	 770
+     [java] 953000	 51937072	 54	 18	 952961	 771
+     [java] 954000	 51993999	 54	 18	 953960	 771
+     [java] 955000	 52064411	 54	 18	 954955	 770
+     [java] 956000	 52122449	 54	 18	 955954	 770
+     [java] 957000	 52182125	 54	 18	 956956	 770
+     [java] 958000	 52239122	 54	 18	 957957	 770
+     [java] 959000	 52294183	 54	 18	 958958	 770
+     [java] 960000	 52348973	 54	 18	 959956	 770
+     [java] 961000	 52404074	 54	 18	 960958	 770
+     [java] 962000	 52459868	 54	 18	 961963	 770
+     [java] 963000	 52515804	 54	 18	 962961	 770
+     [java] 964000	 52570862	 54	 18	 963957	 770
+     [java] 965000	 52626884	 54	 18	 964978	 770
+     [java] 966000	 52682362	 54	 18	 965962	 770
+     [java] 967000	 52736943	 54	 18	 966963	 770
+     [java] 968000	 52793510	 54	 18	 967956	 770
+     [java] 969000	 52849009	 54	 18	 968966	 770
+     [java] 970000	 52906690	 54	 18	 969961	 770
+     [java] 971000	 52961792	 54	 18	 970955	 770
+     [java] 972000	 53017052	 54	 18	 971956	 770
+     [java] 973000	 53073215	 54	 18	 972957	 769
+     [java] 974000	 53130002	 54	 18	 973960	 769
+     [java] 975000	 53187891	 54	 18	 974964	 770
+     [java] 976000	 53245513	 54	 18	 975961	 769
+     [java] 977000	 53303463	 54	 18	 976958	 769
+     [java] 978000	 53360632	 54	 18	 977960	 769
+     [java] 979000	 53418616	 54	 18	 978959	 769
+     [java] 980000	 53476694	 54	 18	 979962	 769
+     [java] 981000	 53533078	 54	 18	 980959	 769
+     [java] 982000	 53589884	 54	 18	 981956	 769
+     [java] 983000	 53647092	 54	 18	 982960	 769
+     [java] 984000	 53702916	 54	 18	 983965	 769
+     [java] 985000	 53758474	 54	 18	 984956	 769
+     [java] 986000	 53813733	 54	 18	 985970	 769
+     [java] 987000	 53869268	 54	 18	 986957	 769
+     [java] 988000	 53925387	 54	 18	 987962	 769
+     [java] 989000	 53980483	 54	 18	 988967	 769
+     [java] 990000	 54037883	 54	 18	 989955	 769
+     [java] 991000	 54096610	 54	 18	 990965	 769
+     [java] 992000	 54157950	 54	 18	 991964	 768
+     [java] 993000	 54216800	 54	 18	 992963	 769
+     [java] 994000	 54272821	 54	 18	 993958	 768
+     [java] 995000	 54331147	 54	 18	 994956	 768
+     [java] 996000	 54387168	 54	 18	 995966	 769
+     [java] 997000	 54444927	 54	 18	 996962	 768
+     [java] 998000	 54500153	 54	 18	 997961	 768
+     [java] 999000	 54564728	 54	 18	 998965	 768
+     [java] 1000000	 54621659	 54	 18	 999963	 768
+     [java] 1001000	 54683247	 54	 18	 1000957	 768
+     [java] 1002000	 54740818	 54	 18	 1001965	 768
+     [java] 1003000	 54796072	 54	 18	 1002959	 768
+     [java] 1004000	 54851494	 54	 18	 1003967	 768
+     [java] 1005000	 54906090	 54	 18	 1004958	 768
+     [java] 1006000	 54963030	 54	 18	 1005956	 768
+     [java] 1007000	 55022087	 54	 18	 1006957	 768
+     [java] 1008000	 55077143	 54	 18	 1007960	 768
+     [java] 1009000	 55132039	 54	 18	 1008964	 767
+     [java] 1010000	 55187654	 54	 18	 1009967	 768
+     [java] 1011000	 55243497	 54	 18	 1010957	 768
+     [java] 1012000	 55298673	 54	 18	 1011965	 767
+     [java] 1013000	 55356058	 54	 18	 1012970	 768
+     [java] 1014000	 55413388	 54	 18	 1013968	 767
+     [java] 1015000	 55469441	 54	 18	 1014955	 767
+     [java] 1016000	 55524735	 54	 18	 1015971	 767
+     [java] 1017000	 55578876	 54	 18	 1016969	 767
+     [java] 1018000	 55633960	 54	 18	 1017957	 767
+     [java] 1019000	 55689789	 54	 18	 1018955	 767
+     [java] 1020000	 55746461	 54	 18	 1019956	 767
+     [java] 1021000	 55801712	 54	 18	 1020972	 767
+     [java] 1022000	 55856720	 54	 18	 1021962	 767
+     [java] 1023000	 55911870	 54	 18	 1022963	 767
+     [java] 1024000	 55968200	 54	 18	 1023966	 767
+     [java] 1025000	 56023241	 54	 18	 1024957	 767
+     [java] 1026000	 56079142	 54	 18	 1025961	 767
+     [java] 1027000	 56133591	 54	 18	 1026970	 767
+     [java] 1028000	 56187438	 54	 18	 1027958	 767
+     [java] 1029000	 56244322	 54	 18	 1028975	 767
+     [java] 1030000	 56298833	 54	 18	 1029969	 767
+     [java] 1031000	 56353857	 54	 18	 1030961	 767
+     [java] 1032000	 56409170	 54	 18	 1031959	 767
+     [java] 1033000	 56464506	 54	 18	 1032963	 767
+     [java] 1034000	 56519752	 54	 18	 1033957	 767
+     [java] 1035000	 56578226	 54	 18	 1034960	 767
+     [java] 1036000	 56634388	 54	 18	 1035960	 766
+     [java] 1037000	 56690799	 54	 18	 1036959	 767
+     [java] 1038000	 56745090	 54	 18	 1037959	 767
+     [java] 1039000	 56800964	 54	 18	 1038959	 766
+     [java] 1040000	 56857654	 54	 18	 1039957	 766
+     [java] 1041000	 56917204	 54	 18	 1040959	 766
+     [java] 1042000	 56980077	 54	 18	 1041965	 766
+     [java] 1043000	 57042899	 54	 18	 1042956	 766
+     [java] 1044000	 57100133	 54	 18	 1043958	 766
+     [java] 1045000	 57155740	 54	 18	 1044957	 766
+     [java] 1046000	 57210581	 54	 18	 1045961	 766
+     [java] 1047000	 57266202	 54	 18	 1046963	 766
+     [java] 1048000	 57321899	 54	 18	 1047962	 766
+     [java] 1049000	 57377582	 54	 18	 1048962	 766
+     [java] 1050000	 57433766	 54	 18	 1049964	 766
+     [java] 1051000	 57489492	 54	 18	 1050957	 766
+     [java] 1052000	 57544838	 54	 18	 1051968	 766
+     [java] 1053000	 57601610	 54	 18	 1052964	 766
+     [java] 1054000	 57658934	 54	 18	 1053955	 765
+     [java] 1055000	 57714407	 54	 18	 1054962	 766
+     [java] 1056000	 57770614	 54	 18	 1055970	 766
+     [java] 1057000	 57825617	 54	 18	 1056965	 765
+     [java] 1058000	 57880980	 54	 18	 1057961	 766
+     [java] 1059000	 57935949	 54	 18	 1058960	 765
+     [java] 1060000	 57990808	 54	 18	 1059959	 765
+     [java] 1061000	 58046397	 54	 18	 1060959	 766
+     [java] 1062000	 58102466	 54	 18	 1061958	 765
+     [java] 1063000	 58156966	 54	 18	 1062957	 765
+     [java] 1064000	 58212012	 54	 18	 1063957	 766
+     [java] 1065000	 58267682	 54	 18	 1064960	 765
+     [java] 1066000	 58323504	 54	 18	 1065966	 765
+     [java] 1067000	 58381193	 54	 18	 1066964	 765
+     [java] 1068000	 58436284	 54	 18	 1067958	 765
+     [java] 1069000	 58492526	 54	 18	 1068967	 765
+     [java] 1070000	 58547917	 54	 18	 1069966	 765
+     [java] 1071000	 58602935	 54	 18	 1070959	 765
+     [java] 1072000	 58659416	 54	 18	 1071958	 765
+     [java] 1073000	 58715352	 54	 18	 1072956	 765
+     [java] 1074000	 58771778	 54	 18	 1073962	 765
+     [java] 1075000	 58826900	 54	 18	 1074958	 765
+     [java] 1076000	 58883924	 54	 18	 1075956	 765
+     [java] 1077000	 58943019	 54	 18	 1076958	 765
+     [java] 1078000	 59000116	 54	 18	 1077962	 765
+     [java] 1079000	 59058715	 54	 18	 1078970	 765
+     [java] 1080000	 59114196	 54	 18	 1079962	 764
+     [java] 1081000	 59169428	 54	 18	 1080970	 765
+     [java] 1082000	 59224117	 54	 18	 1081965	 765
+     [java] 1083000	 59280135	 54	 18	 1082962	 764
+     [java] 1084000	 59337008	 54	 18	 1083965	 764
+     [java] 1085000	 59401318	 54	 18	 1084959	 764
+     [java] 1086000	 59459131	 54	 18	 1085957	 764
+     [java] 1087000	 59520563	 54	 18	 1086962	 764
+     [java] 1088000	 59575261	 54	 18	 1087958	 764
+     [java] 1089000	 59630073	 54	 18	 1088964	 764
+     [java] 1090000	 59685339	 54	 18	 1089964	 764
+     [java] 1091000	 59741241	 54	 18	 1090970	 764
+     [java] 1092000	 59796152	 54	 18	 1091957	 764
+     [java] 1093000	 59850393	 54	 18	 1092958	 764
+     [java] 1094000	 59904966	 54	 18	 1093958	 764
+     [java] 1095000	 59960444	 54	 18	 1094963	 764
+     [java] 1096000	 60014625	 54	 18	 1095958	 764
+     [java] 1097000	 60068677	 54	 18	 1096955	 764
+     [java] 1098000	 60126158	 54	 18	 1097965	 764
+     [java] 1099000	 60181810	 54	 18	 1098963	 764
+     [java] 1100000	 60236415	 54	 18	 1099967	 763
+     [java] 1101000	 60292563	 54	 18	 1100958	 764
+     [java] 1102000	 60349137	 54	 18	 1101966	 764
+     [java] 1103000	 60404834	 54	 18	 1102957	 763
+     [java] 1104000	 60459371	 54	 18	 1103956	 764
+     [java] 1105000	 60516046	 54	 18	 1104960	 763
+     [java] 1106000	 60571482	 54	 18	 1105959	 763
+     [java] 1107000	 60626261	 54	 18	 1106961	 763
+     [java] 1108000	 60681732	 54	 18	 1107957	 763
+     [java] 1109000	 60739930	 54	 18	 1108967	 763
+     [java] 1110000	 60815070	 54	 18	 1109956	 763
+     [java] 1111000	 61406839	 55	 18	 1110955	 757
+     [java] 1112000	 63038855	 56	 17	 1111956	 739
+     [java] 1113000	 63635919	 57	 17	 1112954	 734
+     [java] 1114000	 64243006	 57	 17	 1113959	 728
+     [java] 1115000	 64952597	 58	 17	 1114955	 721
+     [java] 1116000	 65544813	 58	 17	 1115958	 716
+     [java] 1117000	 66203697	 59	 16	 1116955	 710
+     [java] 1118000	 66885325	 59	 16	 1117958	 704
+     [java] 1119000	 67438897	 60	 16	 1118955	 699
+     [java] 1120000	 68031713	 60	 16	 1119954	 694
+     [java] 1121000	 68619803	 61	 16	 1120955	 689
+     [java] 1122000	 69178824	 61	 16	 1121954	 684
+     [java] 1123000	 69761737	 62	 16	 1122954	 680
+     [java] 1124000	 70295180	 62	 15	 1123954	 676
+     [java] 1125000	 70841402	 62	 15	 1124957	 672
+     [java] 1126000	 71442945	 63	 15	 1125954	 667
+     [java] 1127000	 71986475	 63	 15	 1126958	 663
+     [java] 1128000	 72579932	 64	 15	 1127954	 658
+     [java] 1129000	 73219017	 64	 15	 1128954	 654
+     [java] 1130000	 73773131	 65	 15	 1129954	 649
+     [java] 1131000	 74357796	 65	 15	 1130956	 645
+     [java] 1132000	 74942921	 66	 15	 1131955	 641
+     [java] 1133000	 75706614	 66	 14	 1132956	 634
+     [java] 1133856	 76546100	 67	 14	 1133811	 629
+     [java] Message server shutdown
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 2 seconds
