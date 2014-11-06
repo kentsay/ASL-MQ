@@ -1,0 +1,1 @@
+MsgType:SEND, MsgFunc:SEND_TOALL, MsgSender:send1, MsgQueue:queue11, MsgReceiver:all, MsgDetail: Remember
