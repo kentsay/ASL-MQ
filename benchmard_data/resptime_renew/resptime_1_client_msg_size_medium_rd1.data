@@ -1,0 +1,16 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+    [javac] Compiling 1 source file to /home/ec2-user/ASL-MQ/bin
+
+jar:
+      [jar] Building jar: /home/ec2-user/ASL-MQ/ASL-MQ.jar
+
+send:
+     [java] Exception in thread "main" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.client.MsgClient.setMessage(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.client.MsgClient.execute(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.client.MsgClient.main(Unknown Source)
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
