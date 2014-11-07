@@ -1,0 +1,3328 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  Connection reset
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] IOException:  連線被拒絕
+
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] ########## Client Send Report ##########     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕     [java] ########## Client Send Report ##########
+
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32782	 109961	 3	 300	 32783	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32782	 1674152	 51	 19	 32783	 18
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] IOException:  連線被拒絕
+     [java] 32753	 109359	 3	 300	 32754	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] IOException:  連線被拒絕
+     [java] 32753	 109955	 3	 300	 32754	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32784	 109416	 3	 300	 32785	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32756	 109128	 3	 300	 32757	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput     [java] 32783	 109614	 3	 300	 32784	 18
+
+     [java] ########## Client Receive Report ##########
+     [java] 32769	 109837	 3	 300	 32770	 18
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32765	 108890	 3	 303	 32766	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32790	 110785	 3	 298	 32791	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32811	 109197	 3	 301	 32812	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32740	 110415	 3	 297	 32741	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32751	 110530	 3	 297	 32752	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32751	 1673328	 51	 19	 32752	 18
+     [java] 32798	 110032	 3	 298	 32799	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32780	 109145	 3	 300	 32781	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32775	 109860	 3	 300	 32776	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32775	 1674011	 51	 19	 32776	 18
+     [java] 32753	 1674393	 51	 19	 32754	 18
+     [java] 32760	 110229	 3	 297	 32761	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32761	 109114	 3	 300	 32762	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32786	 108880	 3	 303	 32787	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32774	 109297	 3	 300	 32775	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32774	 1674591	 51	 19	 32775	 18
+     [java] 32743	 108822	 3	 303	 32744	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32828	 109825	 3	 301	 32829	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32828	 1674258	 51	 19	 32829	 18
+     [java] 32746	 111139	 3	 295	 32747	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32800	 109924	 3	 300	 32801	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32762	 110063	 3	 297	 32763	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32762	 1673835	 51	 19	 32763	 18
+     [java] 32763	 108482	 3	 303	 32764	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32763	 1675297	 51	 19	 32764	 18
+     [java] 32813	 108408	 3	 303	 32814	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32793	 108610	 3	 303	 32794	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32760	 1673846	 51	 19	 32761	 18
+     [java] 32761	 1674931	 51	 19	 32762	 18
+     [java] 32786	 1675318	 51	 19	 32787	 18
+     [java] 32798	 108859	 3	 303	 32799	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32798	 1674659	 51	 19	 32799	 18
+     [java] 32738	 110337	 3	 297	 32739	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32753	 1674224	 51	 19	 32754	 18
+     [java] 32784	 1674554	 51	 19	 32785	 18
+     [java] 32756	 1675119	 51	 19	 32757	 18
+     [java] 32783	 1674126	 51	 19	 32784	 18
+     [java] 32765	 1674820	 51	 19	 32766	 18
+     [java] 32752	 110355	 3	 297	 32753	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 32790	 1673419	 51	 19	 32791	 18
+     [java] 32746	 1672964	 51	 19	 32747	 18
+     [java] 32800	 1673821	 51	 19	 32801	 18
+     [java] 32811	 1674423	 51	 19	 32812	 18
+     [java] 32740	 1673464	 51	 19	 32741	 18
+     [java] 32798	 1673362	 51	 19	 32799	 18
+     [java] 32780	 1674993	 51	 19	 32781	 18
+     [java] 32738	 1673281	 51	 19	 32739	 18
+     [java] 32743	 1675361	 51	 19	 32744	 18
+     [java] 32769	 1674086	 51	 19	 32770	 18
+     [java] 32813	 1675426	 51	 19	 32814	 18
+     [java] 32793	 1675247	 51	 19	 32794	 18
+     [java] 32752	 1673612	 51	 19	 32753	 18
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 13 seconds
