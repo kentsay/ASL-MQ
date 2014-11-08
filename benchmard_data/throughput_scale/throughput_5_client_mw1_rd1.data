@@ -1,0 +1,288 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+jar:
+
+run:
+     [java] Message server running
+     [java] ########## Middleware Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] Nov 08, 2014 10:06:42 AM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: Get connection error:2 ms.
+     [java] Nov 08, 2014 10:06:42 AM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: Retry Count: 0
+     [java] Exception in thread "pool-1-thread-1" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue12')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue12) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue12')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue12) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue13')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue13) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue14')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue14) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue14')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue14) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue14')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue14) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue15')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue15) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue16')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue16) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] 1000	 48185	 48	 20	 995	 83
+     [java] 2000	 95456	 47	 21	 1996	 86
+     [java] 3000	 142685	 47	 21	 2995	 90
+     [java] 4000	 189905	 47	 21	 3995	 93
+     [java] 5000	 236322	 47	 21	 4995	 94
+     [java] 6000	 282765	 47	 21	 5995	 95
+     [java] 7000	 329869	 47	 21	 6995	 95
+     [java] 8000	 376603	 47	 21	 7995	 96
+     [java] 9000	 423454	 47	 21	 8996	 96
+     [java] 10000	 470989	 47	 21	 9995	 97
+     [java] 11000	 518021	 47	 21	 10995	 97
+     [java] 12000	 565059	 47	 21	 11996	 97
+     [java] 13000	 612510	 47	 21	 12995	 97
+     [java] 14000	 659419	 47	 21	 13995	 97
+     [java] 15000	 706670	 47	 21	 14995	 98
+     [java] 16000	 754333	 47	 21	 15995	 98
+     [java] 17000	 802177	 47	 21	 16996	 98
+     [java] 18000	 850112	 47	 21	 17995	 98
+     [java] 19000	 898636	 47	 21	 18995	 97
+     [java] 20000	 947455	 47	 21	 19996	 98
+     [java] 21000	 996128	 47	 21	 20995	 98
+     [java] 22000	 1045233	 47	 21	 21995	 97
+     [java] 23000	 1093961	 47	 21	 22995	 97
+     [java] 24000	 1142821	 47	 21	 23995	 97
+     [java] 25000	 1192064	 47	 20	 24996	 97
+     [java] 26000	 1242115	 47	 20	 25996	 97
+     [java] 27000	 1291878	 47	 20	 26995	 97
+     [java] 28000	 1341203	 47	 20	 27995	 97
+     [java] 29000	 1390289	 47	 20	 28995	 97
+     [java] 30000	 1439593	 47	 20	 29995	 97
+     [java] 31000	 1490076	 48	 20	 30995	 97
+     [java] 32000	 1541429	 48	 20	 31995	 96
+     [java] 33000	 1593227	 48	 20	 32995	 96
+     [java] 34000	 1644440	 48	 20	 33995	 96
+     [java] 35000	 1695504	 48	 20	 34995	 96
+     [java] 36000	 1747478	 48	 20	 35995	 96
+     [java] 37000	 1796630	 48	 20	 36995	 96
+     [java] 38000	 1846768	 48	 20	 37995	 96
+     [java] 39000	 1896781	 48	 20	 38995	 96
+     [java] 40000	 1947713	 48	 20	 39995	 96
+     [java] 41000	 2000351	 48	 20	 40995	 96
+     [java] 42000	 2056050	 48	 20	 41997	 95
+     [java] 43000	 2108953	 49	 20	 42996	 95
+     [java] 44000	 2161938	 49	 20	 43995	 95
+     [java] 45000	 2214168	 49	 20	 44995	 95
+     [java] 46000	 2266258	 49	 20	 45995	 95
+     [java] 47000	 2325169	 49	 20	 46995	 94
+     [java] 48000	 2392573	 49	 20	 47996	 94
+     [java] 49000	 2453287	 50	 19	 48997	 93
+     [java] 50000	 2514245	 50	 19	 49996	 93
+     [java] 51000	 2575645	 50	 19	 50995	 93
+     [java] 52000	 2643474	 50	 19	 51995	 92
+     [java] 53000	 2708896	 51	 19	 52995	 92
+     [java] 54000	 2771400	 51	 19	 53995	 91
+     [java] 55000	 2835581	 51	 19	 54995	 91
+     [java] 56000	 2905392	 51	 19	 55995	 90
+     [java] 57000	 2969935	 52	 19	 56995	 90
+     [java] 58000	 3036985	 52	 19	 57995	 89
+     [java] 59000	 3105006	 52	 19	 58996	 89
+     [java] 60000	 3175159	 52	 18	 59995	 89
+     [java] 61000	 3246838	 53	 18	 60995	 88
+     [java] 62000	 3325135	 53	 18	 61995	 87
+     [java] 63000	 3395154	 53	 18	 62996	 87
+     [java] 64000	 3471950	 54	 18	 63996	 86
+     [java] 65000	 3542418	 54	 18	 64995	 86
+     [java] 66000	 3613006	 54	 18	 65995	 86
+     [java] 67000	 3682654	 54	 18	 66995	 85
+     [java] 68000	 3757396	 55	 18	 67995	 85
+     [java] 69000	 3833440	 55	 18	 68995	 85
+     [java] 70000	 3909167	 55	 17	 69996	 84
+     [java] 71000	 3982880	 56	 17	 70996	 84
+     [java] 72000	 4061988	 56	 17	 71995	 83
+     [java] 73000	 4140301	 56	 17	 72995	 83
+     [java] 74000	 4220875	 57	 17	 73995	 82
+     [java] 75000	 4304063	 57	 17	 74995	 82
+     [java] 76000	 4391370	 57	 17	 75995	 81
+     [java] 77000	 4476632	 58	 17	 76996	 81
+     [java] 78000	 4563648	 58	 17	 77995	 80
+     [java] 79000	 4653049	 58	 16	 78995	 80
+     [java] 80000	 4736268	 59	 16	 79995	 80
+     [java] 81000	 4825122	 59	 16	 80995	 79
+     [java] 82000	 4916167	 59	 16	 81995	 79
+     [java] 83000	 5004228	 60	 16	 82995	 78
+     [java] 84000	 5095272	 60	 16	 83995	 78
+     [java] 85000	 5193496	 61	 16	 84995	 77
+     [java] 86000	 5287098	 61	 16	 85995	 77
+     [java] 87000	 5378060	 61	 16	 86996	 76
+     [java] 88000	 5472492	 62	 16	 87995	 76
+     [java] 89000	 5578094	 62	 15	 88995	 75
+     [java] 90000	 5675902	 63	 15	 89995	 75
+     [java] 91000	 5776954	 63	 15	 90996	 74
+     [java] 92000	 5875716	 63	 15	 91995	 74
+     [java] 93000	 5974818	 64	 15	 92996	 74
+     [java] 94000	 6080737	 64	 15	 93996	 73
+     [java] 95000	 6181636	 65	 15	 94995	 73
+     [java] 96000	 6283420	 65	 15	 95995	 72
+     [java] 97000	 6394160	 65	 15	 96995	 72
+     [java] 98000	 6500380	 66	 15	 97995	 71
+     [java] 99000	 6608144	 66	 14	 98995	 71
+     [java] 100000	 6726149	 67	 14	 99996	 70
+     [java] 101000	 6831514	 67	 14	 100995	 70
+     [java] 102000	 6942246	 68	 14	 101995	 70
+     [java] 103000	 7055946	 68	 14	 102995	 69
+     [java] 104000	 7167881	 68	 14	 103995	 69
+     [java] 105000	 7281838	 69	 14	 104995	 68
+     [java] 106000	 7392773	 69	 14	 105996	 68
+     [java] 107000	 7512952	 70	 14	 106996	 68
+     [java] 108000	 7631762	 70	 14	 107995	 67
+     [java] 109000	 7747512	 71	 14	 108995	 67
+     [java] 110000	 7869613	 71	 13	 109995	 66
+     [java] 111000	 7987033	 71	 13	 110996	 66
+     [java] 112000	 8106269	 72	 13	 111995	 66
+     [java] 113000	 8232605	 72	 13	 112995	 65
+     [java] 114000	 8350539	 73	 13	 113997	 65
+     [java] 115000	 8470484	 73	 13	 114995	 65
+     [java] 116000	 8584263	 74	 13	 115996	 64
+     [java] 116386	 8624763	 74	 13	 116381	 64
+     [java] Message server shutdown
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 1 second
