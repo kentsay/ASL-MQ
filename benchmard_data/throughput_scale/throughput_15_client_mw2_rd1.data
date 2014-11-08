@@ -1,0 +1,201 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+jar:
+
+run:
+     [java] Message server running
+     [java] ########## Middleware Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 十一月 08, 2014 11:19:53 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Get connection error:0 ms.
+     [java] 十一月 08, 2014 11:19:53 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Get connection error:0 ms.
+     [java] 十一月 08, 2014 11:19:53 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Get connection error:0 ms.
+     [java] 十一月 08, 2014 11:19:53 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Retry Count: 0
+     [java] 十一月 08, 2014 11:19:53 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Get connection error:0 ms.
+     [java] Exception in thread "pool-1-thread-5" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] 十一月 08, 2014 11:19:53 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Get connection error:0 ms.
+     [java] 十一月 08, 2014 11:19:53 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Retry Count: 0
+     [java] 十一月 08, 2014 11:19:53 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Retry Count: 0
+     [java] 十一月 08, 2014 11:19:53 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Retry Count: 0
+     [java] 十一月 08, 2014 11:19:53 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] 資訊: Retry Count: 0
+     [java] Exception in thread "pool-1-thread-7" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] Exception in thread "pool-1-thread-4" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] Exception in thread "pool-1-thread-3" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] Exception in thread "pool-1-thread-2" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] 1000	 53363	 53	 18	 981	 100
+     [java] 2000	 103144	 51	 19	 1981	 142
+     [java] 3000	 153782	 51	 19	 2982	 176
+     [java] 4000	 204560	 51	 19	 3982	 190
+     [java] 5000	 255358	 51	 19	 4981	 200
+     [java] 6000	 314683	 52	 19	 5981	 206
+     [java] 7000	 368180	 52	 19	 6981	 212
+     [java] 8000	 423882	 52	 18	 7985	 216
+     [java] 9000	 479921	 53	 18	 8981	 225
+     [java] 10000	 533634	 53	 18	 9984	 227
+     [java] 11000	 587939	 53	 18	 10984	 229
+     [java] 12000	 649021	 54	 18	 11981	 230
+     [java] 13000	 706106	 54	 18	 12983	 232
+     [java] 14000	 768364	 54	 18	 13981	 229
+     [java] 15000	 829770	 55	 18	 14981	 230
+     [java] 16000	 892862	 55	 17	 15981	 231
+     [java] 17000	 950020	 55	 17	 16981	 232
+     [java] 18000	 1009028	 56	 17	 17981	 230
+     [java] 19000	 1069816	 56	 17	 18981	 231
+     [java] 20000	 1135600	 56	 17	 19982	 232
+     [java] 21000	 1203648	 57	 17	 20981	 230
+     [java] 22000	 1268767	 57	 17	 21982	 229
+     [java] 23000	 1336511	 58	 17	 22983	 230
+     [java] 24000	 1405682	 58	 17	 23982	 228
+     [java] 25000	 1485630	 59	 16	 24981	 225
+     [java] 26000	 1564470	 60	 16	 25981	 224
+     [java] 27000	 1639824	 60	 16	 26981	 223
+     [java] 28000	 1721874	 61	 16	 27983	 220
+     [java] 29000	 1805641	 62	 16	 28982	 218
+     [java] 30000	 1902451	 63	 15	 29983	 214
+     [java] 31000	 1985297	 64	 15	 30982	 213
+     [java] 32000	 2070161	 64	 15	 31983	 211
+     [java] 33000	 2156448	 65	 15	 32982	 210
+     [java] 34000	 2256038	 66	 15	 33981	 207
+     [java] 35000	 2358842	 67	 14	 34984	 204
+     [java] 36000	 2453187	 68	 14	 35982	 203
+     [java] 37000	 2619763	 70	 14	 36982	 195
+     [java] 38000	 2762260	 72	 13	 37981	 191
+     [java] 39000	 2952960	 75	 13	 38981	 184
+     [java] 40000	 3102179	 77	 12	 39982	 180
+     [java] 41000	 3284677	 80	 12	 40981	 175
+     [java] 42000	 3473756	 82	 12	 41981	 170
+     [java] 43000	 3635215	 84	 11	 42981	 166
+     [java] 44000	 3843754	 87	 11	 43981	 161
+     [java] 45000	 3988266	 88	 11	 44981	 159
+     [java] 46000	 4207049	 91	 10	 45981	 155
+     [java] 47000	 4361404	 92	 10	 46981	 153
+     [java] 48000	 4581806	 95	 10	 47981	 149
+     [java] 49000	 4736651	 96	 10	 48982	 147
+     [java] 50000	 4977231	 99	 10	 49981	 143
+     [java] 51000	 5141523	 100	 9	 50981	 141
+     [java] 52000	 5383246	 103	 9	 51982	 138
+     [java] 53000	 5587339	 105	 9	 52981	 135
+     [java] 54000	 5827382	 107	 9	 53981	 133
+     [java] 55000	 6044171	 109	 9	 54981	 130
+     [java] 56000	 6256604	 111	 8	 55981	 128
+     [java] 57000	 6517114	 114	 8	 56982	 125
+     [java] 58000	 6707220	 115	 8	 57982	 124
+     [java] 59000	 6997560	 118	 8	 58981	 121
+     [java] 60000	 7238913	 120	 8	 59981	 119
+     [java] 61000	 7451679	 122	 8	 60982	 118
+     [java] 62000	 7725572	 124	 8	 61981	 116
+     [java] 63000	 7938155	 126	 7	 62981	 114
+     [java] 64000	 8209310	 128	 7	 63982	 112
+     [java] 65000	 8512620	 130	 7	 64982	 110
+     [java] 66000	 8744493	 132	 7	 65981	 109
+     [java] 67000	 9025064	 134	 7	 66981	 107
+     [java] 68000	 9341914	 137	 7	 67982	 105
+     [java] 69000	 9549614	 138	 7	 68981	 105
+     [java] 70000	 9864655	 140	 7	 69981	 103
+     [java] 71000	 10171273	 143	 6	 70982	 101
+     [java] 72000	 10417469	 144	 6	 71981	 100
+     [java] 73000	 10741094	 147	 6	 72981	 98
+     [java] 74000	 11055452	 149	 6	 73981	 97
+     [java] 75000	 11299384	 150	 6	 74981	 96
+     [java] 76000	 11656105	 153	 6	 75982	 95
+     [java] 77000	 11961893	 155	 6	 76981	 93
+     [java] 78000	 12241777	 156	 6	 77982	 92
+     [java] 79000	 12593843	 159	 6	 78981	 91
+     [java] 80000	 12915936	 161	 6	 79981	 90
+     [java] 81000	 13189414	 162	 6	 80981	 89
+     [java] 82000	 13539833	 165	 6	 81981	 88
+     [java] 83000	 13893519	 167	 5	 82981	 87
+     [java] 84000	 14192562	 168	 5	 83981	 86
+     [java] 85000	 14521587	 170	 5	 84981	 85
+     [java] 86000	 14866355	 172	 5	 85981	 84
+     [java] 87000	 15184534	 174	 5	 86981	 83
+     [java] 88000	 15488914	 176	 5	 87981	 83
+     [java] 89000	 15819097	 177	 5	 88981	 82
+     [java] 90000	 16153492	 179	 5	 89981	 81
+     [java] 91000	 16502485	 181	 5	 90981	 80
+     [java] 92000	 16824362	 182	 5	 91981	 80
+     [java] 93000	 17166144	 184	 5	 92981	 79
+     [java] 94000	 17544927	 186	 5	 93981	 78
+     [java] 95000	 17902484	 188	 5	 94981	 77
+     [java] 96000	 18237490	 189	 5	 95981	 77
+     [java] 97000	 18596645	 191	 5	 96981	 76
+     [java] 98000	 18987445	 193	 5	 97983	 75
+     [java] 99000	 19381010	 195	 5	 98981	 75
+     [java] 100000	 19750890	 197	 5	 99981	 74
+     [java] 101000	 20114886	 199	 5	 100981	 73
+     [java] 102000	 20544800	 201	 4	 101981	 73
+     [java] 103000	 20957574	 203	 4	 102981	 72
+     [java] 104000	 21286562	 204	 4	 103981	 71
+     [java] 105000	 21705180	 206	 4	 104981	 71
+     [java] 106000	 22148052	 208	 4	 105981	 70
+     [java] 107000	 22562048	 210	 4	 106981	 69
+     [java] 108000	 22935305	 212	 4	 107982	 69
+     [java] 109000	 23388161	 214	 4	 108981	 68
+     [java] 110000	 23860049	 216	 4	 109981	 67
+     [java] 111000	 24280466	 218	 4	 110981	 67
+     [java] 112000	 24676488	 220	 4	 111981	 66
+     [java] 113000	 25132730	 222	 4	 112981	 66
+     [java] 114000	 25610710	 224	 4	 113983	 65
+     [java] 115000	 26060251	 226	 4	 114982	 65
+     [java] 116000	 26472244	 228	 4	 115981	 64
+     [java] 116110	 26534518	 228	 4	 116091	 64
+     [java] Message server shutdown
+
+BUILD SUCCESSFUL
+Total time: 30 minutes 2 seconds
