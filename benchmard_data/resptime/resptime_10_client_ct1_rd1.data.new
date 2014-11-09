@@ -1,44 +1,33 @@
-
      [java] ########## Client Send Report ##########
      [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
-     [java] 23307	 70479	 3	 332	 23308	 12
+     [java] 34152	 101448	 2	 338	 34153	 18
      [java] ########## Client Receive Report ##########
      [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
-     [java] 23306	 1725153	 74	 13	 23307	 12
+     [java] 34150	 1674778	 49	 20	 34151	 18
      [java] ########## Client Send Report ##########
      [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
-     [java] 23243	 71114	 3	 327	 23244	 12
+     [java] 34151	 101592	 2	 338	 34152	 18
      [java] ########## Client Receive Report ##########
      [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
-     [java] 23243	 1725434	 74	 13	 23244	 12
-     [java] 23297	 69757	 2	 337	 23298	 12
-     [java] ########## Client Receive Report ##########
-     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
-     [java] 23297	 1726653	 74	 13	 23298	 12
+     [java] 34149	 1675090	 49	 20	 34150	 18
      [java] ########## Client Send Report ##########
      [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
-     [java] 23230	 70834	 3	 331	 23231	 12
+     [java] 34151	 101996	 2	 338	 34152	 18
      [java] ########## Client Receive Report ##########
      [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
-     [java] 23230	 1725438	 74	 13	 23231	 12
+     [java] 34149	 1674885	 49	 20	 34150	 18
      [java] ########## Client Send Report ##########
      [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
-     [java] 23309	 71213	 3	 328	 23310	 12
+     [java] 34144	 101515	 2	 338	 34145	 18
      [java] ########## Client Receive Report ##########
      [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
-     [java] 23309	 1725093	 74	 13	 23310	 12
+     [java] 34141	 1674729	 49	 20	 34142	 18
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 34230	 103132	 3	 332	 34231	 18
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 34229	 1677944	 49	 20	 34230	 18
 
-BUILD SUCCESSFUL
-Total time: 30 minutes 3 seconds
 
-BUILD SUCCESSFUL
-Total time: 30 minutes 3 seconds
-
-BUILD SUCCESSFUL
-Total time: 30 minutes 3 seconds
-
-BUILD SUCCESSFUL
-Total time: 30 minutes 3 seconds
-
-BUILD SUCCESSFUL
-Total time: 30 minutes 3 seconds
+Total time: 30 minutes 11 seconds

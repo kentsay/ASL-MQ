@@ -234,9 +234,7 @@ public class MessageService implements Runnable {
                     result.setMsgDetail(ResponseCode.ERROR_QUEUE_NOT_EXISTS.value());
                     //Log.info("queue does not exists, ROLLBACK!!");
                 } else {
-                    synchronized (this) {
-                        updateQueueSize(raw,1);    
-                    }
+                    updateQueueSize(raw,1);    
                 }
             } catch (SQLException e) {
                 isRollBack = true;
@@ -315,9 +313,7 @@ public class MessageService implements Runnable {
                         sql = "SELECT func_delete_msg_detail_byid(?)";
                         rs = DbUtil.sqlSelect(sql, param, conn);
                         if (rs.next()) {
-                            synchronized (this) {
-                                updateQueueSize(raw, -1);    
-                            }
+                            updateQueueSize(raw, -1);    
                         } else {
                             isRollBack = true;
                             result.setMsgDetail(ResponseCode.ERROR_DB_MSG_DETAIL_TABLE_DELETE_FAIL.value());

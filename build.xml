@@ -7,9 +7,9 @@
 	<property name="message-service-class" value="main.java.ch.ethz.systems.asl.service.middleware.MessageServiceMain" />
 	<property name="sender-class" value="main.java.ch.ethz.systems.asl.service.client.MsgClient" />
 	<property name="receiver-class" value="main.java.ch.ethz.systems.asl.service.client.MsgClient" />
-	<property name="msg.server.ip" value="54.228.170.109"/>
+	<property name="msg.server.ip" value="localhost"/>
 	<property name="port.number" value="1999" />
-	<property name="db.farm" value="aws"/>
+	<property name="db.farm" value="local"/>
 
 	<path id="classpath">
 		<fileset dir="${lib.dir}" includes="postgresql.jar" />

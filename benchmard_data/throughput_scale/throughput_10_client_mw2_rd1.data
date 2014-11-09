@@ -8,62 +8,6 @@ run:
      [java] Message server running
      [java] ########## Middleware Report ##########
      [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
-     [java] 十一月 08, 2014 10:38:25 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
-     [java] 資訊: Get connection error:0 ms.
-     [java] 十一月 08, 2014 10:38:25 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
-     [java] 資訊: Get connection error:0 ms.
-     [java] 十一月 08, 2014 10:38:25 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
-     [java] 資訊: Retry Count: 0
-     [java] 十一月 08, 2014 10:38:25 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
-     [java] 資訊: Get connection error:0 ms.
-     [java] 十一月 08, 2014 10:38:25 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
-     [java] 資訊: Retry Count: 0
-     [java] 十一月 08, 2014 10:38:25 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
-     [java] 資訊: Get connection error:6 ms.
-     [java] 十一月 08, 2014 10:38:25 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
-     [java] 資訊: Retry Count: 0
-     [java] 十一月 08, 2014 10:38:25 上午 main.java.ch.ethz.systems.asl.service.db.DBService getConnection
-     [java] 資訊: Retry Count: 0
-     [java] Exception in thread "pool-1-thread-5" java.lang.NullPointerException
-     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
-     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-     [java] 	at java.lang.Thread.run(Thread.java:745)
-     [java] Exception in thread "pool-1-thread-1" java.lang.NullPointerException
-     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
-     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-     [java] 	at java.lang.Thread.run(Thread.java:745)
-     [java] Exception in thread "pool-1-thread-2" java.lang.NullPointerException
-     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
-     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-     [java] 	at java.lang.Thread.run(Thread.java:745)
-     [java] Exception in thread "pool-1-thread-3" java.lang.NullPointerException
-     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
-     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
-     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-     [java] 	at java.lang.Thread.run(Thread.java:745)
      [java] 1000	 50406	 50	 20	 989	 100
      [java] 2000	 98932	 49	 20	 1987	 133
      [java] 3000	 147517	 49	 20	 2987	 150
