@@ -1,0 +1,10 @@
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv1
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv2
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv3
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv4
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv5
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv6
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv7
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv8
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv9
+MsgType:QUERY, MsgFunc:QUERY_BYQUEUE, MsgSender:recv10
