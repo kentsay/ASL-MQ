@@ -1,0 +1,112 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 43625	 2	 349	 15021     [java] ########## Client Send Report ##########
+
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] ########## Client Receive Report ##########
+     [java] 15020	 43904	 2	 349	 15021
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 1621578	 107	 9	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 1621290	 107	 9	 15021
+
+BUILD SUCCESSFUL
+Total time: 27 minutes 48 seconds
+
+BUILD SUCCESSFUL
+Total time: 27 minutes 48 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 46222	 3	 326	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 1621346	 107	 9	 15021
+
+BUILD SUCCESSFUL
+Total time: 27 minutes 51 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 45574	 3	 333	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 1624464	 108	 9	 15021
+     [java] ########## Client Send Report ##########     [java] ########## Client Send Report ##########
+
+     [java] Req#	 Time	 Resp	 Tput	 Recv#     [java] Req#	 Time	 Resp	 Tput	 Recv#
+
+     [java] 15020	 43642	 2	 349	 15021     [java] 15020	 44939	 2	 341	 15021
+
+     [java] ########## Client Receive Report ##########     [java] ########## Client Receive Report ##########
+
+     [java] Req#	 Time	 Resp	 Tput	 Recv#     [java] Req#	 Time	 Resp	 Tput	 Recv#
+
+     [java] 15020	 1626586	 108	 9	 15021     [java] 15020	 1625105	 108	 9	 15021
+
+
+BUILD SUCCESSFUL
+Total time: 27 minutes 53 seconds
+
+BUILD SUCCESSFUL
+Total time: 27 minutes 53 seconds
+
+BUILD SUCCESSFUL
+Total time: 27 minutes 53 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 44480	 2	 341	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 1627538	 108	 9	 15021
+
+BUILD SUCCESSFUL
+Total time: 27 minutes 55 seconds

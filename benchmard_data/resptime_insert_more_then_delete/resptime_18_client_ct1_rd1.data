@@ -1,0 +1,144 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+jar:
+
+jar:
+
+jar:
+
+compile:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+send:
+
+send:
+
+send:
+
+jar:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 30678	 3	 334	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 1203125	 120	 8	 10021	 0
+     [java] ########## Client Send Report ##########     [java] ########## Client Send Report ##########
+
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+
+     [java] 10020	 30707	 3	 334	 10021	 0     [java] 10020	 30988	 3	 334	 10021	 0
+
+     [java] ########## Client Receive Report ##########     [java] ########## Client Receive Report ##########
+
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+
+     [java] 10020	 1203038	 120	 8	 10021	 0
+     [java] 10020	 1202616	 120	 8	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 20 minutes 38 seconds
+
+BUILD SUCCESSFUL
+Total time: 20 minutes 37 seconds
+
+BUILD SUCCESSFUL
+Total time: 20 minutes 38 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31618	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 1207601	 120	 8	 10021	 0
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 30641	 3	 334	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 1208569	 120	 8	 10021	 0
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31826	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 1207417	 120	 8	 10021	 0
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31621	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 1208002	 120	 8	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 20 minutes 43 seconds
+
+BUILD SUCCESSFUL
+Total time: 20 minutes 43 seconds
+
+BUILD SUCCESSFUL
+Total time: 20 minutes 43 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 30542	 3	 334	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+
+BUILD SUCCESSFUL
+Total time: 20 minutes 43 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 30530	 3	 334	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 1209617	 120	 8	 10021	 0
+     [java] 10020	 1209528	 120	 8	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 20 minutes 44 seconds
+
+BUILD SUCCESSFUL
+Total time: 20 minutes 44 seconds

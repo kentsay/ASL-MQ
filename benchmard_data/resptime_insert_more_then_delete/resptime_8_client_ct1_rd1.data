@@ -1,0 +1,65 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+compile:
+
+compile:
+
+jar:
+
+jar:
+
+jar:
+
+compile:
+send:
+
+
+send:
+
+send:
+
+jar:
+
+send:
+     [java] IOException:  null
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 43845	 2	 349	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 837326	 55	 17	 15021
+
+BUILD SUCCESSFUL
+Total time: 14 minutes 43 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 45272	 3	 333	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 837011	 55	 17	 15021
+
+BUILD SUCCESSFUL
+Total time: 14 minutes 44 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 45536	 3	 333	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 838474	 55	 17	 15021
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15011	 45752	 3	 333	 15012
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15010	 837474	 55	 17	 15011
+
+BUILD SUCCESSFUL
+Total time: 14 minutes 46 seconds
+
+BUILD SUCCESSFUL
+Total time: 14 minutes 46 seconds

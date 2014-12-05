@@ -1,0 +1,83 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+send:
+
+send:
+
+send:
+
+send:
+
+compile:
+
+jar:
+
+send:
+     [java] IOException:  null
+     [java] IOException:  null
+     [java] IOException:  null
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15011	 44357	 2	 341	 15012
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15010	 1005446	 66	 14	 15011
+
+BUILD SUCCESSFUL
+Total time: 17 minutes 33 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15011	 44398	 2	 341	 15012
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15010	 1007800	 67	 14	 15011
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 44412	 2	 341	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 1009188	 67	 14	 15021
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15011	 46349	 3	 326	 15012
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15010	 1006033	 67	 14	 15011
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 44641	 2	 341	 15021
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] 15020	 1009248	 67	 14	 15021
+
+BUILD SUCCESSFUL
+Total time: 17 minutes 36 seconds
+
+BUILD SUCCESSFUL
+Total time: 17 minutes 36 seconds
+
+BUILD SUCCESSFUL
+Total time: 17 minutes 36 seconds
+
+BUILD SUCCESSFUL
+Total time: 17 minutes 36 seconds

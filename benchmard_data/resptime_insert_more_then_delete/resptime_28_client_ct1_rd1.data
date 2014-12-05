@@ -1,0 +1,227 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+compile:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+jar:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+
+send:
+     [java] IOException:  null
+     [java] IOException:  null
+     [java] IOException:  null
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31159	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 2997241	 299	 3	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 34 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31058	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 3000681	 299	 3	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 37 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31199	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 3001478	 299	 3	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 38 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31168	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 3003737	 299	 3	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 40 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31259	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 3008826	 300	 3	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 46 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31129	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 3009851	 300	 3	 10021	 0
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10011	 31074	 3	 322	 10012	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10010	 3009971	 300	 3	 10011	 0
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10011	 31063	 3	 322	 10012	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10010	 3009992	 300	 3	 10011	 0
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 47 seconds
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 47 seconds
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 47 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10011	 31081	 3	 322	 10012	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10010	 3011759	 300	 3	 10011	 0
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31156	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 3012293	 300	 3	 10021	 0
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31194	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 3012208	 300	 3	 10021	 0
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31346	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 3012511	 300	 3	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 49 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 31086	 3	 323	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 3012807	 300	 3	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 49 seconds
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 49 seconds
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 49 seconds
+     [java] ########## Client Send Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 30968	 3	 334	 10021	 0
+     [java] ########## Client Receive Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] 10020	 3013314	 300	 3	 10021	 0
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 50 seconds
+
+BUILD SUCCESSFUL
+Total time: 50 minutes 50 seconds

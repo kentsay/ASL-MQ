@@ -1,0 +1,61 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+jar:
+
+run:
+     [java] Message server running
+     [java] ########## Middleware Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] Nov 03, 2014 1:23:20 PM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: DBCP borrow connection time: 101 ms.
+     [java] 1000	 48828	 48	 20	 1000
+     [java] 2000	 96372	 48	 20	 2000
+     [java] 3000	 143998	 47	 20	 3000
+     [java] 4000	 191592	 47	 20	 4000
+     [java] 5000	 239099	 47	 20	 5000
+     [java] 6000	 286409	 47	 20	 6000
+     [java] 7000	 334039	 47	 20	 7000
+     [java] 8000	 381724	 47	 20	 8000
+     [java] 9000	 429367	 47	 20	 9000
+     [java] 10000	 477386	 47	 20	 10000
+     [java] 11000	 525566	 47	 20	 11000
+     [java] 12000	 574138	 47	 20	 12000
+     [java] 13000	 622413	 47	 20	 13000
+     [java] 14000	 671015	 47	 20	 14000
+     [java] 15000	 719553	 47	 20	 15000
+     [java] 16000	 768379	 48	 20	 16000
+     [java] 17000	 817269	 48	 20	 17000
+     [java] 18000	 865998	 48	 20	 18000
+     [java] 19000	 914687	 48	 20	 19000
+     [java] 20000	 963574	 48	 20	 20000
+     [java] 21000	 1012553	 48	 20	 21000
+     [java] 22000	 1061623	 48	 20	 22000
+     [java] 23000	 1110733	 48	 20	 23000
+     [java] 24000	 1160204	 48	 20	 24000
+     [java] 25000	 1209613	 48	 20	 25000
+     [java] 26000	 1259524	 48	 20	 26000
+     [java] 27000	 1309365	 48	 20	 27000
+     [java] 28000	 1370576	 48	 20	 27999
+     [java] java.io.EOFException
+     [java] 	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2325)
+     [java] 	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:2794)
+     [java] 	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:801)
+     [java] 	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:299)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] 29000	 1427117	 49	 20	 28999
+     [java] 30000	 1476985	 49	 20	 29999
+     [java] 31000	 1527353	 49	 20	 30999
+     [java] 32000	 1577644	 49	 20	 31999
+     [java] 33000	 1627862	 49	 20	 32999
+     [java] 34000	 1678334	 49	 20	 33999
+     [java] 35000	 1729081	 49	 20	 34999
+     [java] 36000	 1779751	 49	 20	 35999
+     [java] 37000	 1830800	 49	 20	 36999
+     [java] 38000	 1881609	 49	 20	 37999
+     [java] 39000	 1932852	 49	 20	 38999
+     [java] 40000	 1984212	 49	 20	 39999

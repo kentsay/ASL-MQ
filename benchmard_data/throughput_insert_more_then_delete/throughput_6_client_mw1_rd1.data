@@ -1,0 +1,94 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+jar:
+
+run:
+     [java] Message server running
+     [java] ########## Middleware Report ##########
+     [java] Req#	 Time	 Resp	 Tput	 Recv#
+     [java] Nov 03, 2014 3:03:23 PM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: DBCP borrow connection time: 97 ms.
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue16')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue16) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue19')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue19) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue20')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue20) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] 1000	 49092	 49	 20	 999
+     [java] 2000	 97856	 48	 20	 1999
+     [java] 3000	 146096	 48	 20	 2999
+     [java] 4000	 194283	 48	 20	 3999
+     [java] 5000	 242234	 48	 20	 4999
+     [java] 6000	 290417	 48	 20	 5999
+     [java] 7000	 338910	 48	 20	 6999
+     [java] 8000	 387651	 48	 20	 7999
+     [java] 9000	 436521	 48	 20	 8999
+     [java] 10000	 485504	 48	 20	 9999
+     [java] 11000	 534666	 48	 20	 10999
+     [java] 12000	 584145	 48	 20	 11999
+     [java] 13000	 633289	 48	 20	 12999
+     [java] 14000	 682971	 48	 20	 13999
+     [java] 15000	 732635	 48	 20	 14999
+     [java] 16000	 782559	 48	 20	 15999
+     [java] 17000	 832731	 48	 20	 16999
+     [java] 18000	 883402	 49	 20	 18000
+     [java] 19000	 934625	 49	 20	 19000
+     [java] 20000	 985940	 49	 20	 19999
+     [java] 21000	 1037655	 49	 20	 20999
+     [java] 22000	 1089740	 49	 20	 21999
+     [java] 23000	 1141790	 49	 20	 22999
+     [java] 24000	 1193477	 49	 20	 23999
+     [java] 25000	 1245695	 49	 20	 24999
+     [java] 26000	 1298089	 49	 20	 25999
+     [java] 27000	 1350916	 50	 20	 26999
+     [java] 28000	 1403928	 50	 19	 27999
+     [java] 29000	 1457307	 50	 19	 28999
+     [java] 30000	 1511778	 50	 19	 29999

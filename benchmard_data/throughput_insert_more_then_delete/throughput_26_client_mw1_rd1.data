@@ -1,0 +1,616 @@
+Buildfile: /home/ec2-user/ASL-MQ/build.xml
+
+compile:
+
+jar:
+      [jar] Building jar: /home/ec2-user/ASL-MQ/ASL-MQ.jar
+
+run:
+     [java] Message server running
+     [java] ########## Middleware Report ##########
+     [java] Req#	 Time	 Resp	 Rate	 Recv#	 Throughput
+     [java] Nov 04, 2014 12:27:52 AM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: Get connection error:0 ms.
+     [java] Nov 04, 2014 12:27:52 AM main.java.ch.ethz.systems.asl.service.db.DBService getConnection
+     [java] INFO: Retry Count: 0
+     [java] Exception in thread "pool-1-thread-3" java.lang.NullPointerException
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.getConnection(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue11')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue11) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue12')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue12) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue13')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue13) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue14')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue14) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue14')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue14) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue17')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue17) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue17')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue17) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue18')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue18) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue18')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue18) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_insert_queue('queue18')
+     [java] ERROR: duplicate key value violates unique constraint "queue_qname_key"
+     [java]   Detail: Key (qname)=(queue18) already exists.
+     [java]   Where: SQL function "func_insert_queue" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] 1000	 55958	 55	 18	 989	 100
+     [java] 2000	 107336	 53	 18	 1988	 142
+     [java] 3000	 159673	 53	 18	 2988	 157
+     [java] 4000	 213301	 53	 18	 3988	 173
+     [java] 5000	 266061	 53	 18	 4989	 185
+     [java] 6000	 320582	 53	 18	 5989	 187
+     [java] 7000	 373996	 53	 18	 6988	 194
+     [java] 8000	 430260	 53	 18	 7987	 195
+     [java] 9000	 486626	 54	 18	 8987	 200
+     [java] 10000	 554068	 55	 18	 9988	 196
+     [java] 11000	 607759	 55	 18	 10990	 200
+     [java] 12000	 660135	 55	 18	 11988	 200
+     [java] 13000	 714752	 54	 18	 12987	 203
+     [java] 14000	 769736	 54	 18	 13987	 205
+     [java] 15000	 826310	 55	 18	 14987	 205
+     [java] 16000	 884150	 55	 18	 15988	 205
+     [java] 17000	 943474	 55	 18	 16987	 204
+     [java] 18000	 1003023	 55	 17	 17988	 206
+     [java] 19000	 1065273	 56	 17	 18989	 206
+     [java] 20000	 1129359	 56	 17	 19988	 204
+     [java] 21000	 1195122	 56	 17	 20988	 203
+     [java] 22000	 1261336	 57	 17	 21989	 203
+     [java] 23000	 1348436	 58	 17	 22987	 200
+     [java] 24000	 1419371	 59	 16	 23987	 198
+     [java] 25000	 1492304	 59	 16	 24987	 196
+     [java] 26000	 1574332	 60	 16	 25990	 195
+     [java] 27000	 1651472	 61	 16	 26989	 194
+     [java] 28000	 1731679	 61	 16	 27989	 191
+     [java] 29000	 1823184	 62	 15	 28987	 189
+     [java] 30000	 1907911	 63	 15	 29988	 187
+     [java] 31000	 1992036	 64	 15	 30988	 185
+     [java] 32000	 2101424	 65	 15	 31988	 182
+     [java] 33000	 2198352	 66	 15	 32988	 180
+     [java] 34000	 2297111	 67	 14	 33987	 178
+     [java] 35000	 2404064	 68	 14	 34987	 175
+     [java] 36000	 2507914	 69	 14	 35987	 173
+     [java] 37000	 2618747	 70	 14	 36987	 171
+     [java] 38000	 2728148	 71	 13	 37988	 168
+     [java] 39000	 2850688	 73	 13	 38987	 165
+     [java] 40000	 2977480	 74	 13	 39987	 163
+     [java] 41000	 3101120	 75	 13	 40987	 161
+     [java] 42000	 3228255	 76	 13	 41987	 159
+     [java] 43000	 3362433	 78	 12	 42987	 156
+     [java] 44000	 3489210	 79	 12	 43987	 154
+     [java] 45000	 3636846	 80	 12	 44987	 151
+     [java] 46000	 3782338	 82	 12	 45987	 149
+     [java] 47000	 3919252	 83	 11	 46987	 147
+     [java] 48000	 4073035	 84	 11	 47987	 145
+     [java] 49000	 4213469	 85	 11	 48987	 143
+     [java] 50000	 4372792	 87	 11	 49989	 141
+     [java] 51000	 4544958	 89	 11	 50987	 138
+     [java] 52000	 4692490	 90	 11	 51988	 137
+     [java] 53000	 4864925	 91	 10	 52988	 134
+     [java] 54000	 5017844	 92	 10	 53987	 133
+     [java] 55000	 5196487	 94	 10	 54987	 131
+     [java] 56000	 5381726	 96	 10	 55987	 129
+     [java] 57000	 5538949	 97	 10	 56987	 127
+     [java] 58000	 5729021	 98	 10	 57988	 125
+     [java] 59000	 5936076	 100	 9	 58987	 123
+     [java] 60000	 6118054	 101	 9	 59987	 122
+     [java] 61000	 6302894	 103	 9	 60989	 120
+     [java] 62000	 6510611	 105	 9	 61987	 118
+     [java] 63000	 6710161	 106	 9	 62987	 117
+     [java] 64000	 6895228	 107	 9	 63987	 115
+     [java] 65000	 7115577	 109	 9	 64987	 114
+     [java] 66000	 7317974	 110	 9	 65987	 112
+     [java] 67000	 7526786	 112	 8	 66987	 111
+     [java] 68000	 7754768	 114	 8	 67987	 109
+     [java] 69000	 7980444	 115	 8	 68987	 108
+     [java] 70000	 8185319	 116	 8	 69987	 107
+     [java] 71000	 8422917	 118	 8	 70987	 105
+     [java] 72000	 8662105	 120	 8	 71987	 104
+     [java] 73000	 8890895	 121	 8	 72987	 103
+     [java] 74000	 9110720	 123	 8	 73989	 102
+     [java] 75000	 9356478	 124	 8	 74987	 100
+     [java] 76000	 9601594	 126	 7	 75987	 99
+     [java] 77000	 9839347	 127	 7	 76987	 98
+     [java] 78000	 10073257	 129	 7	 77987	 97
+     [java] 79000	 10328821	 130	 7	 78987	 96
+     [java] 80000	 10578583	 132	 7	 79987	 95
+     [java] 81000	 10806517	 133	 7	 80987	 94
+     [java] 82000	 11039715	 134	 7	 81987	 93
+     [java] 83000	 11296914	 136	 7	 82987	 92
+     [java] 84000	 11613328	 138	 7	 83987	 91
+     [java] 85000	 11962508	 140	 7	 84988	 89
+     [java] 86000	 12317072	 143	 6	 85987	 88
+     [java] 87000	 12657999	 145	 6	 86987	 86
+     [java] 88000	 13023647	 147	 6	 87987	 85
+     [java] 89000	 13403120	 150	 6	 88987	 84
+     [java] 90000	 13808651	 153	 6	 89988	 82
+     [java] 91000	 14192069	 155	 6	 90987	 81
+     [java] 92000	 14576527	 158	 6	 91987	 79
+     [java] 93000	 14901464	 160	 6	 92987	 79
+     [java] 94000	 15324024	 163	 6	 93988	 77
+     [java] 95000	 15751891	 165	 6	 94987	 76
+     [java] 96000	 16167947	 168	 5	 95987	 75
+     [java] 97000	 16573128	 170	 5	 96987	 74
+     [java] 98000	 16970955	 173	 5	 97987	 73
+     [java] 99000	 17360229	 175	 5	 98987	 72
+     [java] 100000	 17787980	 177	 5	 99987	 71
+     [java] 101000	 18225074	 180	 5	 100987	 70
+     [java] 102000	 18682961	 183	 5	 101987	 69
+     [java] 103000	 19122399	 185	 5	 102987	 68
+     [java] 104000	 19492852	 187	 5	 103987	 67
+     [java] 105000	 19938122	 189	 5	 104987	 67
+     [java] 106000	 20415641	 192	 5	 105987	 66
+     [java] 107000	 20879375	 195	 5	 106987	 65
+     [java] 108000	 21327363	 197	 5	 107987	 64
+     [java] 109000	 21780236	 199	 5	 108987	 63
+     [java] 110000	 22231011	 202	 4	 109987	 63
+     [java] 111000	 22695132	 204	 4	 110987	 62
+     [java] 112000	 23200049	 207	 4	 111987	 61
+     [java] 113000	 23708788	 209	 4	 112988	 60
+     [java] 114000	 24206427	 212	 4	 113987	 60
+     [java] 115000	 24727272	 215	 4	 114988	 59
+     [java] 116000	 25221160	 217	 4	 115987	 58
+     [java] 117000	 25722151	 219	 4	 116987	 58
+     [java] 118000	 26208606	 222	 4	 117987	 57
+     [java] 119000	 26747047	 224	 4	 118988	 56
+     [java] 120000	 27288316	 227	 4	 119988	 56
+     [java] 121000	 27825625	 229	 4	 120987	 55
+     [java] 122000	 28369926	 232	 4	 121987	 54
+     [java] 123000	 28904444	 234	 4	 122987	 54
+     [java] 124000	 29455323	 237	 4	 123987	 53
+     [java] 125000	 30011398	 240	 4	 124987	 53
+     [java] 126000	 30554439	 242	 4	 125987	 52
+     [java] 127000	 31095959	 244	 4	 126987	 52
+     [java] 128000	 31669600	 247	 4	 127987	 51
+     [java] 129000	 32254104	 250	 3	 128987	 51
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_detail('queue11')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5361 waits for ShareLock on transaction 2340081; blocked by process 5359.
+     [java] Process 5359 waits for ShareLock on transaction 2340088; blocked by process 5361.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg_detail" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg('queue12')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5357 waits for AccessExclusiveLock on tuple (2079,83) of relation 16403 of database 16385; blocked by process 5367.
+     [java] Process 5367 waits for ShareLock on transaction 2340165; blocked by process 5358.
+     [java] Process 5358 waits for ShareLock on transaction 2340128; blocked by process 5357.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_detail('queue13')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5358 waits for ShareLock on transaction 2340214; blocked by process 5370.
+     [java] Process 5370 waits for ExclusiveLock on tuple (11,22) of relation 16388 of database 16385; blocked by process 5365.
+     [java] Process 5365 waits for ShareLock on transaction 2340210; blocked by process 5358.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg_detail" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:update queue set qsize = ((select qsize from queue where qname = 'queue14') + 1) where qname = 'queue14' 
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5357 waits for ShareLock on transaction 2340251; blocked by process 5364.
+     [java] Process 5364 waits for ShareLock on transaction 2340258; blocked by process 5373.
+     [java] Process 5373 waits for ExclusiveLock on tuple (10,23) of relation 16388 of database 16385; blocked by process 5357.
+     [java]   Hint: See server log for query details.
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.updateQueueSize(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_detail('queue14')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5364 waits for ShareLock on transaction 2340258; blocked by process 5373.
+     [java] Process 5373 waits for ShareLock on transaction 2340251; blocked by process 5364.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg_detail" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:update queue set qsize = ((select qsize from queue where qname = 'queue15') + -1) where qname = 'queue15' 
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5363 waits for ShareLock on transaction 2340326; blocked by process 5358.
+     [java] Process 5358 waits for ShareLock on transaction 2340332; blocked by process 5363.
+     [java]   Hint: See server log for query details.
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.updateQueueSize(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_detail_byid('e8e9da88-2b7d-4a4f-939c-ad535abda2bb')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5359 waits for ShareLock on transaction 2340326; blocked by process 5358.
+     [java] Process 5358 waits for AccessExclusiveLock on tuple (2087,80) of relation 16403 of database 16385; blocked by process 5371.
+     [java] Process 5371 waits for ShareLock on transaction 2340331; blocked by process 5359.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg_detail_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('e8e9da88-2b7d-4a4f-939c-ad535abda2bb')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5360 waits for AccessExclusiveLock on tuple (2087,80) of relation 16403 of database 16385; blocked by process 5367.
+     [java] Process 5367 waits for ShareLock on transaction 2340328; blocked by process 5371.
+     [java] Process 5371 waits for ShareLock on transaction 2340326; blocked by process 5358.
+     [java] Process 5358 waits for AccessExclusiveLock on tuple (2087,80) of relation 16403 of database 16385; blocked by process 5360.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('e8e9da88-2b7d-4a4f-939c-ad535abda2bb')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5363 waits for AccessExclusiveLock on tuple (2087,80) of relation 16403 of database 16385; blocked by process 5367.
+     [java] Process 5367 waits for ShareLock on transaction 2340328; blocked by process 5371.
+     [java] Process 5371 waits for ShareLock on transaction 2340326; blocked by process 5358.
+     [java] Process 5358 waits for AccessExclusiveLock on tuple (2087,80) of relation 16403 of database 16385; blocked by process 5363.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg('queue15')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5358 waits for AccessExclusiveLock on tuple (2087,80) of relation 16403 of database 16385; blocked by process 5367.
+     [java] Process 5367 waits for ShareLock on transaction 2340328; blocked by process 5371.
+     [java] Process 5371 waits for ShareLock on transaction 2340326; blocked by process 5358.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:update queue set qsize = ((select qsize from queue where qname = 'queue11') + -1) where qname = 'queue11' 
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5363 waits for ExclusiveLock on tuple (2,65) of relation 16388 of database 16385; blocked by process 5360.
+     [java] Process 5360 waits for ShareLock on transaction 2340439; blocked by process 5359.
+     [java] Process 5359 waits for ShareLock on transaction 2340436; blocked by process 5363.
+     [java]   Hint: See server log for query details.
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.updateQueueSize(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('886d9d52-e64e-4711-acba-caa4d0e150f5')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5358 waits for ShareLock on transaction 2340441; blocked by process 5370.
+     [java] Process 5370 waits for ShareLock on transaction 2340439; blocked by process 5359.
+     [java] Process 5359 waits for AccessExclusiveLock on tuple (1074,79) of relation 16403 of database 16385; blocked by process 5358.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:update queue set qsize = ((select qsize from queue where qname = 'queue12') + -1) where qname = 'queue12' 
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5366 waits for ExclusiveLock on tuple (14,45) of relation 16388 of database 16385; blocked by process 5360.
+     [java] Process 5360 waits for ShareLock on transaction 2340473; blocked by process 5359.
+     [java] Process 5359 waits for ShareLock on transaction 2340516; blocked by process 5366.
+     [java]   Hint: See server log for query details.
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlAction(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.updateQueueSize(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_byid('e1089cf7-2015-4933-85b4-ce4e6986b03e')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5364 waits for ShareLock on transaction 2340515; blocked by process 5368.
+     [java] Process 5368 waits for ShareLock on transaction 2340473; blocked by process 5359.
+     [java] Process 5359 waits for AccessExclusiveLock on tuple (2082,60) of relation 16403 of database 16385; blocked by process 5364.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg('queue12')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5359 waits for ShareLock on transaction 2340515; blocked by process 5368.
+     [java] Process 5368 waits for ShareLock on transaction 2340473; blocked by process 5359.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processSend(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] java.sql.SQLException: sql:SELECT func_delete_msg_detail_byid('e1089cf7-2015-4933-85b4-ce4e6986b03e')
+     [java] ERROR: deadlock detected
+     [java]   Detail: Process 5360 waits for ShareLock on transaction 2340526; blocked by process 5367.
+     [java] Process 5367 waits for ShareLock on transaction 2340566; blocked by process 5360.
+     [java]   Hint: See server log for query details.
+     [java]   Where: SQL function "func_delete_msg_detail_byid" statement 1
+     [java] 	at main.java.ch.ethz.systems.asl.service.db.DBService.select(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.util.DbUtil.sqlSelect(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.processReceive(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.msgExecution(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.runMsgManagement(Unknown Source)
+     [java] 	at main.java.ch.ethz.systems.asl.service.middleware.MessageService.run(Unknown Source)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+     [java] 	at java.lang.Thread.run(Thread.java:745)
+     [java] 130000	 32901850	 253	 3	 129989	 50
