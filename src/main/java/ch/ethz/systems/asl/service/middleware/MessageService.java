@@ -14,7 +14,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Vector;
-import java.util.logging.Logger;
 
 import javax.naming.NamingException;
 
@@ -26,7 +25,7 @@ import main.java.ch.ethz.systems.asl.util.StopWatch;
 
 public class MessageService implements Runnable {
 
-    private static final Logger Log = Logger.getLogger(MessageService.class.getName());
+    //private static final Logger Log = Logger.getLogger(MessageService.class.getName());
     
     MessageServiceMain server;
     Socket clientSocket;
@@ -117,16 +116,14 @@ public class MessageService implements Runnable {
      */
     private void processMsg(Message raw, Message result) {
         try {
-            String sql = "SELECT func_insert_msg(?,?,?,?,?,?,?)";
+            String sql = "SELECT func_insert_msg(?,?,?,?,?,?)";
             Vector<String> param = new Vector<>();
-            String mid = raw.getMid();
             String sendId = raw.getSender();
             String recvId = (!raw.getReceiver().equals("")) ? raw.getReceiver(): "0";
             String queue  = (!raw.getMsgQueue().equals("")) ? raw.getMsgQueue(): "0";
             String msgType = raw.getMsgType().value();
             String msgFunc = raw.getMsgFunc().value();
             String msgDtl = raw.getMsgDetail();
-            param.add(mid);
             param.add(sendId);
             param.add(recvId);
             param.add(queue);
@@ -150,11 +147,9 @@ public class MessageService implements Runnable {
         try {
             String sql = "SELECT func_insert_msgdtl(?,?,?,?)";
             Vector<String> param = new Vector<>();
-            String mid = raw.getMid();
             String msgType = raw.getMsgType().value();
             String msgFunc = raw.getMsgFunc().value();
             String msgDtl = raw.getMsgDetail();
-            param.add(mid);
             param.add(msgType);
             param.add(msgFunc);
             param.add(msgDtl);
@@ -321,8 +316,8 @@ public class MessageService implements Runnable {
                     //delete from msg only if there is content in table
                     if ( !mid.equals("") ) {
                         sql = "SELECT func_delete_msg_byid(?)";
-                        Vector<String> param2 = new Vector<>();
-                        param2.add(mid);
+                        Vector<Integer> param2 = new Vector<>();
+                        param2.add(Integer.parseInt(mid));
                         rs = DbUtil.sqlSelect(sql, param2, conn);
                         if (rs.next()) {
                             //updateQueueSize(raw, -1);    
