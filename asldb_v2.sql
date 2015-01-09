@@ -14,23 +14,22 @@ CREATE TYPE msgfunc_enum AS ENUM ('ctr_createQ','ctr_deleteQ','send_toUser','sen
 
 CREATE TABLE IF NOT EXISTS msg
 (
-  mid char(36) NOT NULL,
+  mid SERIAL NOT NULL,
   msend_id integer NOT NULL,
   mrecv_id integer NOT NULL,
   mqueue_id integer NOT NULL,
   msg_type msgtype_enum NOT NULL,
   msg_func msgfunc_enum NOT NULL,
   msg_detail varchar(2048),
-  marr_time timestamp DEFAULT current_timestamp,
-  PRIMARY KEY(mid)
+  marr_time timestamp DEFAULT current_timestamp
 );
 CREATE INDEX idx_msend_mrecv_mqueue ON msg (msend_id, mrecv_id, mqueue_id);
 
 /* Function for insert data into msg table */
-CREATE OR REPLACE FUNCTION func_insert_msg(m_id char(36), send_id varchar(20), recv_id varchar(20), q_id varchar(20), type varchar(20), functype varchar(20), msgdtl varchar(2048)) RETURNS void AS
+CREATE OR REPLACE FUNCTION func_insert_msg(send_id varchar(20), recv_id varchar(20), q_id varchar(20), type varchar(20), functype varchar(20), msgdtl varchar(2048)) RETURNS void AS
 '
-	INSERT INTO msg (mid, msend_id, mrecv_id, mqueue_id, msg_type, msg_func, msg_detail) 
-  VALUES (m_id,CAST(send_id as integer),CAST(recv_id as integer),CAST(q_id as integer),CAST(type as msgtype_enum), CAST(functype as msgfunc_enum),msgdtl)
+	INSERT INTO msg (msend_id, mrecv_id, mqueue_id, msg_type, msg_func, msg_detail) 
+  VALUES (CAST(send_id as integer),CAST(recv_id as integer),CAST(q_id as integer),CAST(type as msgtype_enum), CAST(functype as msgfunc_enum),msgdtl)
 '
 LANGUAGE sql;
 
@@ -83,7 +82,7 @@ LANGUAGE SQL;
 */
 
 /* Function for delete msg from msg table */
-CREATE OR REPLACE FUNCTION func_delete_msg_byid(m_id char(36)) RETURNS void AS 
+CREATE OR REPLACE FUNCTION func_delete_msg_byid(m_id integer) RETURNS void AS 
 '
 	DELETE FROM msg WHERE mid=m_id
 '
