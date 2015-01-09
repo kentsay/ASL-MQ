@@ -1,9 +1,0 @@
-bin/
-.settings/
-.classpath
-.project
-.gitignore
-asldb.sql
-benchmard_data/
-db.sql
-ASL-MQ.jar
