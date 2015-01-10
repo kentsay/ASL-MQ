@@ -1,9 +1,9 @@
 Advanced Systems Lab Project
 ======
 
-The goal of this project is to develop a message passing middleware platform supporting persistent queues and a simple message format. The idea is to build a simpler version of systems such as Apache ActiveMQ, IBM MQ Series, or JBoss Messaging. We used Java as the programming language and PostgreSQL as the database. 
+The goal of this project is to develop, performance evaluation, and modeling of a message passing middleware platform supporting persistent queues and a simple message format. The idea is to build a simpler version of systems such as Apache ActiveMQ, IBM MQ Series, or JBoss Messaging. We used Java as the programming language and PostgreSQL as the database. 
 
-There are three layer in this system: client, message middleware and the database. The basic functionality the system support is as follows:
+There are three layers in this system: client, message middleware and the database. The basic functionality the system support is as follows:
 
 1. Messaging
   * Clients can create and delete queues
